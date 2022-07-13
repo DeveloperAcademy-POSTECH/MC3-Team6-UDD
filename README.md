@@ -46,11 +46,7 @@
 |**refactor:**|코드 리팩토링| 
 |**style:**|스타일 (코드 형식, 세미콜론 추가: 비즈니스 로직에 변경 없는 경우)|
 |**chore:**|빌드, 설정 파일|
-ex) [Type] #이슈번호 커밋메세지 `git commit -m '[Feat] #12 로그인 버튼 추가'`
-
-## Git PR Message
-[PR날짜] 브랜치명 >> 작업내용 
-ex) `[2022.07.13] develop/Login >> 로그인 버튼 구현`
+ex) [Type] #이슈번호 커밋메세지 `git commit -m '[feat] #12 로그인 버튼 추가'`
 
 ## Git Branch
 |브랜치명|작업 내용|
