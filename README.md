@@ -46,6 +46,16 @@
 |**refactor:**|코드 리팩토링| 
 |**style:**|스타일 (코드 형식, 세미콜론 추가: 비즈니스 로직에 변경 없는 경우)|
 |**chore:**|빌드, 설정 파일|
+ex) [Type] #이슈번호 커밋메세지 `git commit -m '[feat] #12 로그인 버튼 추가'`
+
+## Git Branch
+|브랜치명|작업 내용|
+|:---|:---|
+|**main**|배포|
+|**develop**|개발된 기능(feature)을 통합|
+|**docs**|문서 작업|
+|**feat**|각 기능별 개발 진행|
+|
 
 
 ## :framed_picture: Demo
