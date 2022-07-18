@@ -14,6 +14,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
                     </tabBar>
                     <connections>
                         <segue destination="phl-wv-49h" kind="relationship" relationship="viewControllers" id="1U9-uK-avd"/>
@@ -23,7 +24,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Olf-V7-sLm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149" y="785"/>
+            <point key="canvasLocation" x="-567" y="-8706"/>
         </scene>
         <!--Home-->
         <scene sceneID="VN8-fa-Isa">
@@ -33,7 +34,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PCv-4K-egz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717" y="677"/>
+            <point key="canvasLocation" x="1" y="-8815"/>
         </scene>
         <!--Like-->
         <scene sceneID="s6s-Hg-qE2">
@@ -43,7 +44,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6n-io-cxH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="786"/>
+            <point key="canvasLocation" x="-7" y="-8705"/>
         </scene>
         <!--Chat-->
         <scene sceneID="HKK-Xn-jsX">
@@ -53,7 +54,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="99H-T4-FlD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="712" y="895"/>
+            <point key="canvasLocation" x="-4" y="-8596"/>
         </scene>
     </scenes>
 </document>
