@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		206D4F5728869505007374C4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D4F5628869505007374C4 /* CustomTextField.swift */; };
 		AE034D6428870E7200DDC259 /* StartScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE034D6328870E7200DDC259 /* StartScreen.storyboard */; };
+		AE034D66288710D100DDC259 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE034D65288710D100DDC259 /* LoginScreen.storyboard */; };
 		C134DF36288007B600992842 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C134DF35288007B600992842 /* .swiftlint.yml */; };
 		C145B61F287E975600BEC69E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C145B61E287E975600BEC69E /* AppDelegate.swift */; };
 		C145B621287E975600BEC69E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C145B620287E975600BEC69E /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		206D4F5628869505007374C4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AE034D6328870E7200DDC259 /* StartScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StartScreen.storyboard; path = ../../../../../../StartScreen.storyboard; sourceTree = "<group>"; };
+		AE034D65288710D100DDC259 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LoginScreen.storyboard; path = UDD/LoginScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		C134DF35288007B600992842 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C145B61B287E975600BEC69E /* UDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C145B61E287E975600BEC69E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				AE034D6328870E7200DDC259 /* StartScreen.storyboard */,
+				AE034D65288710D100DDC259 /* LoginScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				C1B80489288537E2003371AB /* Chat.storyboard in Resources */,
 				C134DF36288007B600992842 /* .swiftlint.yml in Resources */,
 				AE034D6428870E7200DDC259 /* StartScreen.storyboard in Resources */,
+				AE034D66288710D100DDC259 /* LoginScreen.storyboard in Resources */,
 				C1B8048528853730003371AB /* Home.storyboard in Resources */,
 				C145B62B287E975800BEC69E /* LaunchScreen.storyboard in Resources */,
 				C145B628287E975800BEC69E /* Assets.xcassets in Resources */,
