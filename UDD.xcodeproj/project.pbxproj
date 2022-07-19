@@ -17,6 +17,7 @@
 		20AEA6D728870EF8000984B5 /* SelectTag.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AEA6D628870EF8000984B5 /* SelectTag.storyboard */; };
 		20AEA6D928870F17000984B5 /* SelectTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEA6D828870F17000984B5 /* SelectTagViewController.swift */; };
 		AE034D6428870E7200DDC259 /* StartScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE034D6328870E7200DDC259 /* StartScreen.storyboard */; };
+		AE034D66288710D100DDC259 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE034D65288710D100DDC259 /* LoginScreen.storyboard */; };
 		C134DF36288007B600992842 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C134DF35288007B600992842 /* .swiftlint.yml */; };
 		C145B61F287E975600BEC69E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C145B61E287E975600BEC69E /* AppDelegate.swift */; };
 		C145B621287E975600BEC69E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C145B620287E975600BEC69E /* SceneDelegate.swift */; };
@@ -39,6 +40,7 @@
 		20AEA6D628870EF8000984B5 /* SelectTag.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectTag.storyboard; sourceTree = "<group>"; };
 		20AEA6D828870F17000984B5 /* SelectTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTagViewController.swift; sourceTree = "<group>"; };
 		AE034D6328870E7200DDC259 /* StartScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StartScreen.storyboard; path = ../../../../../../StartScreen.storyboard; sourceTree = "<group>"; };
+		AE034D65288710D100DDC259 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LoginScreen.storyboard; path = UDD/LoginScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		C134DF35288007B600992842 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C145B61B287E975600BEC69E /* UDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C145B61E287E975600BEC69E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				20AEA6D0288702DC000984B5 /* AddDogName.storyboard */,
 				20AEA6D628870EF8000984B5 /* SelectTag.storyboard */,
 				AE034D6328870E7200DDC259 /* StartScreen.storyboard */,
+				AE034D65288710D100DDC259 /* LoginScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				20AEA6D728870EF8000984B5 /* SelectTag.storyboard in Resources */,
 				110874592887F1EF005AE3DE /* HomeDetailView.storyboard in Resources */,
 				AE034D6428870E7200DDC259 /* StartScreen.storyboard in Resources */,
+				AE034D66288710D100DDC259 /* LoginScreen.storyboard in Resources */,
 				C1B8048528853730003371AB /* Home.storyboard in Resources */,
 				C145B62B287E975800BEC69E /* LaunchScreen.storyboard in Resources */,
 				C145B628287E975800BEC69E /* Assets.xcassets in Resources */,
