@@ -19,7 +19,7 @@ class CustomTextFields : UITextField {
     func setupUnderlinedTextField() {
         let bottomLayer = CALayer()
         bottomLayer.frame = CGRect(x: 0, y: self.frame.height, width: self.frame.width - 35, height: 1)
-        bottomLayer.backgroundColor = UIColor.green.cgColor
+        bottomLayer.backgroundColor = UIColor(named: "AccentColor")?.cgColor
         self.layer.addSublayer(bottomLayer)
     }
 }
