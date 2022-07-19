@@ -12,10 +12,10 @@ class CustomTextFields : UITextField {
     let padding: CGFloat = 35
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        
+
         setupUnderlinedTextField()
     }
-    
+
     func setupUnderlinedTextField() {
         let bottomLayer = CALayer()
         bottomLayer.frame = CGRect(x: 0, y: self.frame.height, width: self.frame.width - 35, height: 1)
