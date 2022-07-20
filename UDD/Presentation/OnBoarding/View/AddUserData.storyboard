@@ -50,7 +50,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="성별" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0F-M9-Bjx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성별" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0F-M9-Bjx">
                                 <rect key="frame" x="36" y="332" width="24.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.59215686270000001" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -123,6 +123,7 @@
                             <constraint firstItem="TYP-pG-Hf8" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.27" id="BbP-Ps-wsJ"/>
                             <constraint firstItem="GfX-7I-g9L" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="IjO-W7-mEv"/>
                             <constraint firstItem="XBg-k1-K49" firstAttribute="trailing" secondItem="44S-ar-T6c" secondAttribute="trailing" constant="20" id="Wcp-ma-ZUb"/>
+                            <constraint firstItem="X0F-M9-Bjx" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="XzI-hn-xBH"/>
                             <constraint firstItem="44S-ar-T6c" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="20" id="Y2u-NQ-axs"/>
                             <constraint firstItem="XBg-k1-K49" firstAttribute="trailing" secondItem="PP8-hf-Duc" secondAttribute="trailing" constant="36" id="fa1-I2-Y1w"/>
                             <constraint firstItem="GfX-7I-g9L" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.534" id="w7F-zr-T8g"/>
