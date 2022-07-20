@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110874592887F1EF005AE3DE /* HomeDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110874582887F1EF005AE3DE /* HomeDetailView.storyboard */; };
+		1108745B2887F214005AE3DE /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108745A2887F214005AE3DE /* HomeDetailViewController.swift */; };
+		1108745D2887F232005AE3DE /* Extention_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108745C2887F232005AE3DE /* Extention_UIView.swift */; };
+		1108745F2887F23D005AE3DE /* DogOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108745E2887F23D005AE3DE /* DogOwner.swift */; };
 		206D4F5728869505007374C4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D4F5628869505007374C4 /* CustomTextField.swift */; };
 		20AEA6D1288702DC000984B5 /* AddDogName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AEA6D0288702DC000984B5 /* AddDogName.storyboard */; };
 		20AEA6D32887031D000984B5 /* AddDogNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEA6D22887031D000984B5 /* AddDogNameViewController.swift */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		110874582887F1EF005AE3DE /* HomeDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeDetailView.storyboard; sourceTree = "<group>"; };
+		1108745A2887F214005AE3DE /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeDetailViewController.swift; path = UDD/Presentation/Main/View/HomeDetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		1108745C2887F232005AE3DE /* Extention_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extention_UIView.swift; path = UDD/Presentation/Main/View/Extention_UIView.swift; sourceTree = SOURCE_ROOT; };
+		1108745E2887F23D005AE3DE /* DogOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DogOwner.swift; path = UDD/Presentation/Main/View/DogOwner.swift; sourceTree = SOURCE_ROOT; };
 		206D4F5628869505007374C4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		20AEA6D0288702DC000984B5 /* AddDogName.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddDogName.storyboard; sourceTree = "<group>"; };
 		20AEA6D22887031D000984B5 /* AddDogNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogNameViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +101,7 @@
 				C1B8048428853730003371AB /* Home.storyboard */,
 				C1B8048A2885382F003371AB /* Like.storyboard */,
 				C1B80488288537E2003371AB /* Chat.storyboard */,
+				110874582887F1EF005AE3DE /* HomeDetailView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +109,8 @@
 		206D4F4F2886936C007374C4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1108745C2887F232005AE3DE /* Extention_UIView.swift */,
+				1108745E2887F23D005AE3DE /* DogOwner.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -107,6 +118,7 @@
 		206D4F5028869374007374C4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1108745A2887F214005AE3DE /* HomeDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -256,6 +268,7 @@
 				C1B80489288537E2003371AB /* Chat.storyboard in Resources */,
 				C134DF36288007B600992842 /* .swiftlint.yml in Resources */,
 				20AEA6D728870EF8000984B5 /* SelectTag.storyboard in Resources */,
+				110874592887F1EF005AE3DE /* HomeDetailView.storyboard in Resources */,
 				C1B8048528853730003371AB /* Home.storyboard in Resources */,
 				C145B62B287E975800BEC69E /* LaunchScreen.storyboard in Resources */,
 				C145B628287E975800BEC69E /* Assets.xcassets in Resources */,
@@ -313,10 +326,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1108745B2887F214005AE3DE /* HomeDetailViewController.swift in Sources */,
 				20AEA6D32887031D000984B5 /* AddDogNameViewController.swift in Sources */,
 				206D4F5728869505007374C4 /* CustomTextField.swift in Sources */,
+				1108745D2887F232005AE3DE /* Extention_UIView.swift in Sources */,
 				C145B61F287E975600BEC69E /* AppDelegate.swift in Sources */,
 				C145B621287E975600BEC69E /* SceneDelegate.swift in Sources */,
+				1108745F2887F23D005AE3DE /* DogOwner.swift in Sources */,
 				20AEA6D928870F17000984B5 /* SelectTagViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
