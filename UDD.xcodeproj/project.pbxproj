@@ -10,6 +10,10 @@
 		206D4F5728869505007374C4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D4F5628869505007374C4 /* CustomTextField.swift */; };
 		AE034D6428870E7200DDC259 /* StartScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE034D6328870E7200DDC259 /* StartScreen.storyboard */; };
 		AE034D66288710D100DDC259 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE034D65288710D100DDC259 /* LoginScreen.storyboard */; };
+		20AEA6D1288702DC000984B5 /* AddDogName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AEA6D0288702DC000984B5 /* AddDogName.storyboard */; };
+		20AEA6D32887031D000984B5 /* AddDogNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEA6D22887031D000984B5 /* AddDogNameViewController.swift */; };
+		20AEA6D728870EF8000984B5 /* SelectTag.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AEA6D628870EF8000984B5 /* SelectTag.storyboard */; };
+		20AEA6D928870F17000984B5 /* SelectTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEA6D828870F17000984B5 /* SelectTagViewController.swift */; };
 		C134DF36288007B600992842 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C134DF35288007B600992842 /* .swiftlint.yml */; };
 		C145B61F287E975600BEC69E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C145B61E287E975600BEC69E /* AppDelegate.swift */; };
 		C145B621287E975600BEC69E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C145B620287E975600BEC69E /* SceneDelegate.swift */; };
@@ -25,6 +29,10 @@
 		206D4F5628869505007374C4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AE034D6328870E7200DDC259 /* StartScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StartScreen.storyboard; path = ../../../../../../StartScreen.storyboard; sourceTree = "<group>"; };
 		AE034D65288710D100DDC259 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LoginScreen.storyboard; path = UDD/LoginScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		20AEA6D0288702DC000984B5 /* AddDogName.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddDogName.storyboard; sourceTree = "<group>"; };
+		20AEA6D22887031D000984B5 /* AddDogNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogNameViewController.swift; sourceTree = "<group>"; };
+		20AEA6D628870EF8000984B5 /* SelectTag.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectTag.storyboard; sourceTree = "<group>"; };
+		20AEA6D828870F17000984B5 /* SelectTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTagViewController.swift; sourceTree = "<group>"; };
 		C134DF35288007B600992842 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C145B61B287E975600BEC69E /* UDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C145B61E287E975600BEC69E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,8 +127,13 @@
 		206D4F52288693DD007374C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+
 				AE034D6328870E7200DDC259 /* StartScreen.storyboard */,
 				AE034D65288710D100DDC259 /* LoginScreen.storyboard */,
+
+				20AEA6D0288702DC000984B5 /* AddDogName.storyboard */,
+				20AEA6D628870EF8000984B5 /* SelectTag.storyboard */,
+
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +141,8 @@
 		206D4F53288693E3007374C4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				20AEA6D22887031D000984B5 /* AddDogNameViewController.swift */,
+				20AEA6D828870F17000984B5 /* SelectTagViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -245,11 +260,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20AEA6D1288702DC000984B5 /* AddDogName.storyboard in Resources */,
 				C1B8048B2885382F003371AB /* Like.storyboard in Resources */,
 				C1B80489288537E2003371AB /* Chat.storyboard in Resources */,
 				C134DF36288007B600992842 /* .swiftlint.yml in Resources */,
 				AE034D6428870E7200DDC259 /* StartScreen.storyboard in Resources */,
 				AE034D66288710D100DDC259 /* LoginScreen.storyboard in Resources */,
+
+				20AEA6D728870EF8000984B5 /* SelectTag.storyboard in Resources */,
+
 				C1B8048528853730003371AB /* Home.storyboard in Resources */,
 				C145B62B287E975800BEC69E /* LaunchScreen.storyboard in Resources */,
 				C145B628287E975800BEC69E /* Assets.xcassets in Resources */,
@@ -307,9 +326,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20AEA6D32887031D000984B5 /* AddDogNameViewController.swift in Sources */,
 				206D4F5728869505007374C4 /* CustomTextField.swift in Sources */,
 				C145B61F287E975600BEC69E /* AppDelegate.swift in Sources */,
 				C145B621287E975600BEC69E /* SceneDelegate.swift in Sources */,
+				20AEA6D928870F17000984B5 /* SelectTagViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +484,7 @@
 				INFOPLIST_FILE = UDD/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = AddDogName;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -494,7 +515,7 @@
 				INFOPLIST_FILE = UDD/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = AddDogName;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
