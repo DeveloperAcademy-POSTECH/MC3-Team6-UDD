@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1108744928869C28005AE3DE /* HomeDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1108744828869C28005AE3DE /* HomeDetailView.storyboard */; };
 		1108744B28869FC0005AE3DE /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108744A28869FC0005AE3DE /* HomeDetailViewController.swift */; };
 		1108744D2886A04E005AE3DE /* DogOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108744C2886A04E005AE3DE /* DogOwner.swift */; };
 		1108744F2886A677005AE3DE /* Extention_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108744E2886A677005AE3DE /* Extention_UIView.swift */; };
+		110874552887D07C005AE3DE /* HomeDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110874542887D07C005AE3DE /* HomeDetailView.storyboard */; };
 		206D4F5728869505007374C4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D4F5628869505007374C4 /* CustomTextField.swift */; };
 		C134DF36288007B600992842 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C134DF35288007B600992842 /* .swiftlint.yml */; };
 		C145B61F287E975600BEC69E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C145B61E287E975600BEC69E /* AppDelegate.swift */; };
@@ -25,10 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1108744828869C28005AE3DE /* HomeDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeDetailView.storyboard; sourceTree = "<group>"; };
 		1108744A28869FC0005AE3DE /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeDetailViewController.swift; path = UDD/Presentation/Home/View/HomeDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		1108744C2886A04E005AE3DE /* DogOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DogOwner.swift; path = UDD/Presentation/Home/View/DogOwner.swift; sourceTree = SOURCE_ROOT; };
 		1108744E2886A677005AE3DE /* Extention_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention_UIView.swift; sourceTree = "<group>"; };
+		110874542887D07C005AE3DE /* HomeDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeDetailView.storyboard; sourceTree = "<group>"; };
 		206D4F5628869505007374C4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C134DF35288007B600992842 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C145B61B287E975600BEC69E /* UDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,8 +95,7 @@
 				C1B8048428853730003371AB /* Home.storyboard */,
 				C1B8048A2885382F003371AB /* Like.storyboard */,
 				C1B80488288537E2003371AB /* Chat.storyboard */,
-				1108744828869C28005AE3DE /* HomeDetailView.storyboard */,
-				1108744E2886A677005AE3DE /* Extention_UIView.swift */,
+				110874542887D07C005AE3DE /* HomeDetailView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -104,6 +103,7 @@
 		206D4F4F2886936C007374C4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1108744E2886A677005AE3DE /* Extention_UIView.swift */,
 				1108744C2886A04E005AE3DE /* DogOwner.swift */,
 			);
 			path = ViewModel;
@@ -263,13 +263,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1B8048B2885382F003371AB /* Like.storyboard in Resources */,
+				110874552887D07C005AE3DE /* HomeDetailView.storyboard in Resources */,
 				C1B80489288537E2003371AB /* Chat.storyboard in Resources */,
 				C134DF36288007B600992842 /* .swiftlint.yml in Resources */,
 				C1B8048528853730003371AB /* Home.storyboard in Resources */,
 				C145B62B287E975800BEC69E /* LaunchScreen.storyboard in Resources */,
 				C145B628287E975800BEC69E /* Assets.xcassets in Resources */,
 				C145B626287E975600BEC69E /* Main.storyboard in Resources */,
-				1108744928869C28005AE3DE /* HomeDetailView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
