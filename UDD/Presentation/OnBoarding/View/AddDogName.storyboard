@@ -16,29 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="강아지 이름을 알려주세요." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhw-BY-7dM">
-                                <rect key="frame" x="47" y="117" width="245" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="강아지 이름을 알려주세요." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhw-BY-7dM">
+                                <rect key="frame" x="36" y="106.5" width="245" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-B7-FJJ">
-                                <rect key="frame" x="47" y="178" width="25" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-B7-FJJ">
+                                <rect key="frame" x="36" y="184" width="25" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="김땡구" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7O-B6-BfT" customClass="CustomTextFields" customModule="UDD" customModuleProvider="target">
-                                <rect key="frame" x="47" y="203" width="271" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="김땡구" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7O-B6-BfT" customClass="CustomTextFields" customModule="UDD" customModuleProvider="target">
+                                <rect key="frame" x="36" y="210.5" width="342" height="27"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TY-S5-Hg4">
-                                <rect key="frame" x="47.5" y="688" width="319" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TY-S5-Hg4">
+                                <rect key="frame" x="20" y="768" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="zZp-TN-dkd"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <attributedString key="attributedTitle">
@@ -55,6 +54,18 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nhw-BY-7dM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="9ji-ih-Fnf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="4TY-S5-Hg4" secondAttribute="bottom" constant="50" id="B0q-bz-NMI"/>
+                            <constraint firstItem="K7O-B6-BfT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="Fhi-wI-DnX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4TY-S5-Hg4" secondAttribute="trailing" constant="20" id="JLe-XH-cL9"/>
+                            <constraint firstItem="Ecf-B7-FJJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="NOj-97-5Xh"/>
+                            <constraint firstItem="K7O-B6-BfT" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.5" id="Z6d-mA-vFx"/>
+                            <constraint firstItem="4TY-S5-Hg4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="pSV-Iw-O9C"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="K7O-B6-BfT" secondAttribute="trailing" constant="36" id="s28-rB-RK1"/>
+                            <constraint firstItem="nhw-BY-7dM" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.27" id="tE0-qb-yLR"/>
+                            <constraint firstItem="Ecf-B7-FJJ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.43" id="tYs-Db-hSh"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="dogNameTextField" destination="K7O-B6-BfT" id="b1h-jE-snE"/>
