@@ -32,7 +32,7 @@
                                         <color key="textColor" red="0.59215686270000001" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="생년월일을 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-hj-jc2">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="생년월일을 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-hj-jc2" customClass="CustomTextFields" customModule="UDD" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="17" width="137" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Do0-Wm-e4X"/>
@@ -65,7 +65,7 @@
                                         <color key="textColor" red="0.59215686270000001" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="주소를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kC7-5V-WEa">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="주소를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kC7-5V-WEa" customClass="CustomTextFields" customModule="UDD" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="17" width="113" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="UBp-CY-KTE"/>
