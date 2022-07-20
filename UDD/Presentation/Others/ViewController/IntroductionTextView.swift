@@ -29,6 +29,10 @@ class IntroductionText: UITextView {
         textLabel.textColor = .lightGray
         return textLabel
     }()
+    // 화면을 누르면 키보드가 내려가게 하는 것
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.textView.endEditing(true)
+    }
     // 입력되는 글자 수 표현
     private func updateCountLabel(characterCount: Int) {
         remainCountLabel.text = "\(characterCount)/150"
