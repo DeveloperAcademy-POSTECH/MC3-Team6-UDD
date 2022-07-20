@@ -8,12 +8,13 @@
 import UIKit
 import TTGTags
 
-class SelectTagViewController: UIViewController{
-    
+class SelectTagViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tagView = TTGTextTagCollectionView.init(frame: CGRect.init(x: 16, y: 180,
-                                                                       width: UIScreen.main.bounds.width - 32, height: 300))
+        let tagView = TTGTextTagCollectionView.init(frame: CGRect.init(x: 36,
+                                                                       y: 150,
+                                                                       width: UIScreen.main.bounds.width - 72,
+                                                                       height: 300))
         // tagView.backgroundColor = UIColor.lightGraby
         self.view.addSubview(tagView)
 
@@ -40,12 +41,10 @@ class SelectTagViewController: UIViewController{
             selectedStyle.shadowColor = UIColor.clear
             selectedStyle.extraSpace = CGSize.init(width: 20, height: 10)
 
-
             let tags = TTGTextTag.init()
             tags.content = content
             tags.style = normalStyle
             tags.selectedStyle = selectedStyle
-
 
             tagView.addTag(tags)
         }
