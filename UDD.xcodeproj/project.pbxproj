@@ -277,6 +277,10 @@
 				110874592887F1EF005AE3DE /* HomeDetailView.storyboard in Resources */,
 				AE034D6428870E7200DDC259 /* StartScreen.storyboard in Resources */,
 				AE034D66288710D100DDC259 /* LoginScreen.storyboard in Resources */,
+
+				20AEA6D728870EF8000984B5 /* SelectTag.storyboard in Resources */,
+
+				110874592887F1EF005AE3DE /* HomeDetailView.storyboard in Resources */,
 				C1B8048528853730003371AB /* Home.storyboard in Resources */,
 				C145B62B287E975800BEC69E /* LaunchScreen.storyboard in Resources */,
 				C145B628287E975800BEC69E /* Assets.xcassets in Resources */,
