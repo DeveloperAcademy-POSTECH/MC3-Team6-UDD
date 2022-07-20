@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		206D4F5728869505007374C4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D4F5628869505007374C4 /* CustomTextField.swift */; };
+		7E7E57492887E37400ED246A /* IntroductionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7E57482887E37400ED246A /* IntroductionTextView.swift */; };
 		2092EDBB2887F63600D35EB5 /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092EDB92887F63600D35EB5 /* LoginScreenController.swift */; };
 		2092EDBC2887F63600D35EB5 /* StartScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092EDBA2887F63600D35EB5 /* StartScreenController.swift */; };
 		2092EDC12887F6AC00D35EB5 /* StartScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2092EDC02887F6AC00D35EB5 /* StartScreen.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		206D4F5628869505007374C4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		7E7E57482887E37400ED246A /* IntroductionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionTextView.swift; sourceTree = "<group>"; };
 		2092EDB92887F63600D35EB5 /* LoginScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		2092EDBA2887F63600D35EB5 /* StartScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenController.swift; sourceTree = "<group>"; };
 		2092EDC02887F6AC00D35EB5 /* StartScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StartScreen.storyboard; path = UDD/StartScreen.storyboard; sourceTree = SOURCE_ROOT; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				206D4F5628869505007374C4 /* CustomTextField.swift */,
+				7E7E57482887E37400ED246A /* IntroductionTextView.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				206D4F5728869505007374C4 /* CustomTextField.swift in Sources */,
 				C145B61F287E975600BEC69E /* AppDelegate.swift in Sources */,
 				C145B621287E975600BEC69E /* SceneDelegate.swift in Sources */,
+				7E7E57492887E37400ED246A /* IntroductionTextView.swift in Sources */,
 				20AEA6D928870F17000984B5 /* SelectTagViewController.swift in Sources */,
 				2092EDBB2887F63600D35EB5 /* LoginScreenController.swift in Sources */,
 				2092EDBC2887F63600D35EB5 /* StartScreenController.swift in Sources */,
