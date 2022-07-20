@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		206D4F5728869505007374C4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D4F5628869505007374C4 /* CustomTextField.swift */; };
-		7E7E57492887E37400ED246A /* IntroductionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7E57482887E37400ED246A /* IntroductionTextView.swift */; };
 		2092EDBB2887F63600D35EB5 /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092EDB92887F63600D35EB5 /* LoginScreenController.swift */; };
 		2092EDBC2887F63600D35EB5 /* StartScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092EDBA2887F63600D35EB5 /* StartScreenController.swift */; };
 		2092EDC12887F6AC00D35EB5 /* StartScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2092EDC02887F6AC00D35EB5 /* StartScreen.storyboard */; };
@@ -17,6 +16,8 @@
 		20AEA6D728870EF8000984B5 /* SelectTag.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AEA6D628870EF8000984B5 /* SelectTag.storyboard */; };
 		20AEA6D928870F17000984B5 /* SelectTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEA6D828870F17000984B5 /* SelectTagViewController.swift */; };
 		242CB68634C4C16500D032E4 /* Pods_UDD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B8FE15F6F796A092A35144 /* Pods_UDD.framework */; };
+		7E6E5EA428882522003AF360 /* AddUserData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6E5EA328882522003AF360 /* AddUserData.storyboard */; };
+		7E7E57492887E37400ED246A /* IntroductionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7E57482887E37400ED246A /* IntroductionTextView.swift */; };
 		AE034D66288710D100DDC259 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE034D65288710D100DDC259 /* LoginScreen.storyboard */; };
 		C134DF36288007B600992842 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C134DF35288007B600992842 /* .swiftlint.yml */; };
 		C145B61F287E975600BEC69E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C145B61E287E975600BEC69E /* AppDelegate.swift */; };
@@ -31,7 +32,6 @@
 
 /* Begin PBXFileReference section */
 		206D4F5628869505007374C4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		7E7E57482887E37400ED246A /* IntroductionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionTextView.swift; sourceTree = "<group>"; };
 		2092EDB92887F63600D35EB5 /* LoginScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		2092EDBA2887F63600D35EB5 /* StartScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenController.swift; sourceTree = "<group>"; };
 		2092EDC02887F6AC00D35EB5 /* StartScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StartScreen.storyboard; path = UDD/StartScreen.storyboard; sourceTree = SOURCE_ROOT; };
@@ -39,6 +39,8 @@
 		20AEA6D22887031D000984B5 /* AddDogNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogNameViewController.swift; sourceTree = "<group>"; };
 		20AEA6D628870EF8000984B5 /* SelectTag.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectTag.storyboard; sourceTree = "<group>"; };
 		20AEA6D828870F17000984B5 /* SelectTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTagViewController.swift; sourceTree = "<group>"; };
+		7E6E5EA328882522003AF360 /* AddUserData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddUserData.storyboard; sourceTree = "<group>"; };
+		7E7E57482887E37400ED246A /* IntroductionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionTextView.swift; sourceTree = "<group>"; };
 		AE034D65288710D100DDC259 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LoginScreen.storyboard; path = UDD/LoginScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		C134DF35288007B600992842 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C145B61B287E975600BEC69E /* UDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +142,7 @@
 				AE034D65288710D100DDC259 /* LoginScreen.storyboard */,
 				20AEA6D0288702DC000984B5 /* AddDogName.storyboard */,
 				20AEA6D628870EF8000984B5 /* SelectTag.storyboard */,
+				7E6E5EA328882522003AF360 /* AddUserData.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				C145B628287E975800BEC69E /* Assets.xcassets in Resources */,
 				C145B626287E975600BEC69E /* TabBar.storyboard in Resources */,
 				2092EDC12887F6AC00D35EB5 /* StartScreen.storyboard in Resources */,
+				7E6E5EA428882522003AF360 /* AddUserData.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
