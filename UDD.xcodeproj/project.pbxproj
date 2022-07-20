@@ -12,6 +12,7 @@
 		20AEA6D32887031D000984B5 /* AddDogNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEA6D22887031D000984B5 /* AddDogNameViewController.swift */; };
 		20AEA6D728870EF8000984B5 /* SelectTag.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AEA6D628870EF8000984B5 /* SelectTag.storyboard */; };
 		20AEA6D928870F17000984B5 /* SelectTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEA6D828870F17000984B5 /* SelectTagViewController.swift */; };
+		242CB68634C4C16500D032E4 /* Pods_UDD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B8FE15F6F796A092A35144 /* Pods_UDD.framework */; };
 		C134DF36288007B600992842 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C134DF35288007B600992842 /* .swiftlint.yml */; };
 		C145B61F287E975600BEC69E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C145B61E287E975600BEC69E /* AppDelegate.swift */; };
 		C145B621287E975600BEC69E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C145B620287E975600BEC69E /* SceneDelegate.swift */; };
@@ -41,6 +42,7 @@
 		C1B80488288537E2003371AB /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		C1B8048A2885382F003371AB /* Like.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Like.storyboard; sourceTree = "<group>"; };
 		CA47D97F706DC3EDC62AD350 /* Pods-UDD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDD.release.xcconfig"; path = "Target Support Files/Pods-UDD/Pods-UDD.release.xcconfig"; sourceTree = "<group>"; };
+		E0B8FE15F6F796A092A35144 /* Pods_UDD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UDD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34E1874F5BB3A4C3CC48733 /* Pods-UDD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDD.debug.xcconfig"; path = "Target Support Files/Pods-UDD/Pods-UDD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242CB68634C4C16500D032E4 /* Pods_UDD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +166,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B902775A6750F829A8671E6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0B8FE15F6F796A092A35144 /* Pods_UDD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C145B612287E975600BEC69E = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +181,7 @@
 				C145B61D287E975600BEC69E /* UDD */,
 				C145B61C287E975600BEC69E /* Products */,
 				443F36941137DFEB289B6211 /* Pods */,
+				B902775A6750F829A8671E6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +215,7 @@
 				C145B617287E975600BEC69E /* Sources */,
 				C145B618287E975600BEC69E /* Frameworks */,
 				C145B619287E975600BEC69E /* Resources */,
+				7313CE24A479CED9F6D86B82 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,6 +279,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7313CE24A479CED9F6D86B82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UDD/Pods-UDD-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UDD/Pods-UDD-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UDD/Pods-UDD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		88A12637CB3652C74CBD58DD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -471,7 +501,7 @@
 				INFOPLIST_FILE = UDD/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = AddDogName;
+				INFOPLIST_KEY_UIMainStoryboardFile = SelectTag;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -502,7 +532,7 @@
 				INFOPLIST_FILE = UDD/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = AddDogName;
+				INFOPLIST_KEY_UIMainStoryboardFile = SelectTag;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

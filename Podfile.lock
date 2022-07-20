@@ -1,16 +1,20 @@
 PODS:
   - SwiftLint (0.47.1)
+  - TTGTagCollectionView (2.1.0)
 
 DEPENDENCIES:
   - SwiftLint
+  - TTGTagCollectionView
 
 SPEC REPOS:
   trunk:
     - SwiftLint
+    - TTGTagCollectionView
 
 SPEC CHECKSUMS:
   SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
+  TTGTagCollectionView: a2a8668c659b39e7a6ffd6590475ea53a7ae95f7
 
-PODFILE CHECKSUM: f20b7ae035695fd46bc5d2def2fc3a99d44a7bd8
+PODFILE CHECKSUM: 0198e169c77d1a4b3dd45eae11f11c9acf6c45fe
 
 COCOAPODS: 1.11.3
