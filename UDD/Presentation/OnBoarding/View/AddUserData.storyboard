@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GG7-Y8-NaT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,65 +22,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="GfX-7I-g9L" userLabel="생년월일">
-                                <rect key="frame" x="36" y="209.5" width="342" height="59"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="생년월일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUt-HG-ygA">
-                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" red="0.59215686270000001" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="생년월일을 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-hj-jc2" customClass="CustomTextFields" customModule="UDD" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="17" width="137" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Do0-Wm-e4X"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ei8-Pw-DyW">
-                                        <rect key="frame" x="0.0" y="57" width="342" height="2"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2" id="9IH-9b-WGc"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성별" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0F-M9-Bjx">
                                 <rect key="frame" x="36" y="332" width="24.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.59215686270000001" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="R7Z-qz-yEw" userLabel="주소">
-                                <rect key="frame" x="36" y="468" width="342" height="59"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fD-bE-2Zw">
-                                        <rect key="frame" x="0.0" y="0.0" width="24.5" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" red="0.59215686270000001" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="주소를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kC7-5V-WEa" customClass="CustomTextFields" customModule="UDD" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="17" width="113" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="UBp-CY-KTE"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wE-Po-nh4">
-                                        <rect key="frame" x="0.0" y="57" width="342" height="2"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2" id="BUY-BB-Wqb"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="R7Z-qz-yEw" userLabel="주소">
+                                <rect key="frame" x="36" y="496.5" width="342" height="2"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44S-ar-T6c">
                                 <rect key="frame" x="20" y="790.5" width="374" height="50"/>
@@ -109,29 +57,64 @@
                                     <segment title="여"/>
                                 </segments>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="생년월일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsP-CQ-0Cf">
+                                <rect key="frame" x="36" y="230.5" width="48.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="생년월일을 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a4P-Xe-InH" customClass="CustomTextFields" customModule="UDD" customModuleProvider="target">
+                                <rect key="frame" x="36" y="255.5" width="211" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="addUserDataTextField:" destination="wR6-6l-Lh4" eventType="editingDidEnd" id="6oI-3T-JmD"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="주소를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cT7-KR-E9v" customClass="CustomTextFields" customModule="UDD" customModuleProvider="target">
+                                <rect key="frame" x="36" y="514" width="174" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="addUserAdressTextField:" destination="wR6-6l-Lh4" eventType="editingDidEnd" id="nIc-fw-BYS"/>
+                                    <action selector="addUserDataTextField:" destination="wR6-6l-Lh4" eventType="editingDidEnd" id="8PW-1M-Cda"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHa-Jx-e86">
+                                <rect key="frame" x="36" y="489" width="25" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XBg-k1-K49"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="X0F-M9-Bjx" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.76" id="11a-iE-dU5"/>
-                            <constraint firstItem="R7Z-qz-yEw" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="1.11" id="3iI-IF-PjF"/>
+                            <constraint firstItem="rsP-CQ-0Cf" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="2Sn-pU-Uda"/>
                             <constraint firstItem="R7Z-qz-yEw" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="6aO-P0-aXb"/>
+                            <constraint firstItem="zHa-Jx-e86" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="719-mB-FoQ"/>
                             <constraint firstItem="TYP-pG-Hf8" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="7Wq-pb-NgO"/>
                             <constraint firstItem="44S-ar-T6c" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="1.82" id="9CK-LC-yXG"/>
                             <constraint firstItem="XBg-k1-K49" firstAttribute="trailing" secondItem="PP8-hf-Duc" secondAttribute="trailing" constant="36" id="B6S-hP-5au"/>
+                            <constraint firstItem="rsP-CQ-0Cf" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.533" id="B6V-IJ-yDh"/>
                             <constraint firstItem="PP8-hf-Duc" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.85" id="BD6-os-YsN"/>
                             <constraint firstItem="TYP-pG-Hf8" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.27" id="BbP-Ps-wsJ"/>
-                            <constraint firstItem="GfX-7I-g9L" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="IjO-W7-mEv"/>
+                            <constraint firstItem="cT7-KR-E9v" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="NLZ-LC-eoy"/>
                             <constraint firstItem="XBg-k1-K49" firstAttribute="trailing" secondItem="44S-ar-T6c" secondAttribute="trailing" constant="20" id="Wcp-ma-ZUb"/>
                             <constraint firstItem="X0F-M9-Bjx" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="XzI-hn-xBH"/>
                             <constraint firstItem="44S-ar-T6c" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="20" id="Y2u-NQ-axs"/>
+                            <constraint firstItem="a4P-Xe-InH" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.6" id="YLV-gU-lhc"/>
+                            <constraint firstItem="cT7-KR-E9v" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="1.177" id="b9W-Ri-e9U"/>
+                            <constraint firstItem="a4P-Xe-InH" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="bdO-Le-h9Z"/>
                             <constraint firstItem="XBg-k1-K49" firstAttribute="trailing" secondItem="PP8-hf-Duc" secondAttribute="trailing" constant="36" id="fa1-I2-Y1w"/>
-                            <constraint firstItem="GfX-7I-g9L" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.534" id="w7F-zr-T8g"/>
+                            <constraint firstItem="zHa-Jx-e86" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="1.11" id="iYd-Yr-XUE"/>
                             <constraint firstItem="PP8-hf-Duc" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="wp8-N4-WdW"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwN-iZ-lZc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="wR6-6l-Lh4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="197" y="165"/>
         </scene>
@@ -142,6 +125,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
