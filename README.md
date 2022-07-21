@@ -55,6 +55,7 @@ ex) [Type] #이슈번호 커밋메세지 `git commit -m '[feat] #12 로그인 �
 |:---|:---|
 |**main**|배포|
 |**develop**|개발된 기능(feature)을 통합|
+|**bugfix**|버그, 핫픽스|
 |**docs**|문서 작업|
 |**chore**|빌드, 설정 파일|
 |**feat**|각 기능별 개발 진행|
