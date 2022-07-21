@@ -8,7 +8,7 @@
 import Foundation
 
 struct DogDataModel {
-    let UUid: Int   // id
+    let uuid: String   // id
     let dogName: String // 개 이름
     let dogBirth: Date  // 개 생년월일
     let dogSex: String  // 개 성별

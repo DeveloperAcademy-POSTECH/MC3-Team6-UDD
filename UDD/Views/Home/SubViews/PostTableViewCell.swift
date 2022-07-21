@@ -33,7 +33,14 @@ class PostTableViewCell: UITableViewCell {
     }
 
     func configure(with model: DogDataModel) {
-
+        self.dogImageView.image = UIImage(systemName: model.dogImage)
+        self.dogNameLabel.text = "\(model.dogName)"
+        self.dogSexLabel.text = "\(model.dogSex)"
+        self.dogDistanceLabel.text = "\(model.userAddress)"
+        self.dogHashtag1Label.text = "\(model.dogHashtags[0])"
+        self.dogHashtag2Label.text = "\(model.dogHashtags[1])"
+        self.dogHashtag3Label.text = "\(model.dogHashtags[2])"
+        self.dogHashtag4Label.text = "\(model.dogHashtags[3])"
     }
 
 }

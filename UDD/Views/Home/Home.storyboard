@@ -11,37 +11,30 @@
         <!--우리동네댕댕이-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="HomeViewController" customModule="UDD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Vh1-Kz-kth">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VcO-3e-lcc">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="j0p-WN-iEk">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j0p-WN-iEk" id="EDn-QI-vxt">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Vh1-Kz-kth" secondAttribute="bottom" id="98p-uK-20z"/>
-                            <constraint firstItem="Vh1-Kz-kth" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ry2-GD-del"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Vh1-Kz-kth" secondAttribute="trailing" id="jyz-aM-lFF"/>
-                            <constraint firstItem="Vh1-Kz-kth" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="wCS-4M-Pqz"/>
+                            <constraint firstItem="VcO-3e-lcc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Ixt-cW-is1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="VcO-3e-lcc" secondAttribute="bottom" id="RjM-is-5Wc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VcO-3e-lcc" secondAttribute="trailing" id="fOf-Y6-Str"/>
+                            <constraint firstItem="VcO-3e-lcc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jbs-v8-XnE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="우리동네댕댕이" id="caV-So-Pxk"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="table" destination="VcO-3e-lcc" id="KEu-fl-ofE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
