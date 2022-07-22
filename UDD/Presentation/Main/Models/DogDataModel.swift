@@ -18,6 +18,6 @@ struct DogDataModel {
     let userAge: Int    // 견주 나이
     let userSex: String // 견주 성별
     let userAddress: String // 주소
-    let dogBread: String    // 견종
+    let dogBreed: String    // 견종
     let dogImage: String    // 사진
 }
