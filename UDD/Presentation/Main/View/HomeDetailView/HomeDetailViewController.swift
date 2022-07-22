@@ -15,7 +15,7 @@ class HomeDetailViewController: UIViewController {
     @IBOutlet weak var dogWeightInfo: UILabel!
     @IBOutlet weak var dogInfo: UILabel!
     @IBOutlet weak var personInfo: UILabel!
-    
+
     var dogDummy: DogOwner = DogOwner.dummy
     var isDisabled: Bool = DogOwner.personLike
     override func viewDidLoad() {

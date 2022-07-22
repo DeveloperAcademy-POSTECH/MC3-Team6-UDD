@@ -372,7 +372,7 @@
     <resources>
         <image name="dogicon" width="512" height="512"/>
         <image name="golddog" width="800" height="702"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart" catalog="system" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
