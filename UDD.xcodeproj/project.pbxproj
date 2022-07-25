@@ -15,7 +15,6 @@
 		C14C372E288E6A4F00868A75 /* Extention_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3700288E6A4F00868A75 /* Extention_UIView.swift */; };
 		C14C372F288E6A4F00868A75 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3701288E6A4F00868A75 /* CustomTextField.swift */; };
 		C14C3730288E6A4F00868A75 /* IntroductionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3702288E6A4F00868A75 /* IntroductionTextView.swift */; };
-		C14C3731288E6A4F00868A75 /* DogOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3705288E6A4F00868A75 /* DogOwner.swift */; };
 		C14C3732288E6A4F00868A75 /* DogDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3706288E6A4F00868A75 /* DogDataModel.swift */; };
 		C14C3733288E6A4F00868A75 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C3709288E6A4F00868A75 /* Home.storyboard */; };
 		C14C3734288E6A4F00868A75 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C370A288E6A4F00868A75 /* HomeViewController.swift */; };
@@ -48,7 +47,6 @@
 		C14C3700288E6A4F00868A75 /* Extention_UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention_UIView.swift; sourceTree = "<group>"; };
 		C14C3701288E6A4F00868A75 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C14C3702288E6A4F00868A75 /* IntroductionTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionTextView.swift; sourceTree = "<group>"; };
-		C14C3705288E6A4F00868A75 /* DogOwner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogOwner.swift; sourceTree = "<group>"; };
 		C14C3706288E6A4F00868A75 /* DogDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogDataModel.swift; sourceTree = "<group>"; };
 		C14C3709288E6A4F00868A75 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C14C370A288E6A4F00868A75 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				C14C3706288E6A4F00868A75 /* DogDataModel.swift */,
-				C14C3705288E6A4F00868A75 /* DogOwner.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -473,7 +470,6 @@
 				C14C373E288E6A4F00868A75 /* StartScreenController.swift in Sources */,
 				C14C3734288E6A4F00868A75 /* HomeViewController.swift in Sources */,
 				C14C3746288E6A4F00868A75 /* SceneDelegate.swift in Sources */,
-				C14C3731288E6A4F00868A75 /* DogOwner.swift in Sources */,
 				C14C3744288E6A4F00868A75 /* LoginScreenController.swift in Sources */,
 				C14C373B288E6A4F00868A75 /* AddDogNameViewController.swift in Sources */,
 				C14C3730288E6A4F00868A75 /* IntroductionTextView.swift in Sources */,
