@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dso-bc-KL8">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dso-bc-KL8">
                                 <rect key="frame" x="20" y="144" width="374" height="669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -35,16 +35,27 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Content" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lu9-tp-8um">
-                                                    <rect key="frame" x="65" y="43" width="302" height="38"/>
+                                                    <rect key="frame" x="65" y="43" width="217" height="38"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.59215686274509804" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jd8-TE-0Fr">
+                                                    <rect key="frame" x="342" y="20" width="32" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.59215686270000001" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jd8-TE-0Fr" firstAttribute="trailing" secondItem="kOe-Y7-kfc" secondAttribute="trailingMargin" constant="20" id="Xcu-Gk-k90"/>
+                                                <constraint firstItem="jd8-TE-0Fr" firstAttribute="top" secondItem="kOe-Y7-kfc" secondAttribute="top" constant="20" id="s0H-mP-LmU"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="content" destination="lu9-tp-8um" id="Qrh-uy-h1w"/>
+                                            <outlet property="time" destination="jd8-TE-0Fr" id="KRm-Qq-kXN"/>
                                             <outlet property="username" destination="0ip-gY-ijc" id="PYS-C6-0uD"/>
                                         </connections>
                                     </tableViewCell>
@@ -60,8 +71,8 @@
                         <constraints>
                             <constraint firstItem="dso-bc-KL8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="BsN-D9-H6W"/>
                             <constraint firstItem="dso-bc-KL8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="HPD-92-IJq"/>
+                            <constraint firstItem="dso-bc-KL8" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="I0Q-8W-5Bf"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dso-bc-KL8" secondAttribute="trailing" constant="20" id="IJP-Br-nNy"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="dso-bc-KL8" secondAttribute="bottom" constant="100" id="otl-UH-G8Y"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Chat" image="bubble.left.and.bubble.right.fill" catalog="system" id="7Gl-n0-A8Q"/>
