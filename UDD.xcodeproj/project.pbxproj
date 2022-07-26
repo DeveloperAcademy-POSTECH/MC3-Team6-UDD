@@ -37,6 +37,7 @@
 		C14C3746288E6A4F00868A75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3727288E6A4F00868A75 /* SceneDelegate.swift */; };
 		C14C3749288E6E4500868A75 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C3711288E6A4F00868A75 /* Chat.storyboard */; };
 		C14C3750288E73A600868A75 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C374D288E735D00868A75 /* TabBar.storyboard */; };
+		C1D9FCDF288FEFFE001434FF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D9FCDE288FEFFE001434FF /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		C14C3727288E6A4F00868A75 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C14C374A288E707800868A75 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C14C374E288E735D00868A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TabBar.storyboard; sourceTree = "<group>"; };
+		C1D9FCDE288FEFFE001434FF /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		CA47D97F706DC3EDC62AD350 /* Pods-UDD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDD.release.xcconfig"; path = "Target Support Files/Pods-UDD/Pods-UDD.release.xcconfig"; sourceTree = "<group>"; };
 		E0B8FE15F6F796A092A35144 /* Pods_UDD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UDD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34E1874F5BB3A4C3CC48733 /* Pods-UDD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDD.debug.xcconfig"; path = "Target Support Files/Pods-UDD/Pods-UDD.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,9 +196,10 @@
 		C14C3707288E6A4F00868A75 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C14C374C288E735D00868A75 /* Base.lproj */,
+				C14C374D288E735D00868A75 /* TabBar.storyboard */,
 				C14C3708288E6A4F00868A75 /* Home */,
 				C14C3712288E6A4F00868A75 /* HomeDetailView */,
+				C1D9FCE0288FF032001434FF /* Profile */,
 				C14C370E288E6A4F00868A75 /* Like */,
 				C14C3710288E6A4F00868A75 /* Chat */,
 			);
@@ -312,12 +315,12 @@
 			path = LoginScreen;
 			sourceTree = "<group>";
 		};
-		C14C374C288E735D00868A75 /* Base.lproj */ = {
+		C1D9FCE0288FF032001434FF /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				C14C374D288E735D00868A75 /* TabBar.storyboard */,
+				C1D9FCDE288FEFFE001434FF /* Profile.storyboard */,
 			);
-			path = Base.lproj;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +396,7 @@
 				C14C3733288E6A4F00868A75 /* Home.storyboard in Resources */,
 				C14C3736288E6A4F00868A75 /* PostTableViewCell.xib in Resources */,
 				C14C372C288E6A4F00868A75 /* Assets.xcassets in Resources */,
+				C1D9FCDF288FEFFE001434FF /* Profile.storyboard in Resources */,
 				C14C3743288E6A4F00868A75 /* LoginScreen.storyboard in Resources */,
 				C14C373D288E6A4F00868A75 /* StartScreen.storyboard in Resources */,
 			);
