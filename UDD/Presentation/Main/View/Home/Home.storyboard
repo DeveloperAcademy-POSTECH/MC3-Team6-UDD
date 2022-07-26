@@ -30,7 +30,9 @@
                             <constraint firstItem="VcO-3e-lcc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jbs-v8-XnE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="우리동네댕댕이" id="caV-So-Pxk"/>
+                    <navigationItem key="navigationItem" title="우리동네댕댕이" id="caV-So-Pxk">
+                        <barButtonItem key="backBarButtonItem" title="뒤로가기" id="5fm-sN-FVN"/>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="table" destination="VcO-3e-lcc" id="KEu-fl-ofE"/>
