@@ -39,7 +39,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 userSex: "남성",
                 userAddress: "1.2km",
                 dogBreed: "골든 리트리버",
-                dogImage: "person"
+                dogImage: "golddog"
             )
         )
     }
@@ -58,7 +58,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 userSex: "남성",
                 userAddress: "0.2km",
                 dogBreed: "시바견",
-                dogImage: "person.fill.turn.down"
+                dogImage: "golddog"
             )
         )
     }
@@ -77,7 +77,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 userSex: "여성",
                 userAddress: "2km",
                 dogBreed: "미니 푸들",
-                dogImage: "person.fill"
+                dogImage: "golddog"
             )
         )
     }
