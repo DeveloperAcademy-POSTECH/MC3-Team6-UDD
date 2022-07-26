@@ -43,10 +43,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpT-mW-2R7" userLabel="DogSexBackgroundView">
-                                                        <rect key="frame" x="171.5" y="0.0" width="50" height="32"/>
+                                                        <rect key="frame" x="171.5" y="5" width="50" height="22"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="성별" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ije-FO-NG4">
-                                                                <rect key="frame" x="10" y="9" width="30" height="14.5"/>
+                                                                <rect key="frame" x="10" y="4" width="30" height="14.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="12"/>
+                                                                <integer key="value" value="11"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
@@ -73,7 +73,9 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="Vo8-av-daz"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gpT-mW-2R7" secondAttribute="bottom" constant="5" id="aYP-Ig-EkA"/>
                                                     <constraint firstItem="gpT-mW-2R7" firstAttribute="centerY" secondItem="MYR-J0-aif" secondAttribute="centerY" id="pBc-4B-IEe"/>
+                                                    <constraint firstItem="gpT-mW-2R7" firstAttribute="top" secondItem="MYR-J0-aif" secondAttribute="top" constant="5" id="xBV-5v-YDI"/>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1Cv-vp-fto">
@@ -131,9 +133,7 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="5"/>
                             </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                <size key="value" width="0.0" height="0.0"/>
-                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
