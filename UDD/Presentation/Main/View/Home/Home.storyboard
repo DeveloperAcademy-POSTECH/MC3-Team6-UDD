@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,18 +17,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VcO-3e-lcc">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qcz-0C-98z">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXP-3Q-PNG">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="46.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8mO-y5-BEy" userLabel="EmptyView">
+                                                <rect key="frame" x="0.0" y="0.0" width="338.5" height="46.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-DH-tnu">
+                                                <rect key="frame" x="338.5" y="0.0" width="75.5" height="46.5"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=" 필터 " titleAlignment="automatic">
+                                                    <imageReference key="image" image="slider.horizontal.3" catalog="system" symbolScale="small"/>
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="filterButtonOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="sL6-KA-ps7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VcO-3e-lcc">
+                                        <rect key="frame" x="0.0" y="46.5" width="414" height="709.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VcO-3e-lcc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Ixt-cW-is1"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="VcO-3e-lcc" secondAttribute="bottom" id="RjM-is-5Wc"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VcO-3e-lcc" secondAttribute="trailing" id="fOf-Y6-Str"/>
-                            <constraint firstItem="VcO-3e-lcc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jbs-v8-XnE"/>
+                            <constraint firstItem="Qcz-0C-98z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="O21-si-J22"/>
+                            <constraint firstItem="Qcz-0C-98z" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="PcX-nI-77R"/>
+                            <constraint firstItem="Qcz-0C-98z" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="eUi-Ug-JGr"/>
+                            <constraint firstAttribute="bottom" secondItem="Qcz-0C-98z" secondAttribute="bottom" id="pAZ-uq-I5s"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="우리동네댕댕이" id="caV-So-Pxk">
@@ -35,6 +60,7 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="filterButton" destination="IhC-DH-tnu" id="300-Sf-fBR"/>
                         <outlet property="table" destination="VcO-3e-lcc" id="KEu-fl-ofE"/>
                         <segue destination="eVf-Pc-R62" kind="show" identifier="showHomeDetailView" id="8Ua-GY-gPp"/>
                     </connections>
@@ -51,7 +77,7 @@
                     <navigationItem key="navigationItem" id="Kiq-qF-3Qw"/>
                 </viewControllerPlaceholder>
             </objects>
-            <point key="canvasLocation" x="1706" y="116"/>
+            <point key="canvasLocation" x="1709" y="116"/>
         </scene>
         <!--Home-->
         <scene sceneID="1rI-Cj-L4L">
@@ -59,8 +85,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mTK-wF-765" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="BHY-lJ-cP6"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qlz-fY-5TB">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="qlz-fY-5TB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -75,6 +101,10 @@
     </scenes>
     <resources>
         <image name="house.fill" catalog="system" width="32" height="32"/>
+        <image name="slider.horizontal.3" catalog="system" width="32" height="32"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

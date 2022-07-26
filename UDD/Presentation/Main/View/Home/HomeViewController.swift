@@ -9,7 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet var table: UITableView!
+    @IBOutlet weak var filterButton: UIButton!
+    @IBOutlet weak var table: UITableView!
 
     var dogDataModels = [DogDataModel]()
 
@@ -22,7 +23,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         addDummy1()
         addDummy2()
         addDummy3()
-
     }
 
     func addDummy1() {
@@ -82,6 +82,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         )
     }
 
+    @IBAction func filterButtonOnClick(_ sender: Any) {
+        let filterNum = returnNum()
+        filterButton.setTitle(" 필터 \(filterNum != 0 ? "(\(filterNum))" : "")", for: .normal)
+    }
+
+    func returnNum() -> Int {
+        return Int.random(in: 0..<10)
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dogDataModels.count
     }
@@ -102,7 +111,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? HomeDetailViewController {
             destination.dogDataModel = dogDataModels[(table.indexPathForSelectedRow?.row)!]
+            table.deselectRow(at: table.indexPathForSelectedRow!, animated: true)
         }
-        table.deselectRow(at: table.indexPathForSelectedRow!, animated: true)
     }
 }
