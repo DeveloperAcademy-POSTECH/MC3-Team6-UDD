@@ -9,15 +9,15 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
 
-    @IBOutlet var dogImageView: UIImageView!
-    @IBOutlet var dogNameLabel: UILabel!
-    @IBOutlet var dogSexLabel: UILabel!
-    @IBOutlet var dogSexBackgroundView: UIView!
-    @IBOutlet var dogDistanceLabel: UILabel!
-    @IBOutlet var dogHashtag1Label: UILabel!
-    @IBOutlet var dogHashtag2Label: UILabel!
-    @IBOutlet var dogHashtag3Label: UILabel!
-    @IBOutlet var dogHashtag4Label: UILabel!
+    @IBOutlet weak var dogImageView: UIImageView!
+    @IBOutlet weak var dogNameLabel: UILabel!
+    @IBOutlet weak var dogSexLabel: UILabel!
+    @IBOutlet weak var dogSexBackgroundView: UIView!
+    @IBOutlet weak var dogDistanceLabel: UILabel!
+    @IBOutlet weak var dogHashtag1Label: UILabel!
+    @IBOutlet weak var dogHashtag2Label: UILabel!
+    @IBOutlet weak var dogHashtag3Label: UILabel!
+    @IBOutlet weak var dogHashtag4Label: UILabel!
 
     static let identifier = "PostTableViewCell"
 
