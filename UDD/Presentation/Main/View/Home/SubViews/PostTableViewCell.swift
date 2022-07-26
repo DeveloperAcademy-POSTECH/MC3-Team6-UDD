@@ -12,6 +12,7 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet var dogImageView: UIImageView!
     @IBOutlet var dogNameLabel: UILabel!
     @IBOutlet var dogSexLabel: UILabel!
+    @IBOutlet var dogSexBackgroundView: UIView!
     @IBOutlet var dogDistanceLabel: UILabel!
     @IBOutlet var dogHashtag1Label: UILabel!
     @IBOutlet var dogHashtag2Label: UILabel!
@@ -41,6 +42,19 @@ class PostTableViewCell: UITableViewCell {
         self.dogHashtag2Label.text = "\(model.dogHashtags[1])"
         self.dogHashtag3Label.text = "\(model.dogHashtags[2])"
         self.dogHashtag4Label.text = "\(model.dogHashtags[3])"
+        self.dogSexBackgroundView.backgroundColor = changeDogSexBackgroundViewColor(dogSex: model.dogSex)
     }
 
+    func changeDogSexBackgroundViewColor(dogSex: String) -> UIColor? {
+        switch dogSex {
+        case "중성화":
+            return UIColor(named: "NeuterColor")
+        case "남":
+            return UIColor(named: "MaleColor")
+        case "여":
+            return UIColor(named: "FemaleColor")
+        default:
+            return nil
+        }
+    }
 }

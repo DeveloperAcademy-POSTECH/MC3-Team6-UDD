@@ -169,6 +169,7 @@
                 <outlet property="dogHashtag4Label" destination="OzX-bI-KxR" id="Sz9-Fr-3mp"/>
                 <outlet property="dogImageView" destination="5hs-Nl-c6C" id="wf9-G1-gu5"/>
                 <outlet property="dogNameLabel" destination="UAp-KT-e0B" id="0py-dp-mfo"/>
+                <outlet property="dogSexBackgroundView" destination="gpT-mW-2R7" id="WgP-p9-QV5"/>
                 <outlet property="dogSexLabel" destination="Ije-FO-NG4" id="Qko-Yi-HS0"/>
             </connections>
             <point key="canvasLocation" x="98.550724637681171" y="212.94642857142856"/>
