@@ -11,7 +11,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet var table: UITableView!
 
-    var models = [DogDataModel]()
+    var dogDataModels = [DogDataModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func addDummy1() {
-        models.append(
+        dogDataModels.append(
             DogDataModel(
                 uuid: UUID().uuidString,
                 dogName: "땡구",
@@ -45,7 +45,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func addDummy2() {
-        models.append(
+        dogDataModels.append(
             DogDataModel(
                 uuid: UUID().uuidString,
                 dogName: "땡칠",
@@ -64,7 +64,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func addDummy3() {
-        models.append(
+        dogDataModels.append(
             DogDataModel(
                 uuid: UUID().uuidString,
                 dogName: "체리",
@@ -83,7 +83,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models.count
+        return dogDataModels.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -91,7 +91,18 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             withIdentifier: PostTableViewCell.identifier,
             for: indexPath
         ) as! PostTableViewCell
-        cell.configure(with: models[indexPath.row])
+        cell.configure(with: dogDataModels[indexPath.row])
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "showHomeDetailView", sender: self)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? HomeDetailViewController {
+            destination.dogDataModel = dogDataModels[(table.indexPathForSelectedRow?.row)!]
+        }
+        table.deselectRow(at: table.indexPathForSelectedRow!, animated: true)
     }
 }
