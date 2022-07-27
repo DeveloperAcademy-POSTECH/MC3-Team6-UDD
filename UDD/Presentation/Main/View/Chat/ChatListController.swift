@@ -11,6 +11,7 @@ class ChatCell: UITableViewCell {
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var content: UILabel!
     @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
 }
 
 class ChatListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -31,15 +32,17 @@ class ChatListController: UIViewController, UITableViewDataSource, UITableViewDe
                 as? ChatCell else {
             return UITableViewCell()
         }
+
         cell.username.text = username[indexPath.row]
         cell.content.text = content[indexPath.row]
         cell.time.text = time[indexPath.row]
+        cell.profileImage.image = UIImage(systemName: "doc.fill")
 
         return cell
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 92.0
+        return 91.0
     }
 
     @IBOutlet var chatListView: UITableView!
