@@ -57,10 +57,50 @@
                     </view>
                     <navigationItem key="navigationItem" title="우리동네댕댕이" id="caV-So-Pxk">
                         <barButtonItem key="backBarButtonItem" title="뒤로가기" id="5fm-sN-FVN"/>
+                        <barButtonItem key="rightBarButtonItem" id="koM-qw-vOH" userLabel="Profile Bar Button">
+                            <view key="customView" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" id="nGO-Yt-Pjy" userLabel="Profile View">
+                                <rect key="frame" x="346" y="0.0" width="48" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gIU-oL-xp0">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="lOK-0b-Wjo"/>
+                                            <constraint firstAttribute="width" constant="48" id="oqa-ta-0g0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zr5-3T-jWp">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <segue destination="a8g-3F-Kmd" kind="show" id="WgU-90-gNd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="gIU-oL-xp0" firstAttribute="leading" secondItem="nGO-Yt-Pjy" secondAttribute="leading" id="1TG-Yp-O2b"/>
+                                    <constraint firstItem="gIU-oL-xp0" firstAttribute="top" secondItem="nGO-Yt-Pjy" secondAttribute="top" id="H5n-Hc-6aT"/>
+                                    <constraint firstAttribute="bottom" secondItem="gIU-oL-xp0" secondAttribute="bottom" id="Y6R-8d-Hd1"/>
+                                    <constraint firstItem="Zr5-3T-jWp" firstAttribute="trailing" secondItem="gIU-oL-xp0" secondAttribute="trailing" id="agC-g9-Bho"/>
+                                    <constraint firstItem="Zr5-3T-jWp" firstAttribute="bottom" secondItem="gIU-oL-xp0" secondAttribute="bottom" id="bup-oG-Z63"/>
+                                    <constraint firstItem="Zr5-3T-jWp" firstAttribute="top" secondItem="gIU-oL-xp0" secondAttribute="top" id="ltJ-6P-xr6"/>
+                                    <constraint firstAttribute="trailing" secondItem="gIU-oL-xp0" secondAttribute="trailing" id="r7h-Al-w1c"/>
+                                    <constraint firstItem="Zr5-3T-jWp" firstAttribute="leading" secondItem="gIU-oL-xp0" secondAttribute="leading" id="vK3-0G-dgd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="filterButton" destination="IhC-DH-tnu" id="300-Sf-fBR"/>
+                        <outlet property="profileImageView" destination="gIU-oL-xp0" id="Zxh-gn-MgW"/>
                         <outlet property="table" destination="VcO-3e-lcc" id="KEu-fl-ofE"/>
                         <segue destination="eVf-Pc-R62" kind="show" identifier="showHomeDetailView" id="8Ua-GY-gPp"/>
                     </connections>
@@ -69,15 +109,25 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="rKi-wd-Zgw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="a8g-3F-Kmd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CZO-76-ekO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWC-lT-HT3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1709" y="100"/>
+        </scene>
         <!--HomeDetailView-->
         <scene sceneID="zxr-Gf-RGg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x3r-t4-g8A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="HomeDetailView" id="eVf-Pc-R62" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Kiq-qF-3Qw"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3r-t4-g8A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1709" y="116"/>
+            <point key="canvasLocation" x="1709" y="132"/>
         </scene>
         <!--Home-->
         <scene sceneID="1rI-Cj-L4L">
@@ -100,8 +150,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="house.fill" catalog="system" width="32" height="32"/>
-        <image name="slider.horizontal.3" catalog="system" width="32" height="32"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

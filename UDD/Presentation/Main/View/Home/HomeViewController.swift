@@ -9,6 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var filterButton: UIButton!
     @IBOutlet weak var table: UITableView!
 
@@ -17,9 +18,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        profileImageView.image = UIImage(named: "golddog")
+
         table.register(PostTableViewCell.nib(), forCellReuseIdentifier: PostTableViewCell.identifier)
         table.delegate = self
         table.dataSource = self
+
         addDummy1()
         addDummy2()
         addDummy3()
