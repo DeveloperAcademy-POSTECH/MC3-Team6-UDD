@@ -10,6 +10,11 @@
 		11442BC828891F0400F08194 /* DogOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11442BC728891F0400F08194 /* DogOwner.swift */; };
 		11442BCC28891F9C00F08194 /* HomeDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11442BCB28891F9C00F08194 /* HomeDetailView.storyboard */; };
 		206D4F5728869505007374C4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206D4F5628869505007374C4 /* CustomTextField.swift */; };
+		2089F14B288E6C500065918A /* FilterTag.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2089F14A288E6C500065918A /* FilterTag.storyboard */; };
+		2089F14D288E6C760065918A /* FilterTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089F14C288E6C760065918A /* FilterTagViewController.swift */; };
+		2089F14F288E6F1A0065918A /* HalfModalButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2089F14E288E6F1A0065918A /* HalfModalButton.storyboard */; };
+		2089F151288E6F360065918A /* HalfModalButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089F150288E6F360065918A /* HalfModalButtonViewController.swift */; };
+		2089F15A288FC0E90065918A /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089F159288FC0E90065918A /* LineView.swift */; };
 		2092EDBB2887F63600D35EB5 /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092EDB92887F63600D35EB5 /* LoginScreenController.swift */; };
 		2092EDBC2887F63600D35EB5 /* StartScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092EDBA2887F63600D35EB5 /* StartScreenController.swift */; };
 		20AEA6D1288702DC000984B5 /* AddDogName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AEA6D0288702DC000984B5 /* AddDogName.storyboard */; };
@@ -43,6 +48,13 @@
 		11442BC728891F0400F08194 /* DogOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DogOwner.swift; path = UDD/Presentation/Main/Models/DogOwner.swift; sourceTree = SOURCE_ROOT; };
 		11442BCB28891F9C00F08194 /* HomeDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeDetailView.storyboard; sourceTree = "<group>"; };
 		206D4F5628869505007374C4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		2089F14A288E6C500065918A /* FilterTag.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterTag.storyboard; sourceTree = "<group>"; };
+		2089F14C288E6C760065918A /* FilterTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTagViewController.swift; sourceTree = "<group>"; };
+		2089F14E288E6F1A0065918A /* HalfModalButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HalfModalButton.storyboard; sourceTree = "<group>"; };
+		2089F150288E6F360065918A /* HalfModalButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalButtonViewController.swift; sourceTree = "<group>"; };
+		2089F156288E7F3F0065918A /* CustomSPCDetent-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomSPCDetent-Bridging-Header.h"; sourceTree = "<group>"; };
+		2089F157288E7F5F0065918A /* UISheetPresentationControllerDetent+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISheetPresentationControllerDetent+Private.h"; sourceTree = "<group>"; };
+		2089F159288FC0E90065918A /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		2092EDB92887F63600D35EB5 /* LoginScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		2092EDBA2887F63600D35EB5 /* StartScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenController.swift; sourceTree = "<group>"; };
 		20AEA6D0288702DC000984B5 /* AddDogName.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddDogName.storyboard; sourceTree = "<group>"; };
@@ -164,8 +176,18 @@
 				206D4F5628869505007374C4 /* CustomTextField.swift */,
 				7E7E57482887E37400ED246A /* IntroductionTextView.swift */,
 				C14C368928894D9C00868A75 /* Extention_UIView.swift */,
+				2089F159288FC0E90065918A /* LineView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2089F158288E83290065918A /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				2089F156288E7F3F0065918A /* CustomSPCDetent-Bridging-Header.h */,
+				2089F157288E7F5F0065918A /* UISheetPresentationControllerDetent+Private.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 		443F36941137DFEB289B6211 /* Pods */ = {
@@ -207,6 +229,7 @@
 		C145B61D287E975600BEC69E /* UDD */ = {
 			isa = PBXGroup;
 			children = (
+				2089F158288E83290065918A /* Headers */,
 				206D4F4B288692A8007374C4 /* Application */,
 				206D4F4C2886934B007374C4 /* Presentation */,
 				C145B629287E975800BEC69E /* LaunchScreen.storyboard */,
@@ -227,8 +250,12 @@
 		C14C367A28894CD000868A75 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2089F14A288E6C500065918A /* FilterTag.storyboard */,
+				2089F14E288E6F1A0065918A /* HalfModalButton.storyboard */,
 				C14C367B28894CD000868A75 /* Home.storyboard */,
+				2089F150288E6F360065918A /* HalfModalButtonViewController.swift */,
 				C14C367C28894CD000868A75 /* HomeViewController.swift */,
+				2089F14C288E6C760065918A /* FilterTagViewController.swift */,
 				C14C367D28894CD000868A75 /* SubViews */,
 			);
 			path = Home;
@@ -379,6 +406,7 @@
 				C1B80489288537E2003371AB /* Chat.storyboard in Resources */,
 				C134DF36288007B600992842 /* .swiftlint.yml in Resources */,
 				11442BCC28891F9C00F08194 /* HomeDetailView.storyboard in Resources */,
+				2089F14F288E6F1A0065918A /* HalfModalButton.storyboard in Resources */,
 				C14C368E288A6CE200868A75 /* LoginScreen.storyboard in Resources */,
 				C14C368328894CD000868A75 /* PostTableViewCell.xib in Resources */,
 				20AEA6D728870EF8000984B5 /* SelectTag.storyboard in Resources */,
@@ -387,6 +415,7 @@
 				C145B62B287E975800BEC69E /* LaunchScreen.storyboard in Resources */,
 				C145B628287E975800BEC69E /* Assets.xcassets in Resources */,
 				C145B626287E975600BEC69E /* TabBar.storyboard in Resources */,
+				2089F14B288E6C500065918A /* FilterTag.storyboard in Resources */,
 				7E6E5EA428882522003AF360 /* AddUserData.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2089F151288E6F360065918A /* HalfModalButtonViewController.swift in Sources */,
 				C14C367828894CBB00868A75 /* DogDataModel.swift in Sources */,
 				C14C368228894CD000868A75 /* PostTableViewCell.swift in Sources */,
 				20AEA6D32887031D000984B5 /* AddDogNameViewController.swift in Sources */,
@@ -467,9 +497,11 @@
 				C14C368128894CD000868A75 /* HomeViewController.swift in Sources */,
 				C145B621287E975600BEC69E /* SceneDelegate.swift in Sources */,
 				7E7E57492887E37400ED246A /* IntroductionTextView.swift in Sources */,
+				2089F14D288E6C760065918A /* FilterTagViewController.swift in Sources */,
 				11442BC828891F0400F08194 /* DogOwner.swift in Sources */,
 				20AEA6D928870F17000984B5 /* SelectTagViewController.swift in Sources */,
 				2092EDBB2887F63600D35EB5 /* LoginScreenController.swift in Sources */,
+				2089F15A288FC0E90065918A /* LineView.swift in Sources */,
 				2092EDBC2887F63600D35EB5 /* StartScreenController.swift in Sources */,
 				7E6E5EA62889199C003AF360 /* AddUserDataViewController.swift in Sources */,
 				C14C368A28894D9C00868A75 /* Extention_UIView.swift in Sources */,
@@ -626,7 +658,7 @@
 				INFOPLIST_FILE = UDD/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
+				INFOPLIST_KEY_UIMainStoryboardFile = HalfModalButton;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -638,6 +670,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Odaeng UDD";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "UDD/Headers/CustomSPCDetent-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -657,7 +690,7 @@
 				INFOPLIST_FILE = UDD/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
+				INFOPLIST_KEY_UIMainStoryboardFile = HalfModalButton;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -669,6 +702,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Odaeng UDD";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "UDD/Headers/CustomSPCDetent-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
