@@ -21,6 +21,7 @@
 		20AEA6D32887031D000984B5 /* AddDogNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEA6D22887031D000984B5 /* AddDogNameViewController.swift */; };
 		20AEA6D728870EF8000984B5 /* SelectTag.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AEA6D628870EF8000984B5 /* SelectTag.storyboard */; };
 		20AEA6D928870F17000984B5 /* SelectTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AEA6D828870F17000984B5 /* SelectTagViewController.swift */; };
+		20ECC6142892696C00E7F5CA /* DefaultTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ECC6132892696C00E7F5CA /* DefaultTagModel.swift */; };
 		242CB68634C4C16500D032E4 /* Pods_UDD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B8FE15F6F796A092A35144 /* Pods_UDD.framework */; };
 		7E6E5EA428882522003AF360 /* AddUserData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6E5EA328882522003AF360 /* AddUserData.storyboard */; };
 		7E6E5EA62889199C003AF360 /* AddUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E5EA52889199C003AF360 /* AddUserDataViewController.swift */; };
@@ -61,6 +62,7 @@
 		20AEA6D22887031D000984B5 /* AddDogNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogNameViewController.swift; sourceTree = "<group>"; };
 		20AEA6D628870EF8000984B5 /* SelectTag.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectTag.storyboard; sourceTree = "<group>"; };
 		20AEA6D828870F17000984B5 /* SelectTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTagViewController.swift; sourceTree = "<group>"; };
+		20ECC6132892696C00E7F5CA /* DefaultTagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTagModel.swift; sourceTree = "<group>"; };
 		7E6E5EA328882522003AF360 /* AddUserData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddUserData.storyboard; sourceTree = "<group>"; };
 		7E6E5EA52889199C003AF360 /* AddUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserDataViewController.swift; sourceTree = "<group>"; };
 		7E7E57482887E37400ED246A /* IntroductionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionTextView.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			children = (
 				C14C367728894CBB00868A75 /* DogDataModel.swift */,
 				11442BC728891F0400F08194 /* DogOwner.swift */,
+				20ECC6132892696C00E7F5CA /* DefaultTagModel.swift */,
 			);
 			name = Models;
 			path = UDD/Presentation/Main/Models;
@@ -495,6 +498,7 @@
 				206D4F5728869505007374C4 /* CustomTextField.swift in Sources */,
 				C145B61F287E975600BEC69E /* AppDelegate.swift in Sources */,
 				C14C368128894CD000868A75 /* HomeViewController.swift in Sources */,
+				20ECC6142892696C00E7F5CA /* DefaultTagModel.swift in Sources */,
 				C145B621287E975600BEC69E /* SceneDelegate.swift in Sources */,
 				7E7E57492887E37400ED246A /* IntroductionTextView.swift in Sources */,
 				2089F14D288E6C760065918A /* FilterTagViewController.swift in Sources */,

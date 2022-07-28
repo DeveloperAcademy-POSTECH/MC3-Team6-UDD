@@ -77,6 +77,8 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         distanceSlider.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -28).isActive = true
         distanceSlider.topAnchor.constraint(equalTo: distanceLabel.bottomAnchor, constant: 20.5).isActive = true
         
+        // MARK: 하단 경계선
+        
         let bottomLineVC = UIHostingController(rootView: LineView())
         addChild(bottomLineVC)
         let bottomBorderLine: UIView = bottomLineVC.view
@@ -85,14 +87,17 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         bottomBorderLine.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 28).isActive = true
         bottomBorderLine.topAnchor.constraint(equalTo: distanceSlider.bottomAnchor, constant: 8.5).isActive = true
         
+        // MARK: 확인 버튼
+        
         view.addSubview(confirmButton)
         confirmButton.translatesAutoresizingMaskIntoConstraints = false
         confirmButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 28).isActive = true
         confirmButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -28).isActive = true
         // confirmButton.topAnchor.constraint(equalTo: bottomBorderLine.bottomAnchor, constant: 8.5).isActive = true
         confirmButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
+        confirmButton.addTarget(self, action: #selector(printSelectedTag(_:)), for: .touchUpInside)
+        confirmButton.tag = 1234
     }
-
 
     lazy var titleLabel: UILabel = {
         let label: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height:0))
@@ -116,16 +121,17 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         return label
     }()
 
-    var dogSizeHashTag: UIView =  {
+    var dogSizeHashTag: TTGTextTagCollectionView =  {
         let tagView: TTGTextTagCollectionView = TTGTextTagCollectionView(frame: CGRect(x: 28, y: 200, width: UIScreen.main.bounds.width - 72, height: 300))
-        let strings = ["대형견", "중형견", "소형견"]
+        let defaultTag = DefaultTag()
+        let strings = defaultTag.defualtDaeJoongDo
         tagView.alignment  = .left
-
+        
         for text in strings {
             let content = TTGTextTagStringContent.init(text: text)
             content.textColor = UIColor.white
             content.textFont = UIFont.boldSystemFont(ofSize: 12)
-
+            
             let normalStyle = TTGTextTagStyle.init()
             normalStyle.backgroundColor = UIColor.systemGray4
             normalStyle.cornerRadius = 7
@@ -139,12 +145,12 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             selectedStyle.cornerRadius = 7
             selectedStyle.shadowColor = UIColor.clear
             selectedStyle.extraSpace = CGSize.init(width: 20, height: 10)
-
+            
             let tags = TTGTextTag.init()
             tags.content = content
             tags.style = normalStyle
             tags.selectedStyle = selectedStyle
-
+            
             tagView.addTag(tags)
         }
 
@@ -163,10 +169,10 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         return label
     }()
     
-    var dogHashTag: UIView =  {
+    var dogHashTag: TTGTextTagCollectionView =  {
         let tagView: TTGTextTagCollectionView = TTGTextTagCollectionView(frame: CGRect(x: 28, y: 200, width: UIScreen.main.bounds.width - 72, height: 300))
-        let strings = ["차분한", "소심한", "낯을가리는", "활동적인", "장난꾸러기", "주인을잘따르는", "예민한",
-                       "애교쟁이", "경계심강한", "조용한", "똑똑한", "친화력강한"]
+        let defaultTag = DefaultTag()
+        let strings = defaultTag.defaultDogHashTag
         tagView.alignment  = .left
 
         for text in strings {
@@ -199,7 +205,6 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         tagView.reload()
         return tagView
     }()
-    
     
     lazy var distanceLabel: UILabel = {
         let label: UILabel = UILabel(frame: CGRect(x: 25, y: 100, width: 0, height:0))
@@ -230,7 +235,31 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         sender.value = roundedStepValue
         print("Slider step value \(Int(roundedStepValue))")
     }
-
+    
+    @objc func printSelectedTag(_ sender: UIButton) {
+        let selectedDogSizeResult = dogSizeHashTag.allSelectedTags()
+        let selectedDogHashTagResult = dogHashTag.allSelectedTags()
+        
+        let selectedDogSizeCount:Int = selectedDogSizeResult?.count ?? 9999999
+        let selectedDogHashTagCount:Int = selectedDogHashTagResult?.count ?? 9999999
+        
+        print("선택된 강아지 사이즈 개수 >> \(selectedDogSizeCount)")
+        print("선택된 강아지 성격 개수 >> \(selectedDogHashTagCount)")
+        print("선택된 개수 도합 >> \(selectedDogSizeCount + selectedDogHashTagCount)")
+        
+        for index in 0 ..< selectedDogSizeCount {
+            let content = selectedDogSizeResult?[index].content as? TTGTextTagStringContent
+            print(content!.text)
+        }
+        
+        for index in 0 ..< selectedDogHashTagCount {
+            let content = selectedDogHashTagResult?[index].content as? TTGTextTagStringContent
+            print(content!.text)
+        }
+        
+        
+    }
+    
     lazy var confirmButton: UIButton = {
         let confirmButton = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 100))
         confirmButton.backgroundColor = .orange
@@ -240,7 +269,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         return confirmButton
         
     }()
-    
+
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?,
                                 source: UIViewController) -> UIPresentationController? {
         let controller: UISheetPresentationController = .init(presentedViewController: presented,
