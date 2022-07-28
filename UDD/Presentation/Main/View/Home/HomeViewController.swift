@@ -29,6 +29,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         addDummy3()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+
     func addDummy1() {
         dogDataModels.append(
             DogDataModel(
@@ -86,6 +92,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         )
     }
 
+    @IBAction func profileButtonOnClick(_ sender: Any) {
+            navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+
     @IBAction func filterButtonOnClick(_ sender: Any) {
         let filterNum = returnNum()
         filterButton.setTitle(" 필터 \(filterNum != 0 ? "(\(filterNum))" : "")", for: .normal)
@@ -110,6 +120,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "showHomeDetailView", sender: self)
+
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
