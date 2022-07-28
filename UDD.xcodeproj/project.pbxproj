@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		242CB68634C4C16500D032E4 /* Pods_UDD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B8FE15F6F796A092A35144 /* Pods_UDD.framework */; };
 		7E30393B2890F1E200D58E1A /* LikeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30393A2890F1E200D58E1A /* LikeListView.swift */; };
+		7E30398228911B8700D58E1A /* LikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30398028911B8700D58E1A /* LikeTableViewCell.swift */; };
+		7E30398328911B8700D58E1A /* LikeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E30398128911B8700D58E1A /* LikeTableViewCell.xib */; };
+		7E97F23628927D71002F922E /* OpponentDogLikeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E97F23528927D71002F922E /* OpponentDogLikeDataModel.swift */; };
 		C134DF36288007B600992842 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C134DF35288007B600992842 /* .swiftlint.yml */; };
 		C14C372A288E6A4F00868A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C36F6288E6A4F00868A75 /* LaunchScreen.storyboard */; };
 		C14C372C288E6A4F00868A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14C36FB288E6A4F00868A75 /* Assets.xcassets */; };
@@ -42,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		7E30393A2890F1E200D58E1A /* LikeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeListView.swift; sourceTree = "<group>"; };
+		7E30398028911B8700D58E1A /* LikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeTableViewCell.swift; sourceTree = "<group>"; };
+		7E30398128911B8700D58E1A /* LikeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeTableViewCell.xib; sourceTree = "<group>"; };
+		7E97F23528927D71002F922E /* OpponentDogLikeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentDogLikeDataModel.swift; sourceTree = "<group>"; };
 		C134DF35288007B600992842 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C145B61B287E975600BEC69E /* UDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14C36F7288E6A4F00868A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,6 +108,8 @@
 		7E6E5EE5288E7E69003AF360 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				7E30398128911B8700D58E1A /* LikeTableViewCell.xib */,
+				7E30398028911B8700D58E1A /* LikeTableViewCell.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				C14C3706288E6A4F00868A75 /* DogDataModel.swift */,
+				7E97F23528927D71002F922E /* OpponentDogLikeDataModel.swift */,
 				C14C3705288E6A4F00868A75 /* DogOwner.swift */,
 			);
 			path = Models;
@@ -395,6 +404,7 @@
 				C14C3750288E73A600868A75 /* TabBar.storyboard in Resources */,
 				C14C3749288E6E4500868A75 /* Chat.storyboard in Resources */,
 				C14C373C288E6A4F00868A75 /* AddDogName.storyboard in Resources */,
+				7E30398328911B8700D58E1A /* LikeTableViewCell.xib in Resources */,
 				C14C372A288E6A4F00868A75 /* LaunchScreen.storyboard in Resources */,
 				C134DF36288007B600992842 /* .swiftlint.yml in Resources */,
 				C14C3741288E6A4F00868A75 /* AddUserData.storyboard in Resources */,
@@ -476,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E97F23628927D71002F922E /* OpponentDogLikeDataModel.swift in Sources */,
 				C14C3739288E6A4F00868A75 /* HomeDetailViewController.swift in Sources */,
 				C14C3732288E6A4F00868A75 /* DogDataModel.swift in Sources */,
 				C14C372F288E6A4F00868A75 /* CustomTextField.swift in Sources */,
@@ -485,6 +496,7 @@
 				C14C3734288E6A4F00868A75 /* HomeViewController.swift in Sources */,
 				C14C3746288E6A4F00868A75 /* SceneDelegate.swift in Sources */,
 				C14C3731288E6A4F00868A75 /* DogOwner.swift in Sources */,
+				7E30398228911B8700D58E1A /* LikeTableViewCell.swift in Sources */,
 				7E30393B2890F1E200D58E1A /* LikeListView.swift in Sources */,
 				C14C3744288E6A4F00868A75 /* LoginScreenController.swift in Sources */,
 				C14C373B288E6A4F00868A75 /* AddDogNameViewController.swift in Sources */,
