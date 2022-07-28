@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		242CB68634C4C16500D032E4 /* Pods_UDD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B8FE15F6F796A092A35144 /* Pods_UDD.framework */; };
+		AE215A78289139CD00687AB4 /* ChatListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE215A77289139CD00687AB4 /* ChatListController.swift */; };
 		C134DF36288007B600992842 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C134DF35288007B600992842 /* .swiftlint.yml */; };
 		C14C372A288E6A4F00868A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C36F6288E6A4F00868A75 /* LaunchScreen.storyboard */; };
 		C14C372C288E6A4F00868A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14C36FB288E6A4F00868A75 /* Assets.xcassets */; };
@@ -15,7 +16,6 @@
 		C14C372E288E6A4F00868A75 /* Extention_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3700288E6A4F00868A75 /* Extention_UIView.swift */; };
 		C14C372F288E6A4F00868A75 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3701288E6A4F00868A75 /* CustomTextField.swift */; };
 		C14C3730288E6A4F00868A75 /* IntroductionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3702288E6A4F00868A75 /* IntroductionTextView.swift */; };
-		C14C3731288E6A4F00868A75 /* DogOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3705288E6A4F00868A75 /* DogOwner.swift */; };
 		C14C3732288E6A4F00868A75 /* DogDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3706288E6A4F00868A75 /* DogDataModel.swift */; };
 		C14C3733288E6A4F00868A75 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C3709288E6A4F00868A75 /* Home.storyboard */; };
 		C14C3734288E6A4F00868A75 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C370A288E6A4F00868A75 /* HomeViewController.swift */; };
@@ -41,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E6E5EA52889199C003AF360 /* AddUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserDataViewController.swift; sourceTree = "<group>"; };
+		7E7E57482887E37400ED246A /* IntroductionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionTextView.swift; sourceTree = "<group>"; };
+		AE215A77289139CD00687AB4 /* ChatListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListController.swift; sourceTree = "<group>"; };
 		C134DF35288007B600992842 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C145B61B287E975600BEC69E /* UDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14C36F7288E6A4F00868A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,7 +52,6 @@
 		C14C3700288E6A4F00868A75 /* Extention_UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention_UIView.swift; sourceTree = "<group>"; };
 		C14C3701288E6A4F00868A75 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C14C3702288E6A4F00868A75 /* IntroductionTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionTextView.swift; sourceTree = "<group>"; };
-		C14C3705288E6A4F00868A75 /* DogOwner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogOwner.swift; sourceTree = "<group>"; };
 		C14C3706288E6A4F00868A75 /* DogDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogDataModel.swift; sourceTree = "<group>"; };
 		C14C3709288E6A4F00868A75 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C14C370A288E6A4F00868A75 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AE002D212891396F00800157 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				7E7E57482887E37400ED246A /* IntroductionTextView.swift */,
+				7E6E5EA52889199C003AF360 /* AddUserDataViewController.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		B902775A6750F829A8671E6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +126,7 @@
 				C145B61C287E975600BEC69E /* Products */,
 				443F36941137DFEB289B6211 /* Pods */,
 				B902775A6750F829A8671E6F /* Frameworks */,
+				AE002D212891396F00800157 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,7 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				C14C3706288E6A4F00868A75 /* DogDataModel.swift */,
-				C14C3705288E6A4F00868A75 /* DogOwner.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				C14C3711288E6A4F00868A75 /* Chat.storyboard */,
+				AE215A77289139CD00687AB4 /* ChatListController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -469,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE215A78289139CD00687AB4 /* ChatListController.swift in Sources */,
 				C14C3739288E6A4F00868A75 /* HomeDetailViewController.swift in Sources */,
 				C14C3732288E6A4F00868A75 /* DogDataModel.swift in Sources */,
 				C14C372F288E6A4F00868A75 /* CustomTextField.swift in Sources */,
@@ -477,7 +490,6 @@
 				C14C373E288E6A4F00868A75 /* StartScreenController.swift in Sources */,
 				C14C3734288E6A4F00868A75 /* HomeViewController.swift in Sources */,
 				C14C3746288E6A4F00868A75 /* SceneDelegate.swift in Sources */,
-				C14C3731288E6A4F00868A75 /* DogOwner.swift in Sources */,
 				C14C3744288E6A4F00868A75 /* LoginScreenController.swift in Sources */,
 				C14C373B288E6A4F00868A75 /* AddDogNameViewController.swift in Sources */,
 				C14C3730288E6A4F00868A75 /* IntroductionTextView.swift in Sources */,
