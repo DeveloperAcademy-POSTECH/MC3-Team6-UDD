@@ -9,24 +9,34 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet var table: UITableView!
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var filterButton: UIButton!
+    @IBOutlet weak var table: UITableView!
 
-    var models = [DogDataModel]()
+    var dogDataModels = [DogDataModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        profileImageView.image = UIImage(named: "golddog")
+
         table.register(PostTableViewCell.nib(), forCellReuseIdentifier: PostTableViewCell.identifier)
         table.delegate = self
         table.dataSource = self
+
         addDummy1()
         addDummy2()
         addDummy3()
+    }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     func addDummy1() {
-        models.append(
+        dogDataModels.append(
             DogDataModel(
                 uuid: UUID().uuidString,
                 dogName: "땡구",
@@ -39,13 +49,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 userSex: "남성",
                 userAddress: "1.2km",
                 dogBreed: "골든 리트리버",
-                dogImage: "person"
+                dogImage: "golddog"
             )
         )
     }
 
     func addDummy2() {
-        models.append(
+        dogDataModels.append(
             DogDataModel(
                 uuid: UUID().uuidString,
                 dogName: "땡칠",
@@ -58,13 +68,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 userSex: "남성",
                 userAddress: "0.2km",
                 dogBreed: "시바견",
-                dogImage: "person.fill.turn.down"
+                dogImage: "golddog"
             )
         )
     }
 
     func addDummy3() {
-        models.append(
+        dogDataModels.append(
             DogDataModel(
                 uuid: UUID().uuidString,
                 dogName: "체리",
@@ -77,13 +87,26 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 userSex: "여성",
                 userAddress: "2km",
                 dogBreed: "미니 푸들",
-                dogImage: "person.fill"
+                dogImage: "golddog"
             )
         )
     }
 
+    @IBAction func profileButtonOnClick(_ sender: Any) {
+            navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+
+    @IBAction func filterButtonOnClick(_ sender: Any) {
+        let filterNum = returnNum()
+        filterButton.setTitle(" 필터 \(filterNum != 0 ? "(\(filterNum))" : "")", for: .normal)
+    }
+
+    func returnNum() -> Int {
+        return Int.random(in: 0..<10)
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models.count
+        return dogDataModels.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -91,7 +114,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             withIdentifier: PostTableViewCell.identifier,
             for: indexPath
         ) as! PostTableViewCell
-        cell.configure(with: models[indexPath.row])
+        cell.configure(with: dogDataModels[indexPath.row])
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "showHomeDetailView", sender: self)
+
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? HomeDetailViewController {
+            destination.dogDataModel = dogDataModels[(table.indexPathForSelectedRow?.row)!]
+            table.deselectRow(at: table.indexPathForSelectedRow!, animated: true)
+        }
     }
 }

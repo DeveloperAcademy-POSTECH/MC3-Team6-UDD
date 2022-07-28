@@ -19,8 +19,11 @@ class HomeDetailViewController: UIViewController {
     @IBOutlet weak var dogInfo: UILabel!
     @IBOutlet weak var personInfo: UILabel!
     @IBOutlet weak var likeButton: UIButton!
+
+    var dogDataModel: DogDataModel?
     var dogDummy = DogDataModel.dummy
     var isDisabled: Bool = DogDataModel.personLike
+
     override func viewDidLoad() {
         super.viewDidLoad()
         dogImage.image = UIImage(named: dogDummy.dogImage)
@@ -34,14 +37,17 @@ class HomeDetailViewController: UIViewController {
         dogInfo.text = dogDummy.dogInfo
         personInfo.text = "\(dogDummy.dogName) 견주님 [\(dogDummy.userAge)]"
     }
+
     @IBAction func likeButtonAction(_ sender: UIButton) {
         changeLikeState()
     }
+
     func changeLikeState() {
         let imgName = isDisabled ? "heart" : "heart.fill"
         isDisabled.toggle()
         self.likeButton.setImage(UIImage(systemName: imgName), for: .normal)
     }
+
     func dogTagsString() -> String {
         var dogData = ""
 //        dogDummy.dogHashtags
@@ -50,6 +56,7 @@ class HomeDetailViewController: UIViewController {
         }
         return dogData
     }
+
     func dogSizeString(weight: Float) -> String {
         let dogSize : String
         if weight < 10 {
@@ -61,6 +68,7 @@ class HomeDetailViewController: UIViewController {
         }
         return "\(weight) kg (\(dogSize))"
     }
+
     // 나이 계산 로직
     func calcAgeString(birthday: Date) -> String {
         let year = Calendar.current.dateComponents([.year], from: birthday, to: Date()).year ?? 0
