@@ -24,7 +24,6 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 28).isActive = true
         titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 28).isActive = true
-//        titleLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 제목과 본문의 경계선
 
@@ -35,7 +34,6 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         borderLine.translatesAutoresizingMaskIntoConstraints = false
         borderLine.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 28).isActive = true
         borderLine.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20.5).isActive = true
-//        borderLine.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 강아지 크기 부제목
 
@@ -43,7 +41,6 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         dogSizeLabel.translatesAutoresizingMaskIntoConstraints = false
         dogSizeLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 28).isActive = true
         dogSizeLabel.topAnchor.constraint(equalTo: borderLine.bottomAnchor, constant: 20.5).isActive = true
-//        dogSizeLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 강아지 크기 해시태그 선택
 
@@ -54,7 +51,6 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             equalTo: dogSizeLabel.bottomAnchor,
             constant: 20.5
         ).isActive = true
-//        dogSizeHashTag.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 강아지 성격 해시태그 부제목
 
@@ -65,7 +61,6 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             equalTo: dogSizeHashTag.bottomAnchor,
             constant: 20.5
         ).isActive = true
-//        dogHashTagLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 강아지 성격 해시태그 선택
 
@@ -73,7 +68,6 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         dogHashTag.translatesAutoresizingMaskIntoConstraints = false
         dogHashTag.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 28).isActive = true
         dogHashTag.topAnchor.constraint(equalTo: dogHashTagLabel.bottomAnchor, constant: 20.5).isActive = true
-//        dogHashTag.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 선호 거리 범위 부제목
 
@@ -81,7 +75,6 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         distanceLabel.translatesAutoresizingMaskIntoConstraints = false
         distanceLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 28).isActive = true
         distanceLabel.topAnchor.constraint(equalTo: dogHashTag.bottomAnchor, constant: 20.5).isActive = true
-//        distanceLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 선호 거리 범위 슬라이더
 
@@ -93,7 +86,6 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             equalTo: distanceLabel.bottomAnchor,
             constant: 20.5
         ).isActive = true
-//        distanceLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 하단 경계선
 
@@ -107,7 +99,6 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             equalTo: distanceSlider.bottomAnchor,
             constant: 8.5
         ).isActive = true
-//        bottomBorderLine.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 확인 버튼
 
@@ -119,13 +110,9 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             equalTo: bottomBorderLine.bottomAnchor,
             constant: 8.5
          ).isActive = true
-        confirmButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
+        confirmButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -55).isActive = true
         confirmButton.addTarget(self, action: #selector(printSelectedTag(_:)), for: .touchUpInside)
-        confirmButton.tag = 1234
-        // confirmButton.setContentHuggingPriority(UILayoutPriority(1), for: .vertical)
-        confirmButton.heightAnchor.constraint(greaterThanOrEqualToConstant: 30).isActive = true
-
-        print(FilteredTag.sharedTag.selectedDogSize)
+        confirmButton.heightAnchor.constraint(greaterThanOrEqualToConstant: 35).isActive = true
     }
 
     lazy var titleLabel: UILabel = {
@@ -332,7 +319,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
 
     lazy var confirmButton: UIButton = {
         let confirmButton = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 100))
-        confirmButton.backgroundColor = .orange
+        confirmButton.backgroundColor = UIColor(named: "AccentColor")
         confirmButton.setTitle("적용", for: .normal)
         confirmButton.setTitleColor(.white, for: .normal)
 
@@ -347,6 +334,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
                                                                           constant: 505)
         controller.detents = [customDetent]
         controller.prefersGrabberVisible = true
+
         return controller
     }
 }
