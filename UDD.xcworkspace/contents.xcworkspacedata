@@ -1,6 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:UDD/Presentation/Main"
+      name = "Main">
+      <Group
+         location = "group:Models"
+         name = "Models">
+         <FileRef
+            location = "group:DefaultTagModel.swift">
+         </FileRef>
+         <FileRef
+            location = "group:DogDataModel.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:View"
+         name = "View">
+         <Group
+            location = "group:Home"
+            name = "Home">
+            <FileRef
+               location = "group:HalfModalButton.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:HalfModalButtonViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Home.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:HomeViewController.swift">
+            </FileRef>
+            <Group
+               location = "group:SubViews"
+               name = "SubViews">
+               <FileRef
+                  location = "group:PostTableViewCell.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:PostTableViewCell.xib">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:FilterTag.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:FilterTagViewController.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Like"
+            name = "Like">
+            <FileRef
+               location = "group:Like.storyboard">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Chat"
+            name = "Chat">
+            <FileRef
+               location = "group:ChatListController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Chat.storyboard">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:HomeDetailView"
+            name = "HomeDetailView">
+            <FileRef
+               location = "group:HomeDetailViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:HomeDetailView.storyboard">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Profile"
+            name = "Profile">
+            <FileRef
+               location = "group:Profile.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:TabBar.storyboard">
+         </FileRef>
+      </Group>
+   </Group>
    <FileRef
       location = "group:UDD.xcodeproj">
    </FileRef>
