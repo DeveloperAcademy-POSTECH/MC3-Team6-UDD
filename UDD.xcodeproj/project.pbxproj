@@ -710,6 +710,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Odaeng UDD";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UDD/Presentation/Headers/CustomSPCDetent-Bridging-Header.h";
+				"SWIFT_OBJC_INTERFACE_HEADER_NAME[arch=*]" = "CustomSPCDetent-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -742,6 +744,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Odaeng UDD";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UDD/Presentation/Headers/CustomSPCDetent-Bridging-Header.h";
+				"SWIFT_OBJC_INTERFACE_HEADER_NAME[arch=*]" = "CustomSPCDetent-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
