@@ -80,8 +80,7 @@ class LikeListView: UIViewController, UITableViewDataSource,UITableViewDelegate 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? HomeDetailViewController {
-//            destination.dogDataModel =
-//            dogDataModel[(likeTableView.indexPathForSelectedRow?.row)!]
+            destination.dogDataModel = dogDataModel
             // TableViewCell이 선택되자마자 deselect되게 함
             likeTableView.deselectRow(at: likeTableView.indexPathForSelectedRow!, animated: true)
         }
