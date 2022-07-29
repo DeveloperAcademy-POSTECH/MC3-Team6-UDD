@@ -50,6 +50,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Like" image="heart.fill" catalog="system" id="jz9-Rf-t5q"/>
+                    <navigationItem key="navigationItem" id="4lo-Ez-CPG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="likeSegmentedControl" destination="VLQ-Ni-zQy" id="UgR-oh-RQn"/>
@@ -59,7 +60,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="No2-sK-bh2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
         </scene>
     </scenes>
     <resources>

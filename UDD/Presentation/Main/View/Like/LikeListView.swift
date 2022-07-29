@@ -11,6 +11,7 @@ class LikeListView: UIViewController, UITableViewDataSource,UITableViewDelegate 
     @IBOutlet weak var likeSegmentedControl: UISegmentedControl!
     @IBOutlet weak var likeTableView: UITableView!
 
+    // TableViewCell에 들어가는 더미 데이터를 2차원 배열로 구성
     var opponentDogLikeDataModel = Array(repeating: [OpponentDogLikeDataModel](), count: 2)
 
     override func viewDidLoad() {
@@ -18,68 +19,25 @@ class LikeListView: UIViewController, UITableViewDataSource,UITableViewDelegate 
         likeTableView.register(LikeTableViewCell.nib(), forCellReuseIdentifier: LikeTableViewCell.identifier)
         likeTableView.delegate = self
         likeTableView.dataSource = self
-        addOpponentDummy1()
-        addOpponentDummy2()
-        addOpponentDummy3()
-        addOpponentDummy4()
-        addOpponentDummy5()
+        addDummy(name: "뽀삐", image: "golddog", isTrue: true)
+        addDummy(name: "뽀식", image: "golddog", isTrue: true)
+        addDummy(name: "빠니", image: "golddog", isTrue: false)
+        addDummy(name: "브레드", image: "golddog", isTrue: false)
+        addDummy(name: "죠지", image: "golddog", isTrue: false)
     }
 
-    func addOpponentDummy1() {
-        opponentDogLikeDataModel[0].append(
+    func addDummy(name: String, image: String, isTrue: Bool) {
+        opponentDogLikeDataModel[(isTrue ? 0 : 1)].append(
             OpponentDogLikeDataModel(
-                opponentDogName: "뽀삐",
-                opponentDogImage: "golddog",
+                opponentDogName: name,
+                opponentDogImage: image,
                 opponentDogUUID: UUID().uuidString,
-                isReceived: true
+                isReceived: isTrue
             )
         )
     }
 
-    func addOpponentDummy2() {
-        opponentDogLikeDataModel[0].append(
-            OpponentDogLikeDataModel(
-                opponentDogName: "뽀식",
-                opponentDogImage: "golddog",
-                opponentDogUUID: UUID().uuidString,
-                isReceived: true
-            )
-        )
-    }
-
-    func addOpponentDummy3() {
-        opponentDogLikeDataModel[1].append(
-            OpponentDogLikeDataModel(
-                opponentDogName: "두부",
-                opponentDogImage: "golddog",
-                opponentDogUUID: UUID().uuidString,
-                isReceived: false
-            )
-        )
-    }
-
-    func addOpponentDummy4() {
-        opponentDogLikeDataModel[1].append(
-            OpponentDogLikeDataModel(
-                opponentDogName: "마루",
-                opponentDogImage: "golddog",
-                opponentDogUUID: UUID().uuidString,
-                isReceived: false
-            )
-        )
-    }
-
-    func addOpponentDummy5() {
-        opponentDogLikeDataModel[1].append(
-            OpponentDogLikeDataModel(
-                opponentDogName: "애플",
-                opponentDogImage: "golddog",
-                opponentDogUUID: UUID().uuidString,
-                isReceived: false
-            )
-        )
-    }
-
+    // 0의 경우 Segmented Control에서 받은 좋아요에 해당, 1의 경우 보낸 좋아요에 해당
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch likeSegmentedControl.selectedSegmentIndex {
         case 0:
@@ -101,7 +59,7 @@ class LikeListView: UIViewController, UITableViewDataSource,UITableViewDelegate 
         )
         return cell
     }
-
+    // TableViewCell이 선택되자마자 deselect되게 함
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         likeTableView.deselectRow(at: likeTableView.indexPathForSelectedRow!, animated: true)
     }
