@@ -97,6 +97,8 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         confirmButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
         confirmButton.addTarget(self, action: #selector(printSelectedTag(_:)), for: .touchUpInside)
         confirmButton.tag = 1234
+        
+        print(FilteredTag.sharedTag.selectedDogSize)
     }
 
     lazy var titleLabel: UILabel = {
@@ -154,6 +156,10 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             tagView.addTag(tags)
         }
 
+        for index in FilteredTag.sharedTag.selectedDogSizeIndex {
+            tagView.updateTag(at: index, selected: true)
+        }
+        
         tagView.reload()
         return tagView
     }()
@@ -202,6 +208,10 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             tagView.addTag(tags)
         }
 
+        for index in FilteredTag.sharedTag.selectedDogHashTagIndex {
+            tagView.updateTag(at: index, selected: true)
+        }
+
         tagView.reload()
         return tagView
     }()
@@ -237,27 +247,44 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
     }
     
     @objc func printSelectedTag(_ sender: UIButton) {
+        let defaultTag = DefaultTag()
+        let dogSizeArr: [String] = defaultTag.defualtDaeJoongDo
+        let dogHashTagArr: [String] = defaultTag.defaultDogHashTag
+        
+        FilteredTag.sharedTag.totalSelectedCount = 0
+        FilteredTag.sharedTag.selectedDogSizeIndex.removeAll()
+        FilteredTag.sharedTag.selectedDogHashTagIndex.removeAll()
+        FilteredTag.sharedTag.selectedDogSize.removeAll()
+        FilteredTag.sharedTag.selectedDogHashTag.removeAll()
+        
         let selectedDogSizeResult = dogSizeHashTag.allSelectedTags()
         let selectedDogHashTagResult = dogHashTag.allSelectedTags()
         
         let selectedDogSizeCount:Int = selectedDogSizeResult?.count ?? 9999999
         let selectedDogHashTagCount:Int = selectedDogHashTagResult?.count ?? 9999999
+        let totalSelectedCount: Int = selectedDogSizeCount + selectedDogHashTagCount
         
         print("선택된 강아지 사이즈 개수 >> \(selectedDogSizeCount)")
         print("선택된 강아지 성격 개수 >> \(selectedDogHashTagCount)")
         print("선택된 개수 도합 >> \(selectedDogSizeCount + selectedDogHashTagCount)")
         
+        FilteredTag.sharedTag.totalSelectedCount = totalSelectedCount
+        
         for index in 0 ..< selectedDogSizeCount {
             let content = selectedDogSizeResult?[index].content as? TTGTextTagStringContent
+            FilteredTag.sharedTag.selectedDogSize.append(content!.text)
+            FilteredTag.sharedTag.selectedDogSizeIndex.append(UInt(dogSizeArr.index(of: content!.text) ?? 999999))
             print(content!.text)
         }
+        print(FilteredTag.sharedTag.selectedDogSize)
         
         for index in 0 ..< selectedDogHashTagCount {
             let content = selectedDogHashTagResult?[index].content as? TTGTextTagStringContent
+            FilteredTag.sharedTag.selectedDogHashTag.append(content!.text)
+            FilteredTag.sharedTag.selectedDogHashTagIndex.append(UInt(dogHashTagArr.index(of: content!.text) ?? 9999999))
             print(content!.text)
         }
-        
-        
+        dismiss(animated: true, completion: nil)
     }
     
     lazy var confirmButton: UIButton = {
@@ -267,7 +294,6 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         confirmButton.setTitleColor(.white, for: .normal)
         
         return confirmButton
-        
     }()
 
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?,
@@ -280,6 +306,5 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         controller.prefersGrabberVisible = true
         return controller
     }
-
     
 }
