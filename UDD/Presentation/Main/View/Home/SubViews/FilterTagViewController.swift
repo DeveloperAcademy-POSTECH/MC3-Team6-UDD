@@ -24,6 +24,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 28).isActive = true
         titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 28).isActive = true
+//        titleLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 제목과 본문의 경계선
 
@@ -34,6 +35,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         borderLine.translatesAutoresizingMaskIntoConstraints = false
         borderLine.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 28).isActive = true
         borderLine.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20.5).isActive = true
+//        borderLine.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 강아지 크기 부제목
 
@@ -41,6 +43,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         dogSizeLabel.translatesAutoresizingMaskIntoConstraints = false
         dogSizeLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 28).isActive = true
         dogSizeLabel.topAnchor.constraint(equalTo: borderLine.bottomAnchor, constant: 20.5).isActive = true
+//        dogSizeLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 강아지 크기 해시태그 선택
 
@@ -51,6 +54,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             equalTo: dogSizeLabel.bottomAnchor,
             constant: 20.5
         ).isActive = true
+//        dogSizeHashTag.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 강아지 성격 해시태그 부제목
 
@@ -61,6 +65,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             equalTo: dogSizeHashTag.bottomAnchor,
             constant: 20.5
         ).isActive = true
+//        dogHashTagLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 강아지 성격 해시태그 선택
 
@@ -68,6 +73,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         dogHashTag.translatesAutoresizingMaskIntoConstraints = false
         dogHashTag.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 28).isActive = true
         dogHashTag.topAnchor.constraint(equalTo: dogHashTagLabel.bottomAnchor, constant: 20.5).isActive = true
+//        dogHashTag.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 선호 거리 범위 부제목
 
@@ -75,6 +81,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         distanceLabel.translatesAutoresizingMaskIntoConstraints = false
         distanceLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 28).isActive = true
         distanceLabel.topAnchor.constraint(equalTo: dogHashTag.bottomAnchor, constant: 20.5).isActive = true
+//        distanceLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 선호 거리 범위 슬라이더
 
@@ -86,6 +93,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             equalTo: distanceLabel.bottomAnchor,
             constant: 20.5
         ).isActive = true
+//        distanceLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 하단 경계선
 
@@ -99,6 +107,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             equalTo: distanceSlider.bottomAnchor,
             constant: 8.5
         ).isActive = true
+//        bottomBorderLine.setContentHuggingPriority(.defaultHigh, for: .vertical)
 
         // MARK: 확인 버튼
 
@@ -106,13 +115,15 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         confirmButton.translatesAutoresizingMaskIntoConstraints = false
         confirmButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 28).isActive = true
         confirmButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -28).isActive = true
-//         confirmButton.topAnchor.constraint(
-//            equalTo: bottomBorderLine.bottomAnchor,
-//            constant: 8.5
-//         ).isActive = true
+         confirmButton.topAnchor.constraint(
+            equalTo: bottomBorderLine.bottomAnchor,
+            constant: 8.5
+         ).isActive = true
         confirmButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
         confirmButton.addTarget(self, action: #selector(printSelectedTag(_:)), for: .touchUpInside)
         confirmButton.tag = 1234
+        // confirmButton.setContentHuggingPriority(UILayoutPriority(1), for: .vertical)
+        confirmButton.heightAnchor.constraint(greaterThanOrEqualToConstant: 30).isActive = true
 
         print(FilteredTag.sharedTag.selectedDogSize)
     }
@@ -292,9 +303,9 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         let selectedDogHashTagCount:Int = selectedDogHashTagResult?.count ?? 9999999
         let totalSelectedCount: Int = selectedDogSizeCount + selectedDogHashTagCount
 
-        print("선택된 강아지 사이즈 개수 >> \(selectedDogSizeCount)")
-        print("선택된 강아지 성격 개수 >> \(selectedDogHashTagCount)")
-        print("선택된 개수 도합 >> \(selectedDogSizeCount + selectedDogHashTagCount)")
+//        print("선택된 강아지 사이즈 개수 >> \(selectedDogSizeCount)")
+//        print("선택된 강아지 성격 개수 >> \(selectedDogHashTagCount)")
+//        print("선택된 개수 도합 >> \(selectedDogSizeCount + selectedDogHashTagCount)")
 
         FilteredTag.sharedTag.totalSelectedCount = totalSelectedCount
 
@@ -302,19 +313,19 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             let content = selectedDogSizeResult?[index].content as? TTGTextTagStringContent
             FilteredTag.sharedTag.selectedDogSize.append(content!.text)
             FilteredTag.sharedTag.selectedDogSizeIndex.append(
-                UInt(dogSizeArr.index(of: content!.text) ?? 999999)
+                UInt(dogSizeArr.firstIndex(of: content!.text) ?? 999999)
             )
             print(content!.text)
         }
-        print(FilteredTag.sharedTag.selectedDogSize)
+//        print(FilteredTag.sharedTag.selectedDogSize)
 
         for index in 0 ..< selectedDogHashTagCount {
             let content = selectedDogHashTagResult?[index].content as? TTGTextTagStringContent
             FilteredTag.sharedTag.selectedDogHashTag.append(content!.text)
             FilteredTag.sharedTag.selectedDogHashTagIndex.append(
-                UInt(dogHashTagArr.index(of: content!.text) ?? 9999999)
+                UInt(dogHashTagArr.firstIndex(of: content!.text) ?? 9999999)
             )
-            print(content!.text)
+//            print(content!.text)
         }
         dismiss(animated: true, completion: nil)
     }
