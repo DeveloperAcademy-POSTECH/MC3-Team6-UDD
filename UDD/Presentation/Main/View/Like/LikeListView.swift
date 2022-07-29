@@ -19,7 +19,7 @@ class LikeListView: UIViewController, UITableViewDataSource,UITableViewDelegate 
         dogBirth: Date(),
         dogSex: "중성화",
         dogWeight: 1.2,
-        dogHashtags: ["#소심한", "#조용한", "#경계심강한", "#애교쟁이"],
+        dogHashtags: ["소심한", "조용한", "경계심강한", "애교쟁이"],
         dogInfo: "나는야 우주최강 귀요미~ 땡구 와쪄염 뿌우",
         userAge: 3,
         userSex: "남성",
