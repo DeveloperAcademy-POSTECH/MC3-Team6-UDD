@@ -40,14 +40,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             DogDataModel(
                 uuid: UUID().uuidString,
                 dogName: "땡구",
-                dogBirth: Date(),
+                dogBirth: Calendar.current.date(byAdding: .year, value: -1, to: Date())!,
                 dogSex: "중성화",
                 dogWeight: 1.2,
-                dogHashtags: ["#소심한", "#조용한", "#경계심강한", "#애교쟁이"],
+                dogHashtags: ["소심한", "조용한", "경계심강한", "애교쟁이"],
                 dogInfo: "나는야 우주최강 귀요미~ 땡구 와쪄염 뿌우",
                 userAge: 3,
                 userSex: "남성",
-                userAddress: "1.2km",
+                userAddress: "1.2",
                 dogBreed: "골든 리트리버",
                 dogImage: "golddog"
             )
@@ -59,14 +59,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             DogDataModel(
                 uuid: UUID().uuidString,
                 dogName: "땡칠",
-                dogBirth: Date(),
+                dogBirth: Calendar.current.date(byAdding: .year, value: -3, to: Date())!,
                 dogSex: "남",
                 dogWeight: 5,
-                dogHashtags: ["#참돔", "#생선까스", "#선넘어", "#안좋아해"],
+                dogHashtags: ["참돔", "생선까스", "선넘어", "안좋아해"],
                 dogInfo: "나는야 우주최강 귀요미~ 땡칠 와쪄염 뿌우",
                 userAge: 48,
                 userSex: "남성",
-                userAddress: "0.2km",
+                userAddress: "0.2",
                 dogBreed: "시바견",
                 dogImage: "golddog"
             )
@@ -78,14 +78,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             DogDataModel(
                 uuid: UUID().uuidString,
                 dogName: "체리",
-                dogBirth: Date(),
+                dogBirth: Calendar.current.date(byAdding: .year, value: -8, to: Date())!,
                 dogSex: "여",
                 dogWeight: 0.7,
-                dogHashtags: ["#소심한", "#조용한", "#경계심강한", "#애교쟁이"],
+                dogHashtags: ["소심한", "조용한", "경계심강한", "애교쟁이"],
                 dogInfo: "나는야 우주최강 귀요미~ 땡구 와쪄염 뿌우",
                 userAge: 1,
                 userSex: "여성",
-                userAddress: "2km",
+                userAddress: "2",
                 dogBreed: "미니 푸들",
                 dogImage: "golddog"
             )
