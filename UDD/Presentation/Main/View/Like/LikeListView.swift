@@ -13,6 +13,20 @@ class LikeListView: UIViewController, UITableViewDataSource,UITableViewDelegate 
 
     // TableViewCell에 들어가는 더미 데이터를 2차원 배열로 구성
     var opponentDogLikeDataModel = Array(repeating: [OpponentDogLikeDataModel](), count: 2)
+    var dogDataModel = DogDataModel(
+        uuid: UUID().uuidString,
+        dogName: "땡구",
+        dogBirth: Date(),
+        dogSex: "중성화",
+        dogWeight: 1.2,
+        dogHashtags: ["#소심한", "#조용한", "#경계심강한", "#애교쟁이"],
+        dogInfo: "나는야 우주최강 귀요미~ 땡구 와쪄염 뿌우",
+        userAge: 3,
+        userSex: "남성",
+        userAddress: "1.2km",
+        dogBreed: "골든 리트리버",
+        dogImage: "person"
+    )
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,9 +73,18 @@ class LikeListView: UIViewController, UITableViewDataSource,UITableViewDelegate 
         )
         return cell
     }
-    // TableViewCell이 선택되자마자 deselect되게 함
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        likeTableView.deselectRow(at: likeTableView.indexPathForSelectedRow!, animated: true)
+        self.performSegue(withIdentifier: "showLikeDetailView", sender: self)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? HomeDetailViewController {
+//            destination.dogDataModel =
+//            dogDataModel[(likeTableView.indexPathForSelectedRow?.row)!]
+            // TableViewCell이 선택되자마자 deselect되게 함
+            likeTableView.deselectRow(at: likeTableView.indexPathForSelectedRow!, animated: true)
+        }
     }
 
     @IBAction func segmentedChange(_ sender: Any) {

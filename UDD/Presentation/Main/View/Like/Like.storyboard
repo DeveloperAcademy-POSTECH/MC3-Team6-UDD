@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="obf-Dy-IZw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Like-->
+        <!--Like List View-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="LikeListView" customModule="UDD" customModuleProvider="target" sceneMemberID="viewController">
@@ -49,16 +49,45 @@
                             <constraint firstItem="h2x-9L-rqb" firstAttribute="top" secondItem="VLQ-Ni-zQy" secondAttribute="bottom" constant="30" id="wLa-LT-2Ae"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Like" image="heart.fill" catalog="system" id="jz9-Rf-t5q"/>
                     <navigationItem key="navigationItem" id="4lo-Ez-CPG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="likeSegmentedControl" destination="VLQ-Ni-zQy" id="UgR-oh-RQn"/>
                         <outlet property="likeTableView" destination="h2x-9L-rqb" id="nzy-B3-IXn"/>
+                        <segue destination="I9I-Nz-OZL" kind="show" identifier="showLikeDetailView" id="da0-OX-6qa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="No2-sK-bh2" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1952.1739130434785" y="115.84821428571428"/>
+        </scene>
+        <!--HomeDetailView-->
+        <scene sceneID="TKD-fF-f1e">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeDetailView" id="I9I-Nz-OZL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="agi-H4-sf0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxs-xG-Z6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="116"/>
+        </scene>
+        <!--Like-->
+        <scene sceneID="REN-wc-Tbu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="obf-Dy-IZw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Like" image="heart.fill" catalog="system" id="jz9-Rf-t5q"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s8Y-t6-Ljx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="vSX-lB-in5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KcM-0L-aGG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
         </scene>
