@@ -84,7 +84,7 @@ class ChatRoomVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         // TableView에는 원하는 곳으로 이동하는 함수가 있다. 고로 전송할때마다 최신 대화로 이동.
         chatTableView.scrollToRow(at: lastindexPath, at: UITableView.ScrollPosition.bottom, animated: true)
         /* 티키타카를 하기 위한 공간 */
-        
+
     }
     // 테이블 뷰를 사용하게 되면 무조건 구현해야하는 함수 2개.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
