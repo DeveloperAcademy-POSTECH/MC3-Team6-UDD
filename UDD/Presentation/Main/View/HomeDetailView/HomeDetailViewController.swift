@@ -43,10 +43,6 @@ class HomeDetailViewController: UIViewController {
         changeLikeState()
     }
 
-    @IBAction func naviBackButton(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
-    }
-
     func changeLikeState() {
         let imgName = isDisabled ? "heart" : "heart.fill"
         isDisabled.toggle()
