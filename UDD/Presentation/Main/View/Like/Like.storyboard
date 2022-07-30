@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VLQ-Ni-zQy">
-                                <rect key="frame" x="20" y="81" width="374" height="32"/>
+                                <rect key="frame" x="20" y="88" width="374" height="32"/>
                                 <segments>
                                     <segment title="받은 좋아요"/>
                                     <segment title="보낸 좋아요"/>
@@ -28,7 +28,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="h2x-9L-rqb">
-                                <rect key="frame" x="20" y="142" width="374" height="671"/>
+                                <rect key="frame" x="20" y="149" width="374" height="664"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
@@ -41,9 +41,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="h2x-9L-rqb" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="4d2-lV-ski"/>
-                            <constraint firstItem="VLQ-Ni-zQy" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.215" id="Gd1-wj-nsL"/>
                             <constraint firstItem="VLQ-Ni-zQy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="K7K-zf-rxx"/>
                             <constraint firstItem="h2x-9L-rqb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="KcZ-6h-xFF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="VLQ-Ni-zQy" secondAttribute="top" id="MH8-hT-xwo"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VLQ-Ni-zQy" secondAttribute="trailing" constant="20" id="X1f-hc-0qe"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="h2x-9L-rqb" secondAttribute="trailing" constant="20" id="bKH-N8-4Uc"/>
                             <constraint firstItem="h2x-9L-rqb" firstAttribute="top" secondItem="VLQ-Ni-zQy" secondAttribute="bottom" constant="30" id="wLa-LT-2Ae"/>
@@ -93,7 +93,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
