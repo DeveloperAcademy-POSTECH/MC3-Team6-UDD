@@ -50,6 +50,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="9pn-C0-Urn" kind="show" id="SmH-Il-QbO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -74,6 +77,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="60.869565217391312" y="105.80357142857143"/>
+        </scene>
+        <!--AddDogDetail-->
+        <scene sceneID="f9I-Ux-NSj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddDogDetail" id="9pn-C0-Urn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UBB-jn-Rvl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38b-td-NTu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="234"/>
         </scene>
     </scenes>
     <resources>

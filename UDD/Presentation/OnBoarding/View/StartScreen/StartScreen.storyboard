@@ -58,6 +58,9 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.60784313725490191" green="0.37647058823529411" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="WF1-m8-HWH" kind="show" id="XG9-hM-op8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Iv-hJ-xMR">
                                 <rect key="frame" x="20" y="707" width="374" height="50"/>
@@ -113,6 +116,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUC-25-C34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1466.6666666666667" y="-57.589285714285708"/>
+        </scene>
+        <!--AddDogName-->
+        <scene sceneID="wC7-lx-cgG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddDogName" id="WF1-m8-HWH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GDJ-a2-lS0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pxs-cD-8eS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1531" y="248"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1NB-Hk-QNT">
