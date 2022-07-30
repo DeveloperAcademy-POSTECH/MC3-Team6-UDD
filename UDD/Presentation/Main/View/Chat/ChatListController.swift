@@ -22,6 +22,8 @@ struct RecentMessage {
 }
 
 class ChatListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    @IBOutlet weak var chatTable: UITableView!
     func getChatTime (date: Date) -> String {
         let time = DateFormatter()
         time.dateFormat = "HH:mm"
@@ -111,6 +113,21 @@ class ChatListController: UIViewController, UITableViewDataSource, UITableViewDe
         chatListView.dataSource = self
 
         addList()
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "showChatRoom", sender: self)
+
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ChatRoomVC {
+            destination.messageList = messageList[(chatTable.indexPathForSelectedRow?.row)!]
+
+//            [(chatTable.indexPathForSelectedRow?.row)!]
+            chatTable.deselectRow(at: chatTable.indexPathForSelectedRow!, animated: true)
+        }
     }
 
 }
