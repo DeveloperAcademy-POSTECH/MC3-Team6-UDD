@@ -21,6 +21,8 @@
 		20AA0BC12893B2FD00F4759C /* DefaultTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AA0BC02893B2FD00F4759C /* DefaultTagModel.swift */; };
 		242CB68634C4C16500D032E4 /* Pods_UDD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B8FE15F6F796A092A35144 /* Pods_UDD.framework */; };
 		AE215A78289139CD00687AB4 /* ChatListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE215A77289139CD00687AB4 /* ChatListController.swift */; };
+		AE5ECC6B289568F600958E24 /* AddDogDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5ECC6A289568F600958E24 /* AddDogDetail.storyboard */; };
+		AE5ECC6D2895694B00958E24 /* AddDogDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5ECC6C2895694B00958E24 /* AddDogDetailController.swift */; };
 		C134DF36288007B600992842 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C134DF35288007B600992842 /* .swiftlint.yml */; };
 		C14C372A288E6A4F00868A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C36F6288E6A4F00868A75 /* LaunchScreen.storyboard */; };
 		C14C372C288E6A4F00868A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14C36FB288E6A4F00868A75 /* Assets.xcassets */; };
@@ -68,6 +70,8 @@
 		7E6E5EA52889199C003AF360 /* AddUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserDataViewController.swift; sourceTree = "<group>"; };
 		7E7E57482887E37400ED246A /* IntroductionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionTextView.swift; sourceTree = "<group>"; };
 		AE215A77289139CD00687AB4 /* ChatListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListController.swift; sourceTree = "<group>"; };
+		AE5ECC6A289568F600958E24 /* AddDogDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddDogDetail.storyboard; sourceTree = "<group>"; };
+		AE5ECC6C2895694B00958E24 /* AddDogDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogDetailController.swift; sourceTree = "<group>"; };
 		C134DF35288007B600992842 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C145B61B287E975600BEC69E /* UDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14C36F7288E6A4F00868A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -156,6 +160,15 @@
 				7E6E5EA52889199C003AF360 /* AddUserDataViewController.swift */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		AE5ECC69289568E400958E24 /* AddDogDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AE5ECC6A289568F600958E24 /* AddDogDetail.storyboard */,
+				AE5ECC6C2895694B00958E24 /* AddDogDetailController.swift */,
+			);
+			path = AddDogDetail;
 			sourceTree = "<group>";
 		};
 		B902775A6750F829A8671E6F /* Frameworks */ = {
@@ -326,6 +339,7 @@
 		C14C3716288E6A4F00868A75 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AE5ECC69289568E400958E24 /* AddDogDetail */,
 				C14C371A288E6A4F00868A75 /* StartScreen */,
 				C14C3723288E6A4F00868A75 /* LoginScreen */,
 				C14C3717288E6A4F00868A75 /* AddDogName */,
@@ -453,6 +467,7 @@
 				20AA0BB72893B09600F4759C /* TabBar.storyboard in Resources */,
 				119C50AA2891800F00A12955 /* MyCell.xib in Resources */,
 				C14C3749288E6E4500868A75 /* Chat.storyboard in Resources */,
+				AE5ECC6B289568F600958E24 /* AddDogDetail.storyboard in Resources */,
 				C14C373C288E6A4F00868A75 /* AddDogName.storyboard in Resources */,
 				C14C372A288E6A4F00868A75 /* LaunchScreen.storyboard in Resources */,
 				C134DF36288007B600992842 /* .swiftlint.yml in Resources */,
@@ -558,6 +573,7 @@
 				C14C3730288E6A4F00868A75 /* IntroductionTextView.swift in Sources */,
 				20AA0BB92893B15600F4759C /* FilterTagViewController.swift in Sources */,
 				C14C3742288E6A4F00868A75 /* AddUserDataViewController.swift in Sources */,
+				AE5ECC6D2895694B00958E24 /* AddDogDetailController.swift in Sources */,
 				C14C372E288E6A4F00868A75 /* Extention_UIView.swift in Sources */,
 				C14C3735288E6A4F00868A75 /* PostTableViewCell.swift in Sources */,
 			);
