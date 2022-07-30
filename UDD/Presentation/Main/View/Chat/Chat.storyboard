@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aqe-T1-Jmc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yfE-kY-srK">
+            <objects>
+                <navigationController id="aqe-T1-Jmc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vfd-lX-lOf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="cdn-Sa-WlX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ttS-FL-VNk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-696" y="116"/>
+        </scene>
         <!--Chat-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -100,14 +116,27 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Chat" image="bubble.left.and.bubble.right.fill" catalog="system" id="7Gl-n0-A8Q"/>
+                    <navigationItem key="navigationItem" id="kyn-4M-SQ0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="chatListView" destination="dso-bc-KL8" id="GRJ-MJ-X7i"/>
+                        <outlet property="chatTable" destination="dso-bc-KL8" id="gf3-Wz-lMV"/>
+                        <segue destination="JXV-yJ-DCX" kind="show" identifier="showChatRoom" id="1vd-we-Qy9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+        </scene>
+        <!--ChatRoom-->
+        <scene sceneID="MVe-5a-xts">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="showChatRoom" storyboardName="ChatRoom" id="JXV-yJ-DCX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xLS-Dj-gn2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8a8-zL-sHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="116"/>
         </scene>
     </scenes>
     <resources>
