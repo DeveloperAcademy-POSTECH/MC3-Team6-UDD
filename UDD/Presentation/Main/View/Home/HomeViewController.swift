@@ -47,7 +47,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 dogInfo: "나는야 우주최강 귀요미~ 땡구 와쪄염 뿌우",
                 userAge: 3,
                 userSex: "남성",
-                userAddress: "1.2",
+                userAddress: "1.2km",
                 dogBreed: "골든 리트리버",
                 dogImage: "golddog"
             )
@@ -66,7 +66,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 dogInfo: "나는야 우주최강 귀요미~ 땡칠 와쪄염 뿌우",
                 userAge: 48,
                 userSex: "남성",
-                userAddress: "0.2",
+                userAddress: "0.2km",
                 dogBreed: "시바견",
                 dogImage: "golddog"
             )
@@ -85,7 +85,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 dogInfo: "나는야 우주최강 귀요미~ 땡구 와쪄염 뿌우",
                 userAge: 1,
                 userSex: "여성",
-                userAddress: "2",
+                userAddress: "2km",
                 dogBreed: "미니 푸들",
                 dogImage: "golddog"
             )

@@ -29,7 +29,7 @@ class HomeDetailViewController: UIViewController {
         dogImage.image = UIImage(named: dogDataModel.dogImage)
         dogName.text = dogDataModel.dogName
         dogTags.text = dogTagsString()
-        dogDistance.text = "\(dogDataModel.userAddress)km"
+        dogDistance.text = "\(dogDataModel.userAddress)"
         dogGender.text = dogDataModel.dogSex
         dogAge.text = calcAgeString(birthday: dogDataModel.dogBirth)
         dogBreed.text = dogDataModel.dogBreed
@@ -55,7 +55,6 @@ class HomeDetailViewController: UIViewController {
 
     func dogTagsString() -> String {
         var dogData = ""
-//        dogDummy.dogHashtags
         for tagg in dogDataModel.dogHashtags {
             dogData += "#\(tagg)  "
         }
