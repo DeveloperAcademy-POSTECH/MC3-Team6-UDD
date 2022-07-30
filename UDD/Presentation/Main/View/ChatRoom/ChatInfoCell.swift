@@ -9,12 +9,11 @@ import UIKit
 
 class ChatInfoCell: UITableViewCell {
 
+    @IBOutlet weak var chatImage: UIImageView!
     @IBOutlet weak var todayDate: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        todayDate.text = nowKorDate()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

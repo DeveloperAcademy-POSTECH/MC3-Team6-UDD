@@ -55,6 +55,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="sNq-SO-uzc"/>
             <connections>
+                <outlet property="chatImage" destination="lUZ-tJ-gb8" id="GwA-zU-yLf"/>
                 <outlet property="todayDate" destination="kU8-Cu-vkp" id="gyV-5B-BBx"/>
             </connections>
             <point key="canvasLocation" x="611.59420289855075" y="263.50446428571428"/>
