@@ -16,7 +16,7 @@ class LikeListView: UIViewController, UITableViewDataSource,UITableViewDelegate 
     var dogDataModel = DogDataModel(
         uuid: UUID().uuidString,
         dogName: "땡구",
-        dogBirth: Date(),
+        dogBirth: Calendar.current.date(byAdding: .year, value: -3, to: Date())!,
         dogSex: "중성화",
         dogWeight: 1.2,
         dogHashtags: ["소심한", "조용한", "경계심강한", "애교쟁이"],
@@ -53,14 +53,7 @@ class LikeListView: UIViewController, UITableViewDataSource,UITableViewDelegate 
 
     // 0의 경우 Segmented Control에서 받은 좋아요에 해당, 1의 경우 보낸 좋아요에 해당
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch likeSegmentedControl.selectedSegmentIndex {
-        case 0:
-            return opponentDogLikeDataModel[0].count
-        case 1:
-            return opponentDogLikeDataModel[1].count
-        default:
-            return 0
-        }
+        return opponentDogLikeDataModel[likeSegmentedControl.selectedSegmentIndex].count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
