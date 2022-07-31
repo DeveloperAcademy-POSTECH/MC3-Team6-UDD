@@ -34,9 +34,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TY-S5-Hg4">
-                                <rect key="frame" x="20" y="768" width="374" height="44"/>
+                                <rect key="frame" x="20" y="762" width="374" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="zZp-TN-dkd"/>
+                                    <constraint firstAttribute="height" constant="50" id="V3l-R1-fmW"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -50,6 +50,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="9pn-C0-Urn" kind="show" id="SmH-Il-QbO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -74,6 +77,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="60.869565217391312" y="105.80357142857143"/>
+        </scene>
+        <!--AddDogDetail-->
+        <scene sceneID="f9I-Ux-NSj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddDogDetail" id="9pn-C0-Urn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UBB-jn-Rvl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38b-td-NTu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="234"/>
         </scene>
     </scenes>
     <resources>
