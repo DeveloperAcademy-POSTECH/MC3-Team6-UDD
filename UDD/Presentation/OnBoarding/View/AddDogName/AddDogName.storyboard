@@ -34,9 +34,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TY-S5-Hg4">
-                                <rect key="frame" x="20" y="768" width="374" height="44"/>
+                                <rect key="frame" x="20" y="762" width="374" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="zZp-TN-dkd"/>
+                                    <constraint firstAttribute="height" constant="50" id="V3l-R1-fmW"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">

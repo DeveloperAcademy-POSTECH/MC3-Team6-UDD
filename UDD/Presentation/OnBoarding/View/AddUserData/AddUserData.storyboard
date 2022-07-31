@@ -32,9 +32,9 @@
                                 <rect key="frame" x="36" y="496.5" width="342" height="1.5"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44S-ar-T6c">
-                                <rect key="frame" x="20" y="790.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="762" width="374" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="pCP-RD-npt"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ru8-VV-fXx"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -99,7 +99,6 @@
                             <constraint firstItem="R7Z-qz-yEw" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="6aO-P0-aXb"/>
                             <constraint firstItem="zHa-Jx-e86" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="719-mB-FoQ"/>
                             <constraint firstItem="TYP-pG-Hf8" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="7Wq-pb-NgO"/>
-                            <constraint firstItem="44S-ar-T6c" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="1.82" id="9CK-LC-yXG"/>
                             <constraint firstItem="XBg-k1-K49" firstAttribute="trailing" secondItem="PP8-hf-Duc" secondAttribute="trailing" constant="36" id="B6S-hP-5au"/>
                             <constraint firstItem="rsP-CQ-0Cf" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.533" id="B6V-IJ-yDh"/>
                             <constraint firstItem="PP8-hf-Duc" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.85" id="BD6-os-YsN"/>
@@ -110,6 +109,7 @@
                             <constraint firstItem="X0F-M9-Bjx" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="XzI-hn-xBH"/>
                             <constraint firstItem="44S-ar-T6c" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="20" id="Y2u-NQ-axs"/>
                             <constraint firstItem="a4P-Xe-InH" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.6" id="YLV-gU-lhc"/>
+                            <constraint firstItem="XBg-k1-K49" firstAttribute="bottom" secondItem="44S-ar-T6c" secondAttribute="bottom" constant="50" id="a0U-3M-vB8"/>
                             <constraint firstItem="cT7-KR-E9v" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="1.177" id="b9W-Ri-e9U"/>
                             <constraint firstItem="a4P-Xe-InH" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="bdO-Le-h9Z"/>
                             <constraint firstItem="XBg-k1-K49" firstAttribute="trailing" secondItem="PP8-hf-Duc" secondAttribute="trailing" constant="36" id="fa1-I2-Y1w"/>
