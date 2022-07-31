@@ -15,6 +15,9 @@
 		119C50AE2891801E00A12955 /* YourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119C50AC2891801E00A12955 /* YourCell.xib */; };
 		119C50BD2893FA3500A12955 /* ChatInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50BB2893FA3500A12955 /* ChatInfoCell.swift */; };
 		119C50BE2893FA3500A12955 /* ChatInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119C50BC2893FA3500A12955 /* ChatInfoCell.xib */; };
+		119C50C228966FEB00A12955 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50C128966FEA00A12955 /* Storage.swift */; };
+		119C50C7289670F500A12955 /* StartNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50C6289670F500A12955 /* StartNaviController.swift */; };
+		119C50C92896715E00A12955 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50C82896715E00A12955 /* TabBarController.swift */; };
 		20AA0BB72893B09600F4759C /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C374E288E735D00868A75 /* TabBar.storyboard */; };
 		20AA0BB92893B15600F4759C /* FilterTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AA0BB82893B15600F4759C /* FilterTagViewController.swift */; };
 		20AA0BBC2893B24100F4759C /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AA0BBB2893B24100F4759C /* LineView.swift */; };
@@ -62,6 +65,9 @@
 		119C50AC2891801E00A12955 /* YourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourCell.xib; sourceTree = "<group>"; };
 		119C50BB2893FA3500A12955 /* ChatInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfoCell.swift; sourceTree = "<group>"; };
 		119C50BC2893FA3500A12955 /* ChatInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInfoCell.xib; sourceTree = "<group>"; };
+		119C50C128966FEA00A12955 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		119C50C6289670F500A12955 /* StartNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNaviController.swift; sourceTree = "<group>"; };
+		119C50C82896715E00A12955 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		20AA0BB82893B15600F4759C /* FilterTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTagViewController.swift; sourceTree = "<group>"; };
 		20AA0BBB2893B24100F4759C /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		20AA0BBE2893B28B00F4759C /* UISheetPresentationControllerDetent+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISheetPresentationControllerDetent+Private.h"; sourceTree = "<group>"; };
@@ -133,6 +139,14 @@
 				119C50AC2891801E00A12955 /* YourCell.xib */,
 			);
 			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		119C50C32896702900A12955 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				119C50C128966FEA00A12955 /* Storage.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		20AA0BBD2893B27C00F4759C /* Headers */ = {
@@ -235,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				C14C36FF288E6A4F00868A75 /* View */,
+				119C50C32896702900A12955 /* Onboarding */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -272,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				C14C374E288E735D00868A75 /* TabBar.storyboard */,
+				119C50C82896715E00A12955 /* TabBarController.swift */,
 				C14C3708288E6A4F00868A75 /* Home */,
 				C14C3712288E6A4F00868A75 /* HomeDetailView */,
 				C1D9FCE0288FF032001434FF /* Profile */,
@@ -363,6 +379,7 @@
 			children = (
 				C14C371B288E6A4F00868A75 /* StartScreen.storyboard */,
 				C14C371C288E6A4F00868A75 /* StartScreenController.swift */,
+				119C50C6289670F500A12955 /* StartNaviController.swift */,
 			);
 			path = StartScreen;
 			sourceTree = "<group>";
@@ -556,8 +573,10 @@
 				AE215A78289139CD00687AB4 /* ChatListController.swift in Sources */,
 				119C50A628917FE400A12955 /* ChatRoomVC.swift in Sources */,
 				C14C3739288E6A4F00868A75 /* HomeDetailViewController.swift in Sources */,
+				119C50C92896715E00A12955 /* TabBarController.swift in Sources */,
 				119C50A92891800F00A12955 /* MyCell.swift in Sources */,
 				C14C3732288E6A4F00868A75 /* DogDataModel.swift in Sources */,
+				119C50C228966FEB00A12955 /* Storage.swift in Sources */,
 				C14C372F288E6A4F00868A75 /* CustomTextField.swift in Sources */,
 				C14C373F288E6A4F00868A75 /* SelectTagViewController.swift in Sources */,
 				C14C372D288E6A4F00868A75 /* AppDelegate.swift in Sources */,
@@ -569,6 +588,7 @@
 				119C50BD2893FA3500A12955 /* ChatInfoCell.swift in Sources */,
 				C14C3746288E6A4F00868A75 /* SceneDelegate.swift in Sources */,
 				C14C3744288E6A4F00868A75 /* LoginScreenController.swift in Sources */,
+				119C50C7289670F500A12955 /* StartNaviController.swift in Sources */,
 				C14C373B288E6A4F00868A75 /* AddDogNameViewController.swift in Sources */,
 				C14C3730288E6A4F00868A75 /* IntroductionTextView.swift in Sources */,
 				20AA0BB92893B15600F4759C /* FilterTagViewController.swift in Sources */,

@@ -34,7 +34,7 @@
                                     <color key="baseBackgroundColor" red="0.60784313729999995" green="0.37647058820000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="h4Q-Ai-ixd" kind="show" id="rCz-mK-zTU"/>
+                                    <action selector="loginStartButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OqV-98-lNr"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="nex-gE-u7h">
@@ -139,16 +139,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="73.660714285714278"/>
-        </scene>
-        <!--TabBar-->
-        <scene sceneID="fsL-u1-yt1">
-            <objects>
-                <viewControllerPlaceholder storyboardName="TabBar" id="h4Q-Ai-ixd" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="cOs-am-v9x"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A9A-rB-jeM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="769" y="54"/>
         </scene>
     </scenes>
     <resources>

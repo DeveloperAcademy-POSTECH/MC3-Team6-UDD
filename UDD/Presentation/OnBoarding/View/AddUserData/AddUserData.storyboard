@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Add User Data View Controller-->
         <scene sceneID="iJ3-IZ-M9P">
             <objects>
-                <viewController id="GG7-Y8-NaT" sceneMemberID="viewController">
+                <viewController id="GG7-Y8-NaT" customClass="AddUserDataViewController" customModule="UDD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kib-6P-kEh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,8 +28,8 @@
                                 <color key="textColor" red="0.59215686270000001" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="R7Z-qz-yEw" userLabel="주소">
-                                <rect key="frame" x="36" y="496.5" width="342" height="2"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="R7Z-qz-yEw" userLabel="주소">
+                                <rect key="frame" x="36" y="496.5" width="342" height="1.5"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44S-ar-T6c">
                                 <rect key="frame" x="20" y="790.5" width="374" height="50"/>
@@ -50,7 +50,7 @@
                                     <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Vfs-LR-Dvu" kind="show" id="9Ki-V3-ed2"/>
+                                    <action selector="finishSaveButton:" destination="GG7-Y8-NaT" eventType="touchUpInside" id="Vd0-tR-Csl"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PP8-hf-Duc">
@@ -75,7 +75,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="주소를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cT7-KR-E9v" customClass="CustomTextFields" customModule="UDD" customModuleProvider="target">
-                                <rect key="frame" x="36" y="514" width="174" height="27"/>
+                                <rect key="frame" x="36" y="513.5" width="174" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -94,6 +94,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="X0F-M9-Bjx" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.76" id="11a-iE-dU5"/>
+                            <constraint firstItem="R7Z-qz-yEw" firstAttribute="trailing" secondItem="PP8-hf-Duc" secondAttribute="trailing" id="29C-oU-lHj"/>
                             <constraint firstItem="rsP-CQ-0Cf" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="2Sn-pU-Uda"/>
                             <constraint firstItem="R7Z-qz-yEw" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="6aO-P0-aXb"/>
                             <constraint firstItem="zHa-Jx-e86" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="719-mB-FoQ"/>
@@ -104,6 +105,7 @@
                             <constraint firstItem="PP8-hf-Duc" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.85" id="BD6-os-YsN"/>
                             <constraint firstItem="TYP-pG-Hf8" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="0.27" id="BbP-Ps-wsJ"/>
                             <constraint firstItem="cT7-KR-E9v" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="NLZ-LC-eoy"/>
+                            <constraint firstItem="R7Z-qz-yEw" firstAttribute="centerY" secondItem="zHa-Jx-e86" secondAttribute="centerY" id="RQ2-cH-Fc2"/>
                             <constraint firstItem="XBg-k1-K49" firstAttribute="trailing" secondItem="44S-ar-T6c" secondAttribute="trailing" constant="20" id="Wcp-ma-ZUb"/>
                             <constraint firstItem="X0F-M9-Bjx" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="XzI-hn-xBH"/>
                             <constraint firstItem="44S-ar-T6c" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="20" id="Y2u-NQ-axs"/>
@@ -112,7 +114,9 @@
                             <constraint firstItem="a4P-Xe-InH" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="bdO-Le-h9Z"/>
                             <constraint firstItem="XBg-k1-K49" firstAttribute="trailing" secondItem="PP8-hf-Duc" secondAttribute="trailing" constant="36" id="fa1-I2-Y1w"/>
                             <constraint firstItem="zHa-Jx-e86" firstAttribute="centerY" secondItem="Kib-6P-kEh" secondAttribute="centerY" multiplier="1.11" id="iYd-Yr-XUE"/>
+                            <constraint firstItem="cT7-KR-E9v" firstAttribute="top" secondItem="R7Z-qz-yEw" secondAttribute="bottom" constant="15.5" id="qZ2-MH-f2x"/>
                             <constraint firstItem="PP8-hf-Duc" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="wp8-N4-WdW"/>
+                            <constraint firstItem="R7Z-qz-yEw" firstAttribute="top" secondItem="Kib-6P-kEh" secondAttribute="top" constant="496.5" id="yim-J3-su3"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -120,16 +124,6 @@
                 <exit id="wR6-6l-Lh4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="197" y="165"/>
-        </scene>
-        <!--TabBar-->
-        <scene sceneID="9uE-EI-4Di">
-            <objects>
-                <viewControllerPlaceholder storyboardName="TabBar" id="Vfs-LR-Dvu" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="KRl-pE-3tM"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eLm-9f-D9b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="807" y="248"/>
         </scene>
     </scenes>
     <resources>

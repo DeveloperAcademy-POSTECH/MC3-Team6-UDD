@@ -115,7 +115,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUC-25-C34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1466.6666666666667" y="-57.589285714285708"/>
+            <point key="canvasLocation" x="1671" y="149"/>
         </scene>
         <!--AddDogName-->
         <scene sceneID="wC7-lx-cgG">
@@ -125,12 +125,12 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pxs-cD-8eS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1531" y="248"/>
+            <point key="canvasLocation" x="1676" y="2"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Start Navi Controller-->
         <scene sceneID="1NB-Hk-QNT">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j4T-FP-gvB" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="StartNaviController" automaticallyAdjustsScrollViewInsets="NO" id="j4T-FP-gvB" customClass="StartNaviController" customModule="UDD" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="g5L-Xk-Pb5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
