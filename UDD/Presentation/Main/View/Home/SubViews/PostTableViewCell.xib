@@ -19,16 +19,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5G-Ck-e8k" userLabel="CardView">
-                        <rect key="frame" x="20" y="11" width="310" height="250"/>
+                        <rect key="frame" x="20" y="11" width="310" height="235"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="golddog" translatesAutoresizingMaskIntoConstraints="NO" id="5hs-Nl-c6C">
-                                <rect key="frame" x="0.0" y="0.0" width="310" height="170"/>
+                                <rect key="frame" x="0.0" y="0.0" width="310" height="155"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="170" id="k8U-EN-C3b"/>
+                                    <constraint firstAttribute="width" secondItem="5hs-Nl-c6C" secondAttribute="height" multiplier="30:15" id="aRy-zx-9qo"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gh0-X4-LCP" userLabel="InfoView">
-                                <rect key="frame" x="0.0" y="170" width="310" height="80"/>
+                                <rect key="frame" x="0.0" y="155" width="310" height="80"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vrm-vt-MJh">
                                         <rect key="frame" x="24" y="8" width="262" height="64"/>

@@ -38,10 +38,10 @@ class PostTableViewCell: UITableViewCell {
         self.dogNameLabel.text = "\(model.dogName)"
         self.dogSexLabel.text = "\(model.dogSex)"
         self.dogDistanceLabel.text = "\(model.userAddress)"
-        self.dogHashtag1Label.text = "\(model.dogHashtags[0])"
-        self.dogHashtag2Label.text = "\(model.dogHashtags[1])"
-        self.dogHashtag3Label.text = "\(model.dogHashtags[2])"
-        self.dogHashtag4Label.text = "\(model.dogHashtags[3])"
+        self.dogHashtag1Label.text = "#\(model.dogHashtags[0])"
+        self.dogHashtag2Label.text = "#\(model.dogHashtags[1])"
+        self.dogHashtag3Label.text = "#\(model.dogHashtags[2])"
+        self.dogHashtag4Label.text = "#\(model.dogHashtags[3])"
         self.dogSexBackgroundView.backgroundColor = changeDogSexBackgroundViewColor(dogSex: model.dogSex)
     }
 
