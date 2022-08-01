@@ -17,11 +17,17 @@ class ChatCell: UITableViewCell {
 struct RecentMessage {
     let senderName: String! // 보낸사람 강아지 이름
     let senderImage: UIImage // 보낸사람 프로필 사진
-    let messageContext: String
-    let messageTime: Date
+    var messageContext: String
+    var messageTime: Date
 }
 
-class ChatListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ChatListController: UIViewController, UITableViewDataSource, UITableViewDelegate, ChatRoomVCDelegate {
+
+    var lastChat: String?
+    var lastTime: Date?
+    var cellIndex = 0
+
+    @IBOutlet weak var chatTable: UITableView!
     func getChatTime (date: Date) -> String {
         let time = DateFormatter()
         time.dateFormat = "HH:mm"
@@ -113,4 +119,32 @@ class ChatListController: UIViewController, UITableViewDataSource, UITableViewDe
         addList()
     }
 
+    // 수정된 뷰가 반영될 수 있도록 새로 테이블을 갱신
+    override func viewWillAppear(_ animated: Bool) {
+        chatTable.reloadData()
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "showChatRoom", sender: self)
+
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let chatRoomVC = segue.destination as? ChatRoomVC {
+            chatRoomVC.delegate = self
+            chatRoomVC.messageList = messageList[(chatTable.indexPathForSelectedRow?.row)!]
+            cellIndex = (chatTable.indexPathForSelectedRow?.row) ?? 0
+            chatTable.deselectRow(at: chatTable.indexPathForSelectedRow!, animated: true)
+        }
+    }
+
+    func userChatData(lastText: String?, lastTime: Date?) {
+        if let lastText = lastText {
+            self.messageList[cellIndex].messageContext = lastText
+        }
+        if let lastTime = lastTime {
+            self.messageList[cellIndex].messageTime = lastTime
+        }
+    }
 }

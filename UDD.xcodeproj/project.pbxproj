@@ -13,6 +13,12 @@
 		119C50AA2891800F00A12955 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119C50A82891800F00A12955 /* MyCell.xib */; };
 		119C50AD2891801E00A12955 /* YourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50AB2891801E00A12955 /* YourCell.swift */; };
 		119C50AE2891801E00A12955 /* YourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119C50AC2891801E00A12955 /* YourCell.xib */; };
+		119C50BD2893FA3500A12955 /* ChatInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50BB2893FA3500A12955 /* ChatInfoCell.swift */; };
+		119C50BE2893FA3500A12955 /* ChatInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119C50BC2893FA3500A12955 /* ChatInfoCell.xib */; };
+		119C50C228966FEB00A12955 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50C128966FEA00A12955 /* Storage.swift */; };
+		119C50C7289670F500A12955 /* StartNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50C6289670F500A12955 /* StartNaviController.swift */; };
+		119C50C92896715E00A12955 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50C82896715E00A12955 /* TabBarController.swift */; };
+		20AA0BB72893B09600F4759C /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C374E288E735D00868A75 /* TabBar.storyboard */; };
 		20AA0BB92893B15600F4759C /* FilterTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AA0BB82893B15600F4759C /* FilterTagViewController.swift */; };
 		20AA0BBC2893B24100F4759C /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AA0BBB2893B24100F4759C /* LineView.swift */; };
 		20AA0BC12893B2FD00F4759C /* DefaultTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AA0BC02893B2FD00F4759C /* DefaultTagModel.swift */; };
@@ -23,6 +29,8 @@
 		7E97F23628927D71002F922E /* OpponentDogLikeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E97F23528927D71002F922E /* OpponentDogLikeDataModel.swift */; };
 		7EBD43D92893BA2C00B9E528 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C374E288E735D00868A75 /* TabBar.storyboard */; };
 		AE215A78289139CD00687AB4 /* ChatListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE215A77289139CD00687AB4 /* ChatListController.swift */; };
+		AE5ECC6B289568F600958E24 /* AddDogDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5ECC6A289568F600958E24 /* AddDogDetail.storyboard */; };
+		AE5ECC6D2895694B00958E24 /* AddDogDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5ECC6C2895694B00958E24 /* AddDogDetailController.swift */; };
 		C134DF36288007B600992842 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C134DF35288007B600992842 /* .swiftlint.yml */; };
 		C14C372A288E6A4F00868A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C36F6288E6A4F00868A75 /* LaunchScreen.storyboard */; };
 		C14C372C288E6A4F00868A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14C36FB288E6A4F00868A75 /* Assets.xcassets */; };
@@ -60,6 +68,11 @@
 		119C50A82891800F00A12955 /* MyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		119C50AB2891801E00A12955 /* YourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCell.swift; sourceTree = "<group>"; };
 		119C50AC2891801E00A12955 /* YourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourCell.xib; sourceTree = "<group>"; };
+		119C50BB2893FA3500A12955 /* ChatInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfoCell.swift; sourceTree = "<group>"; };
+		119C50BC2893FA3500A12955 /* ChatInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInfoCell.xib; sourceTree = "<group>"; };
+		119C50C128966FEA00A12955 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		119C50C6289670F500A12955 /* StartNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNaviController.swift; sourceTree = "<group>"; };
+		119C50C82896715E00A12955 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		20AA0BB82893B15600F4759C /* FilterTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTagViewController.swift; sourceTree = "<group>"; };
 		20AA0BBB2893B24100F4759C /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		20AA0BBE2893B28B00F4759C /* UISheetPresentationControllerDetent+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISheetPresentationControllerDetent+Private.h"; sourceTree = "<group>"; };
@@ -70,6 +83,8 @@
 		7E30398128911B8700D58E1A /* LikeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeTableViewCell.xib; sourceTree = "<group>"; };
 		7E97F23528927D71002F922E /* OpponentDogLikeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentDogLikeDataModel.swift; sourceTree = "<group>"; };
 		AE215A77289139CD00687AB4 /* ChatListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListController.swift; sourceTree = "<group>"; };
+		AE5ECC6A289568F600958E24 /* AddDogDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddDogDetail.storyboard; sourceTree = "<group>"; };
+		AE5ECC6C2895694B00958E24 /* AddDogDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogDetailController.swift; sourceTree = "<group>"; };
 		C134DF35288007B600992842 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C145B61B287E975600BEC69E /* UDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14C36F7288E6A4F00868A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -123,12 +138,22 @@
 			children = (
 				119C50A328917B4300A12955 /* ChatRoom.storyboard */,
 				119C50A528917FE400A12955 /* ChatRoomVC.swift */,
+				119C50BB2893FA3500A12955 /* ChatInfoCell.swift */,
+				119C50BC2893FA3500A12955 /* ChatInfoCell.xib */,
 				119C50A72891800F00A12955 /* MyCell.swift */,
 				119C50A82891800F00A12955 /* MyCell.xib */,
 				119C50AB2891801E00A12955 /* YourCell.swift */,
 				119C50AC2891801E00A12955 /* YourCell.xib */,
 			);
 			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		119C50C32896702900A12955 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				119C50C128966FEA00A12955 /* Storage.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		20AA0BBD2893B27C00F4759C /* Headers */ = {
@@ -156,6 +181,15 @@
 				7E30398028911B8700D58E1A /* LikeTableViewCell.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		AE5ECC69289568E400958E24 /* AddDogDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AE5ECC6A289568F600958E24 /* AddDogDetail.storyboard */,
+				AE5ECC6C2895694B00958E24 /* AddDogDetailController.swift */,
+			);
+			path = AddDogDetail;
 			sourceTree = "<group>";
 		};
 		B902775A6750F829A8671E6F /* Frameworks */ = {
@@ -221,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				C14C36FF288E6A4F00868A75 /* View */,
+				119C50C32896702900A12955 /* Onboarding */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -259,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				C14C374E288E735D00868A75 /* TabBar.storyboard */,
+				119C50C82896715E00A12955 /* TabBarController.swift */,
 				C14C3708288E6A4F00868A75 /* Home */,
 				C14C3712288E6A4F00868A75 /* HomeDetailView */,
 				C1D9FCE0288FF032001434FF /* Profile */,
@@ -328,6 +364,7 @@
 		C14C3716288E6A4F00868A75 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AE5ECC69289568E400958E24 /* AddDogDetail */,
 				C14C371A288E6A4F00868A75 /* StartScreen */,
 				C14C3723288E6A4F00868A75 /* LoginScreen */,
 				C14C3717288E6A4F00868A75 /* AddDogName */,
@@ -351,6 +388,7 @@
 			children = (
 				C14C371B288E6A4F00868A75 /* StartScreen.storyboard */,
 				C14C371C288E6A4F00868A75 /* StartScreenController.swift */,
+				119C50C6289670F500A12955 /* StartNaviController.swift */,
 			);
 			path = StartScreen;
 			sourceTree = "<group>";
@@ -455,6 +493,7 @@
 				7EBD43D92893BA2C00B9E528 /* TabBar.storyboard in Resources */,
 				119C50AA2891800F00A12955 /* MyCell.xib in Resources */,
 				C14C3749288E6E4500868A75 /* Chat.storyboard in Resources */,
+				AE5ECC6B289568F600958E24 /* AddDogDetail.storyboard in Resources */,
 				C14C373C288E6A4F00868A75 /* AddDogName.storyboard in Resources */,
 				7E30398328911B8700D58E1A /* LikeTableViewCell.xib in Resources */,
 				C14C372A288E6A4F00868A75 /* LaunchScreen.storyboard in Resources */,
@@ -464,6 +503,7 @@
 				C14C3737288E6A4F00868A75 /* Like.storyboard in Resources */,
 				C14C373A288E6A4F00868A75 /* HomeDetailView.storyboard in Resources */,
 				C14C3733288E6A4F00868A75 /* Home.storyboard in Resources */,
+				119C50BE2893FA3500A12955 /* ChatInfoCell.xib in Resources */,
 				C14C3736288E6A4F00868A75 /* PostTableViewCell.xib in Resources */,
 				119C50A428917B4300A12955 /* ChatRoom.storyboard in Resources */,
 				C14C372C288E6A4F00868A75 /* Assets.xcassets in Resources */,
@@ -544,8 +584,10 @@
 				AE215A78289139CD00687AB4 /* ChatListController.swift in Sources */,
 				119C50A628917FE400A12955 /* ChatRoomVC.swift in Sources */,
 				C14C3739288E6A4F00868A75 /* HomeDetailViewController.swift in Sources */,
+				119C50C92896715E00A12955 /* TabBarController.swift in Sources */,
 				119C50A92891800F00A12955 /* MyCell.swift in Sources */,
 				C14C3732288E6A4F00868A75 /* DogDataModel.swift in Sources */,
+				119C50C228966FEB00A12955 /* Storage.swift in Sources */,
 				C14C372F288E6A4F00868A75 /* CustomTextField.swift in Sources */,
 				C14C373F288E6A4F00868A75 /* SelectTagViewController.swift in Sources */,
 				C14C372D288E6A4F00868A75 /* AppDelegate.swift in Sources */,
@@ -554,14 +596,17 @@
 				C14C3734288E6A4F00868A75 /* HomeViewController.swift in Sources */,
 				20AA0BC12893B2FD00F4759C /* DefaultTagModel.swift in Sources */,
 				119C50AD2891801E00A12955 /* YourCell.swift in Sources */,
+				119C50BD2893FA3500A12955 /* ChatInfoCell.swift in Sources */,
 				C14C3746288E6A4F00868A75 /* SceneDelegate.swift in Sources */,
 				7E30398228911B8700D58E1A /* LikeTableViewCell.swift in Sources */,
 				7E30393B2890F1E200D58E1A /* LikeListView.swift in Sources */,
 				C14C3744288E6A4F00868A75 /* LoginScreenController.swift in Sources */,
+				119C50C7289670F500A12955 /* StartNaviController.swift in Sources */,
 				C14C373B288E6A4F00868A75 /* AddDogNameViewController.swift in Sources */,
 				C14C3730288E6A4F00868A75 /* IntroductionTextView.swift in Sources */,
 				20AA0BB92893B15600F4759C /* FilterTagViewController.swift in Sources */,
 				C14C3742288E6A4F00868A75 /* AddUserDataViewController.swift in Sources */,
+				AE5ECC6D2895694B00958E24 /* AddDogDetailController.swift in Sources */,
 				C14C372E288E6A4F00868A75 /* Extention_UIView.swift in Sources */,
 				C14C3735288E6A4F00868A75 /* PostTableViewCell.swift in Sources */,
 			);
@@ -710,7 +755,7 @@
 				INFOPLIST_FILE = UDD/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
+				INFOPLIST_KEY_UIMainStoryboardFile = StartScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -744,7 +789,7 @@
 				INFOPLIST_FILE = UDD/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
+				INFOPLIST_KEY_UIMainStoryboardFile = StartScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

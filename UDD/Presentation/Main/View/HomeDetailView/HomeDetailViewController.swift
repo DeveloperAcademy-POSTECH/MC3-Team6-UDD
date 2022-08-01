@@ -20,22 +20,23 @@ class HomeDetailViewController: UIViewController {
     @IBOutlet weak var personInfo: UILabel!
     @IBOutlet weak var likeButton: UIButton!
 
-    var dogDataModel: DogDataModel?
-    var dogDummy = DogDataModel.dummy
-    var isDisabled: Bool = DogDataModel.personLike
+    var dogDataModel: DogDataModel!
+    var isDisabled: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        dogImage.image = UIImage(named: dogDummy.dogImage)
-        dogName.text = dogDummy.dogName
+
+        dogImage.image = UIImage(named: dogDataModel.dogImage)
+        dogName.text = dogDataModel.dogName
         dogTags.text = dogTagsString()
-        dogDistance.text = "\(dogDummy.userAddress)km"
-        dogGender.text = dogDummy.dogSex
-        dogAge.text = calcAgeString(birthday: dogDummy.dogBirth)
-        dogBreed.text = dogDummy.dogBreed
-        dogWeightInfo.text = dogSizeString(weight: dogDummy.dogWeight)
-        dogInfo.text = dogDummy.dogInfo
-        personInfo.text = "\(dogDummy.dogName) 견주님 [\(dogDummy.userAge)]"
+        dogDistance.text = "\(dogDataModel.userAddress)"
+        dogGender.text = dogDataModel.dogSex
+        dogAge.text = calcAgeString(birthday: dogDataModel.dogBirth)
+        dogBreed.text = dogDataModel.dogBreed
+        dogWeightInfo.text = dogSizeString(weight: dogDataModel.dogWeight)
+        dogInfo.text = dogDataModel.dogInfo
+        personInfo.text = "\(dogDataModel.dogName) 견주님 [\(dogDataModel.userAge)]"
+        navigationItem.largeTitleDisplayMode = .never
     }
 
     @IBAction func likeButtonAction(_ sender: UIButton) {
@@ -50,8 +51,7 @@ class HomeDetailViewController: UIViewController {
 
     func dogTagsString() -> String {
         var dogData = ""
-//        dogDummy.dogHashtags
-        for tagg in dogDummy.dogHashtags {
+        for tagg in dogDataModel.dogHashtags {
             dogData += "#\(tagg)  "
         }
         return dogData

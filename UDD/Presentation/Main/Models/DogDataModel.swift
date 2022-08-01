@@ -21,19 +21,3 @@ struct DogDataModel {
     let dogBreed: String    // 견종
     let dogImage: String    // 사진
 }
-
-extension DogDataModel {
-    static let dummy = DogDataModel(
-        uuid: UUID().uuidString,
-        dogName: "고양이",
-        dogBirth: Calendar.current.date(byAdding: .year, value: -1, to: Date())!,
-        dogSex: "중성화",
-        dogWeight: 25.3,
-        dogHashtags: ["소심한", "중심한", "대심한", "청심환"],
-        dogInfo: "우리 개는 울때 야옹하면서 울어요",
-        userAge: 25, userSex: "중성화",
-        userAddress: "42.195",
-        dogBreed: "골든 리트리버",
-        dogImage: "golddog")
-    static let personLike = false
-}
