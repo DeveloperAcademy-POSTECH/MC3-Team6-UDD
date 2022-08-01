@@ -306,7 +306,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             FilteredTag.sharedTag.selectedDogSizeIndex.append(
                 UInt(dogSizeArr.firstIndex(of: content!.text) ?? 999999)
             )
-            print(content!.text)
+//            print(content!.text)
         }
 //        print(FilteredTag.sharedTag.selectedDogSize)
 
