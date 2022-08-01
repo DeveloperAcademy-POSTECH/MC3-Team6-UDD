@@ -115,6 +115,10 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
         confirmButton.heightAnchor.constraint(greaterThanOrEqualToConstant: 35).isActive = true
     }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "refresh") , object: nil)
+    }
+
     lazy var titleLabel: UILabel = {
         let label: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height:0))
         label.font = UIFont.systemFont(ofSize: 22, weight: .semibold)
@@ -302,7 +306,7 @@ class FilterTagViewController: UIViewController, UIViewControllerTransitioningDe
             FilteredTag.sharedTag.selectedDogSizeIndex.append(
                 UInt(dogSizeArr.firstIndex(of: content!.text) ?? 999999)
             )
-            print(content!.text)
+//            print(content!.text)
         }
 //        print(FilteredTag.sharedTag.selectedDogSize)
 
