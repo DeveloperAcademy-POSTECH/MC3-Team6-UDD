@@ -24,4 +24,3 @@ class LoginScreenController: UIViewController {
         present(vccc, animated: false, completion: nil)
     }
 }
-

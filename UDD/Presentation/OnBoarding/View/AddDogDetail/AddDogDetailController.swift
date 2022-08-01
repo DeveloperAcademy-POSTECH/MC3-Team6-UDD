@@ -11,13 +11,19 @@ class AddDogDetailController: UIViewController {
     /*
     lazy var presentAlbumButton: UIButton = {
             let button = UIButton()
-            //button.frame = CGRect(x: self.view.bounds.width/2, y : self.view.bounds.height/2, width: 128, height: 128) // TODO: 위치 조정 해야함
+            button.frame = CGRect(
+                x: self.view.bounds.width/2,
+                y : self.view.bounds.height/2,
+                width: 128,
+                height: 128
+            )
+     // TODO: 위치 조정 해야함
            // button.backgroundColor = .gray
             //button.setTitle("++", for: .normal)
             button.addTarget(self, action: #selector(presentAlbum), for: .touchUpInside)
             return button
     }()
-     */
+    */
 
     @IBOutlet weak var imageView: UIImageView!
 
@@ -27,7 +33,7 @@ class AddDogDetailController: UIViewController {
     @IBOutlet weak var dogWeightTextField: CustomTextFields!
     @IBOutlet weak var imageSelectButton: UIButton! = {
         let button = UIButton()
-        button.addTarget(self, action: #selector(presentAlbum), for: .touchUpInside)
+        button.addTarget(AddDogDetailController.self, action: #selector(presentAlbum), for: .touchUpInside)
         return button
     }()
 
@@ -35,7 +41,6 @@ class AddDogDetailController: UIViewController {
         super.viewDidLoad()
     }
 }
-
 
 // UIImagePickerControllerDelegate = 카메라 롤이나 앨범에서 사진을 가져올 수 있도록 도와 주는 것
 extension AddDogDetailController : UIImagePickerControllerDelegate , UINavigationControllerDelegate {
