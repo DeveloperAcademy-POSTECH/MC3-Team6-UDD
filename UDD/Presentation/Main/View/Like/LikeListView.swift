@@ -25,7 +25,7 @@ class LikeListView: UIViewController, UITableViewDataSource,UITableViewDelegate 
         userSex: "남성",
         userAddress: "1.2km",
         dogBreed: "골든 리트리버",
-        dogImage: "person"
+        dogImage: "golddog"
     )
 
     override func viewDidLoad() {
