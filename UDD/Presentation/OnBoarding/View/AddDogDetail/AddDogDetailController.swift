@@ -8,23 +8,6 @@
 import UIKit
 
 class AddDogDetailController: UIViewController {
-    /*
-    lazy var presentAlbumButton: UIButton = {
-            let button = UIButton()
-            button.frame = CGRect(
-                x: self.view.bounds.width/2,
-                y : self.view.bounds.height/2,
-                width: 128,
-                height: 128
-            )
-     // TODO: 위치 조정 해야함
-           // button.backgroundColor = .gray
-            //button.setTitle("++", for: .normal)
-            button.addTarget(self, action: #selector(presentAlbum), for: .touchUpInside)
-            return button
-    }()
-    */
-
     @IBOutlet weak var imageView: UIImageView!
 
     @IBOutlet weak var dogAgeTextField: CustomTextFields!
