@@ -128,9 +128,7 @@
                             <constraint firstItem="XBg-k1-K49" firstAttribute="bottom" secondItem="44S-ar-T6c" secondAttribute="bottom" constant="50" id="a0U-3M-vB8"/>
                             <constraint firstItem="YRK-Mj-Wq2" firstAttribute="top" secondItem="TYP-pG-Hf8" secondAttribute="bottom" constant="50" id="gHc-Gp-GXA"/>
                             <constraint firstItem="u1H-Om-PQ7" firstAttribute="top" secondItem="v9N-5V-aWG" secondAttribute="bottom" constant="60" id="tAF-ju-qDI"/>
-                            <constraint firstItem="YRK-Mj-Wq2" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="tLN-gb-wZY"/>
                             <constraint firstItem="u1H-Om-PQ7" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="unH-vq-EZZ"/>
-                            <constraint firstItem="u1H-Om-PQ7" firstAttribute="leading" secondItem="XBg-k1-K49" secondAttribute="leading" constant="36" id="ywk-bX-yN8"/>
                         </constraints>
                     </view>
                 </viewController>
