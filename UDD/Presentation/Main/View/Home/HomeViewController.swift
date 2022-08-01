@@ -27,6 +27,29 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         addDummy1()
         addDummy2()
         addDummy3()
+
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleNoti(_:)),
+            name: NSNotification.Name(rawValue: "refresh"),
+            object: nil
+        )
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(
+            self,
+            name: NSNotification.Name(rawValue: "refresh"),
+            object: nil
+        )
+    }
+
+    @objc func handleNoti(_ noti: Notification) {
+        let filterCount = FilteredTag.sharedTag.totalSelectedCount
+        filterButton.setTitle(
+            " 필터 \(filterCount != 0 ? "(\(filterCount))" : "")",
+            for: .normal
+        )
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -93,7 +116,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     @IBAction func profileButtonOnClick(_ sender: Any) {
-            navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     @IBAction func filterButtonOnClick(_ sender: Any) {
