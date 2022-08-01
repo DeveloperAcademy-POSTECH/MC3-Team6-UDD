@@ -27,6 +27,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         addDummy1()
         addDummy2()
         addDummy3()
+
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleNoti(_:)),
+            name: NSNotification.Name(rawValue: "refresh"),
+            object: nil
+        )
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +41,26 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(
+            self,
+            name: NSNotification.Name(rawValue: "refresh"),
+            object: nil
+        )
+    }
+
+    // MARK: 노티피케이션 핸들링
+
+    @objc func handleNoti(_ noti: Notification) {
+        let filterCount = FilteredTag.sharedTag.totalSelectedCount
+        filterButton.setTitle(
+            " 필터 \(filterCount != 0 ? "(\(filterCount))" : "")",
+            for: .normal
+        )
+    }
+
+    // MARK: 더미 추가 함수
 
     func addDummy1() {
         dogDataModels.append(
@@ -92,8 +119,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         )
     }
 
+    // MARK: 필터
+
     @IBAction func profileButtonOnClick(_ sender: Any) {
-            navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     @IBAction func filterButtonOnClick(_ sender: Any) {
@@ -105,9 +134,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         present(filterVC, animated: true)
     }
 
-    func returnNum() -> Int {
-        return Int.random(in: 0..<10)
-    }
+    // MARK: 테이블
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dogDataModels.count
@@ -127,6 +154,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
+
+    // MARK: 네비게이션 링크 전 데이터 바인딩
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? HomeDetailViewController {

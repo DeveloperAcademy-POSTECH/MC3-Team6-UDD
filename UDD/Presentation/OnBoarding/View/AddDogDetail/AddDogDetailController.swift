@@ -16,7 +16,7 @@ class AddDogDetailController: UIViewController {
     @IBOutlet weak var dogWeightTextField: CustomTextFields!
     @IBOutlet weak var imageSelectButton: UIButton! = {
         let button = UIButton()
-        button.addTarget(self, action: #selector(presentAlbum), for: .touchUpInside)
+        button.addTarget(AddDogDetailController.self, action: #selector(presentAlbum), for: .touchUpInside)
         return button
     }()
 
@@ -24,7 +24,6 @@ class AddDogDetailController: UIViewController {
         super.viewDidLoad()
     }
 }
-
 
 // UIImagePickerControllerDelegate = 카메라 롤이나 앨범에서 사진을 가져올 수 있도록 도와 주는 것
 extension AddDogDetailController : UIImagePickerControllerDelegate , UINavigationControllerDelegate {

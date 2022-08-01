@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="obf-Dy-IZw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,28 +8,94 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Like-->
+        <!--Like List View-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="LikeListView" customModule="UDD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VLQ-Ni-zQy">
+                                <rect key="frame" x="20" y="88" width="374" height="32"/>
+                                <segments>
+                                    <segment title="받은 좋아요"/>
+                                    <segment title="보낸 좋아요"/>
+                                </segments>
+                                <connections>
+                                    <action selector="likeSegmentedControl:" destination="No2-sK-bh2" eventType="valueChanged" id="e3Q-AD-Bzn"/>
+                                    <action selector="segmentedChange:" destination="Y6W-OH-hqX" eventType="valueChanged" id="aVD-Zg-0pl"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="h2x-9L-rqb">
+                                <rect key="frame" x="20" y="149" width="374" height="664"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="d14-nn-1E6"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="4BA-54-v9b"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h2x-9L-rqb" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="4d2-lV-ski"/>
+                            <constraint firstItem="VLQ-Ni-zQy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="K7K-zf-rxx"/>
+                            <constraint firstItem="h2x-9L-rqb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="KcZ-6h-xFF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="VLQ-Ni-zQy" secondAttribute="top" id="MH8-hT-xwo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VLQ-Ni-zQy" secondAttribute="trailing" constant="20" id="X1f-hc-0qe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="h2x-9L-rqb" secondAttribute="trailing" constant="20" id="bKH-N8-4Uc"/>
+                            <constraint firstItem="h2x-9L-rqb" firstAttribute="top" secondItem="VLQ-Ni-zQy" secondAttribute="bottom" constant="30" id="wLa-LT-2Ae"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Like" image="heart.fill" catalog="system" id="jz9-Rf-t5q"/>
+                    <navigationItem key="navigationItem" id="4lo-Ez-CPG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="likeSegmentedControl" destination="VLQ-Ni-zQy" id="UgR-oh-RQn"/>
+                        <outlet property="likeTableView" destination="h2x-9L-rqb" id="nzy-B3-IXn"/>
+                        <segue destination="I9I-Nz-OZL" kind="show" identifier="showLikeDetailView" id="da0-OX-6qa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="No2-sK-bh2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="132" y="116"/>
+            <point key="canvasLocation" x="1952.1739130434785" y="115.84821428571428"/>
+        </scene>
+        <!--HomeDetailView-->
+        <scene sceneID="TKD-fF-f1e">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeDetailView" id="I9I-Nz-OZL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="agi-H4-sf0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxs-xG-Z6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="116"/>
+        </scene>
+        <!--Like-->
+        <scene sceneID="REN-wc-Tbu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="obf-Dy-IZw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Like" image="heart.fill" catalog="system" id="jz9-Rf-t5q"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s8Y-t6-Ljx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="vSX-lB-in5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KcM-0L-aGG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
         </scene>
     </scenes>
     <resources>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="heart.fill" catalog="system" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
