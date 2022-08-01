@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -39,7 +38,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="nex-gE-u7h">
-                                <rect key="frame" x="36" y="178.5" width="342" height="73"/>
+                                <rect key="frame" x="36" y="183" width="342" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFd-g1-UQg">
                                         <rect key="frame" x="0.0" y="0.0" width="36.5" height="17"/>
@@ -47,8 +46,8 @@
                                         <color key="textColor" red="0.59215686274509804" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="아이디를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jvm-0t-kNC">
-                                        <rect key="frame" x="0.0" y="24" width="125" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="아이디를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jvm-0t-kNC" customClass="CustomTextFields" customModule="UDD" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24" width="342" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Viy-me-VtJ"/>
                                         </constraints>
@@ -56,17 +55,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uyR-Zx-Oub">
-                                        <rect key="frame" x="0.0" y="71" width="342" height="2"/>
-                                        <color key="backgroundColor" red="0.60784313725490191" green="0.37647058823529411" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2" id="RK3-IH-RoF"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Jvm-0t-kNC" secondAttribute="trailing" id="Dbg-r2-Fcl"/>
+                                    <constraint firstItem="Jvm-0t-kNC" firstAttribute="leading" secondItem="nex-gE-u7h" secondAttribute="leading" id="gSF-MQ-sO3"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Odd-iH-LvO">
-                                <rect key="frame" x="36" y="276.5" width="342" height="59"/>
+                                <rect key="frame" x="36" y="272" width="342" height="57"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwW-j1-SXo">
                                         <rect key="frame" x="0.0" y="0.0" width="48.5" height="17"/>
@@ -74,8 +70,8 @@
                                         <color key="textColor" red="0.59215686270000001" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="비밀번호를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6w0-GI-Utf">
-                                        <rect key="frame" x="0.0" y="17" width="137" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="비밀번호를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6w0-GI-Utf" customClass="CustomTextFields" customModule="UDD" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="17" width="342" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="n2l-pC-GM2"/>
                                         </constraints>
@@ -83,17 +79,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6T-oc-Uc6">
-                                        <rect key="frame" x="0.0" y="57" width="342" height="2"/>
-                                        <color key="backgroundColor" red="0.60784313729999995" green="0.37647058820000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2" id="sk4-L3-8n5"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6w0-GI-Utf" secondAttribute="trailing" id="L8t-1A-Q0X"/>
+                                    <constraint firstItem="6w0-GI-Utf" firstAttribute="leading" secondItem="Odd-iH-LvO" secondAttribute="leading" id="awu-eB-DQL"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygR-LG-GWT">
-                                <rect key="frame" x="36" y="84.5" width="104" height="29"/>
+                                <rect key="frame" x="36" y="89" width="104" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -122,7 +115,6 @@
                             <constraint firstItem="Odd-iH-LvO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="0Lz-3J-roS"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nex-gE-u7h" secondAttribute="trailing" constant="36" id="2mF-m7-dBL"/>
                             <constraint firstItem="nex-gE-u7h" firstAttribute="top" secondItem="ygR-LG-GWT" secondAttribute="bottom" constant="65" id="4pJ-O3-ZLH"/>
-                            <constraint firstItem="nex-gE-u7h" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="5Nw-JJ-1jS"/>
                             <constraint firstItem="ygR-LG-GWT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="I9o-yg-XFz"/>
                             <constraint firstItem="nex-gE-u7h" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.48" id="OTB-6d-6CZ"/>
                             <constraint firstItem="po6-yn-oCi" firstAttribute="top" secondItem="O1v-A9-CSa" secondAttribute="bottom" constant="10" id="VLO-V2-egJ"/>
