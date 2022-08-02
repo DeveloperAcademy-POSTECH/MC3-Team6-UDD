@@ -27,6 +27,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         addDummy1()
         addDummy2()
         addDummy3()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationController?.setNavigationBarHidden(true, animated: true)
 
         NotificationCenter.default.addObserver(
             self,
@@ -34,12 +40,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             name: NSNotification.Name(rawValue: "refresh"),
             object: nil
         )
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-        navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     override func viewDidDisappear(_ animated: Bool) {
