@@ -18,7 +18,6 @@
 		119C50C228966FEB00A12955 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50C128966FEA00A12955 /* Storage.swift */; };
 		119C50C7289670F500A12955 /* StartNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50C6289670F500A12955 /* StartNaviController.swift */; };
 		119C50C92896715E00A12955 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50C82896715E00A12955 /* TabBarController.swift */; };
-		20AA0BB72893B09600F4759C /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C374E288E735D00868A75 /* TabBar.storyboard */; };
 		20AA0BB92893B15600F4759C /* FilterTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AA0BB82893B15600F4759C /* FilterTagViewController.swift */; };
 		20AA0BBC2893B24100F4759C /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AA0BBB2893B24100F4759C /* LineView.swift */; };
 		20AA0BC12893B2FD00F4759C /* DefaultTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AA0BC02893B2FD00F4759C /* DefaultTagModel.swift */; };
@@ -758,6 +757,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = StartScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -792,6 +792,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = StartScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
