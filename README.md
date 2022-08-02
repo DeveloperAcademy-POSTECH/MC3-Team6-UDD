@@ -14,20 +14,18 @@
 </p>
 
 <p align="center" text-align="center" width="100%">
-<img src="https://user-images.githubusercontent.com/33440010/178694073-37b52664-3a52-4ad1-85c7-9cf0962aab36.jpg" width="240px;"/>
-<br>
-<a href="https://www.flaticon.com/kr/free-icons/" title="동물 아이콘">동물 아이콘  제작자: Roundicons Premium - Flaticon</a>
+<img width="251" alt="image" src="https://user-images.githubusercontent.com/33440010/182344858-bc6e6e94-60ed-4931-921a-249b20228017.png">
   
 <p align="center" text-align="center" display="inline-block">Apple Developer Academy MC3 Team 6 ODaeng</p>
 
 # :iphone: 우리 동네 댕댕이
 
-어플 소개
+우리 강아지에게 동네 베스트 프랜드를 만들어 주세요!
 
 
 ## :pushpin: Features
 
-기능 설명
+강아지의 성격을 해시태그 형식으로 보고 원하는 강아지의 주인과 약속을 잡아 강아지의 베스트 프랜드를 만들 수 있습니다.
 
 
 ## :people_hugging: Authors
@@ -63,12 +61,16 @@ ex) [Type] #이슈번호 커밋메세지 `git commit -m '[feat] #12 로그인 �
 
 ## :framed_picture: Demo
 
-데모 움짤 or link
+|![회원가입](https://user-images.githubusercontent.com/33440010/182363193-a8aafd3a-5620-4a5a-853b-f054b9867861.mp4)|![탐색](https://user-images.githubusercontent.com/33440010/182364114-68ed8bce-85a7-4999-966a-cbc78cd69ff5.mp4)|![필터](https://user-images.githubusercontent.com/33440010/182363246-d8323da8-e76c-4c9f-b069-4292ec70cd85.mp4)|![채팅](https://user-images.githubusercontent.com/33440010/182364527-2b402443-e4b5-4130-835c-8b7dbff2e228.mp4)|
+|:--:|:--:|:--:|:--:|
+|회원 가입|탐색|필터|채팅|
 
 
 ## :fireworks: Screenshots
 
-실행 스크린샷
+|<img width="550" alt="메인 화면" src="https://user-images.githubusercontent.com/33440010/182346793-2bf220c8-7b45-4364-814a-374601125172.png">|<img width="550" alt="필터" src="https://user-images.githubusercontent.com/33440010/182348372-81767d29-04fb-45d5-965a-93d9cfc15d99.png">|<img width="550" alt="받은 좋아요" src="https://user-images.githubusercontent.com/33440010/182347255-32069010-c816-4ad3-bf8f-6a739b1d1637.png">|<img width="550" alt="보낸 좋아요" src="https://user-images.githubusercontent.com/33440010/182347286-310b4aef-2977-412a-9ee8-eec59160573b.png">|<img width="550" alt="채팅" src="https://user-images.githubusercontent.com/33440010/182347674-0bfc932b-7e7b-4b7f-aeb4-0a295f299b95.png">|
+|:--:|:--:|:--:|:--:|:--:|
+|메인 화면|필터|받은 좋아요|보낸 좋아요|채팅|
 
 
 ## :books: Documentation
