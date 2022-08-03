@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="211" id="68c-QU-Vbz" customClass="MyCell" customModule="UDD" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="463" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="68c-QU-Vbz" id="noN-zi-X8y">
+                <rect key="frame" x="0.0" y="0.0" width="463" height="211"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mybox" translatesAutoresizingMaskIntoConstraints="NO" id="NQD-oS-oMQ">
+                        <rect key="frame" x="386" y="10" width="67" height="191"/>
+                        <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="755" verticalHuggingPriority="755" scrollEnabled="NO" text="qwe" translatesAutoresizingMaskIntoConstraints="NO" id="Ib7-yD-F2s">
+                        <rect key="frame" x="396" y="15" width="37" height="181"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.5" height="0.5"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020.1.22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wt-k8-r5r">
+                        <rect key="frame" x="333.5" y="189" width="47.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4wt-k8-r5r" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="noN-zi-X8y" secondAttribute="leading" constant="40" id="YiC-ra-Qlt"/>
+                    <constraint firstItem="NQD-oS-oMQ" firstAttribute="leading" secondItem="4wt-k8-r5r" secondAttribute="trailing" constant="5" id="bMC-Xt-neS"/>
+                    <constraint firstItem="NQD-oS-oMQ" firstAttribute="trailing" secondItem="Ib7-yD-F2s" secondAttribute="trailing" constant="20" id="dsd-1S-pvZ"/>
+                    <constraint firstItem="Ib7-yD-F2s" firstAttribute="leading" secondItem="NQD-oS-oMQ" secondAttribute="leading" constant="10" id="ish-vf-TO6"/>
+                    <constraint firstItem="Ib7-yD-F2s" firstAttribute="bottom" secondItem="NQD-oS-oMQ" secondAttribute="bottom" constant="-5" id="oAl-Be-mn3"/>
+                    <constraint firstItem="NQD-oS-oMQ" firstAttribute="top" secondItem="noN-zi-X8y" secondAttribute="top" constant="10" id="qbx-ma-wnw"/>
+                    <constraint firstItem="Ib7-yD-F2s" firstAttribute="top" secondItem="NQD-oS-oMQ" secondAttribute="top" constant="5" id="rAP-n7-e6g"/>
+                    <constraint firstAttribute="bottom" secondItem="NQD-oS-oMQ" secondAttribute="bottom" constant="10" id="sjo-zJ-z9r"/>
+                    <constraint firstAttribute="trailing" secondItem="NQD-oS-oMQ" secondAttribute="trailing" constant="10" id="tef-BN-doO"/>
+                    <constraint firstItem="NQD-oS-oMQ" firstAttribute="bottom" secondItem="4wt-k8-r5r" secondAttribute="bottom" id="wMu-jf-Nez"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="eY7-tr-al3"/>
+            <connections>
+                <outlet property="mySendTime" destination="4wt-k8-r5r" id="1bX-2n-NPS"/>
+                <outlet property="myTextView" destination="Ib7-yD-F2s" id="LK2-Oc-Jn0"/>
+            </connections>
+            <point key="canvasLocation" x="-93.478260869565219" y="165.06696428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mybox" width="132" height="108"/>
+    </resources>
+</document>

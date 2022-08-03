@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 class CustomTextFields : UITextField {
-    let padding: CGFloat = 35
     required init?(coder: NSCoder) {
         super.init(coder: coder)
 

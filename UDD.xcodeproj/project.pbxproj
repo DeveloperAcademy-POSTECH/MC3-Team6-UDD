@@ -7,7 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		119C50A428917B4300A12955 /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119C50A328917B4300A12955 /* ChatRoom.storyboard */; };
+		119C50A628917FE400A12955 /* ChatRoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50A528917FE400A12955 /* ChatRoomVC.swift */; };
+		119C50A92891800F00A12955 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50A72891800F00A12955 /* MyCell.swift */; };
+		119C50AA2891800F00A12955 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119C50A82891800F00A12955 /* MyCell.xib */; };
+		119C50AD2891801E00A12955 /* YourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50AB2891801E00A12955 /* YourCell.swift */; };
+		119C50AE2891801E00A12955 /* YourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119C50AC2891801E00A12955 /* YourCell.xib */; };
+		119C50BD2893FA3500A12955 /* ChatInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50BB2893FA3500A12955 /* ChatInfoCell.swift */; };
+		119C50BE2893FA3500A12955 /* ChatInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119C50BC2893FA3500A12955 /* ChatInfoCell.xib */; };
+		119C50C228966FEB00A12955 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50C128966FEA00A12955 /* Storage.swift */; };
+		119C50C7289670F500A12955 /* StartNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50C6289670F500A12955 /* StartNaviController.swift */; };
+		119C50C92896715E00A12955 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C50C82896715E00A12955 /* TabBarController.swift */; };
+		20AA0BB92893B15600F4759C /* FilterTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AA0BB82893B15600F4759C /* FilterTagViewController.swift */; };
+		20AA0BBC2893B24100F4759C /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AA0BBB2893B24100F4759C /* LineView.swift */; };
+		20AA0BC12893B2FD00F4759C /* DefaultTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AA0BC02893B2FD00F4759C /* DefaultTagModel.swift */; };
 		242CB68634C4C16500D032E4 /* Pods_UDD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B8FE15F6F796A092A35144 /* Pods_UDD.framework */; };
+		7E30393B2890F1E200D58E1A /* LikeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30393A2890F1E200D58E1A /* LikeListView.swift */; };
+		7E30398228911B8700D58E1A /* LikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E30398028911B8700D58E1A /* LikeTableViewCell.swift */; };
+		7E30398328911B8700D58E1A /* LikeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E30398128911B8700D58E1A /* LikeTableViewCell.xib */; };
+		7E97F23628927D71002F922E /* OpponentDogLikeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E97F23528927D71002F922E /* OpponentDogLikeDataModel.swift */; };
+		7EBD43D92893BA2C00B9E528 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C374E288E735D00868A75 /* TabBar.storyboard */; };
+		AE215A78289139CD00687AB4 /* ChatListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE215A77289139CD00687AB4 /* ChatListController.swift */; };
+		AE5ECC6B289568F600958E24 /* AddDogDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5ECC6A289568F600958E24 /* AddDogDetail.storyboard */; };
+		AE5ECC6D2895694B00958E24 /* AddDogDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5ECC6C2895694B00958E24 /* AddDogDetailController.swift */; };
 		C134DF36288007B600992842 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C134DF35288007B600992842 /* .swiftlint.yml */; };
 		C14C372A288E6A4F00868A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C36F6288E6A4F00868A75 /* LaunchScreen.storyboard */; };
 		C14C372C288E6A4F00868A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14C36FB288E6A4F00868A75 /* Assets.xcassets */; };
@@ -15,7 +37,6 @@
 		C14C372E288E6A4F00868A75 /* Extention_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3700288E6A4F00868A75 /* Extention_UIView.swift */; };
 		C14C372F288E6A4F00868A75 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3701288E6A4F00868A75 /* CustomTextField.swift */; };
 		C14C3730288E6A4F00868A75 /* IntroductionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3702288E6A4F00868A75 /* IntroductionTextView.swift */; };
-		C14C3731288E6A4F00868A75 /* DogOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3705288E6A4F00868A75 /* DogOwner.swift */; };
 		C14C3732288E6A4F00868A75 /* DogDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3706288E6A4F00868A75 /* DogDataModel.swift */; };
 		C14C3733288E6A4F00868A75 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C3709288E6A4F00868A75 /* Home.storyboard */; };
 		C14C3734288E6A4F00868A75 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C370A288E6A4F00868A75 /* HomeViewController.swift */; };
@@ -36,10 +57,33 @@
 		C14C3744288E6A4F00868A75 /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3725288E6A4F00868A75 /* LoginScreenController.swift */; };
 		C14C3746288E6A4F00868A75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C3727288E6A4F00868A75 /* SceneDelegate.swift */; };
 		C14C3749288E6E4500868A75 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C3711288E6A4F00868A75 /* Chat.storyboard */; };
-		C14C3750288E73A600868A75 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C374D288E735D00868A75 /* TabBar.storyboard */; };
+		C1D9FCDF288FEFFE001434FF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D9FCDE288FEFFE001434FF /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		119C50A328917B4300A12955 /* ChatRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
+		119C50A528917FE400A12955 /* ChatRoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomVC.swift; sourceTree = "<group>"; };
+		119C50A72891800F00A12955 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		119C50A82891800F00A12955 /* MyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		119C50AB2891801E00A12955 /* YourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCell.swift; sourceTree = "<group>"; };
+		119C50AC2891801E00A12955 /* YourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourCell.xib; sourceTree = "<group>"; };
+		119C50BB2893FA3500A12955 /* ChatInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfoCell.swift; sourceTree = "<group>"; };
+		119C50BC2893FA3500A12955 /* ChatInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInfoCell.xib; sourceTree = "<group>"; };
+		119C50C128966FEA00A12955 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		119C50C6289670F500A12955 /* StartNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNaviController.swift; sourceTree = "<group>"; };
+		119C50C82896715E00A12955 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		20AA0BB82893B15600F4759C /* FilterTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTagViewController.swift; sourceTree = "<group>"; };
+		20AA0BBB2893B24100F4759C /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		20AA0BBE2893B28B00F4759C /* UISheetPresentationControllerDetent+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISheetPresentationControllerDetent+Private.h"; sourceTree = "<group>"; };
+		20AA0BBF2893B28B00F4759C /* CustomSPCDetent-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CustomSPCDetent-Bridging-Header.h"; sourceTree = "<group>"; };
+		20AA0BC02893B2FD00F4759C /* DefaultTagModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTagModel.swift; sourceTree = "<group>"; };
+		7E30393A2890F1E200D58E1A /* LikeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeListView.swift; sourceTree = "<group>"; };
+		7E30398028911B8700D58E1A /* LikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeTableViewCell.swift; sourceTree = "<group>"; };
+		7E30398128911B8700D58E1A /* LikeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeTableViewCell.xib; sourceTree = "<group>"; };
+		7E97F23528927D71002F922E /* OpponentDogLikeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentDogLikeDataModel.swift; sourceTree = "<group>"; };
+		AE215A77289139CD00687AB4 /* ChatListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListController.swift; sourceTree = "<group>"; };
+		AE5ECC6A289568F600958E24 /* AddDogDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddDogDetail.storyboard; sourceTree = "<group>"; };
+		AE5ECC6C2895694B00958E24 /* AddDogDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogDetailController.swift; sourceTree = "<group>"; };
 		C134DF35288007B600992842 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C145B61B287E975600BEC69E /* UDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14C36F7288E6A4F00868A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +92,6 @@
 		C14C3700288E6A4F00868A75 /* Extention_UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention_UIView.swift; sourceTree = "<group>"; };
 		C14C3701288E6A4F00868A75 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C14C3702288E6A4F00868A75 /* IntroductionTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionTextView.swift; sourceTree = "<group>"; };
-		C14C3705288E6A4F00868A75 /* DogOwner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogOwner.swift; sourceTree = "<group>"; };
 		C14C3706288E6A4F00868A75 /* DogDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogDataModel.swift; sourceTree = "<group>"; };
 		C14C3709288E6A4F00868A75 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C14C370A288E6A4F00868A75 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +113,8 @@
 		C14C3725288E6A4F00868A75 /* LoginScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		C14C3727288E6A4F00868A75 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C14C374A288E707800868A75 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C14C374E288E735D00868A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TabBar.storyboard; sourceTree = "<group>"; };
+		C14C374E288E735D00868A75 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		C1D9FCDE288FEFFE001434FF /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		CA47D97F706DC3EDC62AD350 /* Pods-UDD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDD.release.xcconfig"; path = "Target Support Files/Pods-UDD/Pods-UDD.release.xcconfig"; sourceTree = "<group>"; };
 		E0B8FE15F6F796A092A35144 /* Pods_UDD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UDD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34E1874F5BB3A4C3CC48733 /* Pods-UDD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UDD.debug.xcconfig"; path = "Target Support Files/Pods-UDD/Pods-UDD.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +132,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		119C50A228917B2900A12955 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				119C50A328917B4300A12955 /* ChatRoom.storyboard */,
+				119C50A528917FE400A12955 /* ChatRoomVC.swift */,
+				119C50BB2893FA3500A12955 /* ChatInfoCell.swift */,
+				119C50BC2893FA3500A12955 /* ChatInfoCell.xib */,
+				119C50A72891800F00A12955 /* MyCell.swift */,
+				119C50A82891800F00A12955 /* MyCell.xib */,
+				119C50AB2891801E00A12955 /* YourCell.swift */,
+				119C50AC2891801E00A12955 /* YourCell.xib */,
+			);
+			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		119C50C32896702900A12955 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				119C50C128966FEA00A12955 /* Storage.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		20AA0BBD2893B27C00F4759C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				20AA0BBF2893B28B00F4759C /* CustomSPCDetent-Bridging-Header.h */,
+				20AA0BBE2893B28B00F4759C /* UISheetPresentationControllerDetent+Private.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		443F36941137DFEB289B6211 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +171,24 @@
 				CA47D97F706DC3EDC62AD350 /* Pods-UDD.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7E6E5EE5288E7E69003AF360 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				7E30398128911B8700D58E1A /* LikeTableViewCell.xib */,
+				7E30398028911B8700D58E1A /* LikeTableViewCell.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		AE5ECC69289568E400958E24 /* AddDogDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AE5ECC6A289568F600958E24 /* AddDogDetail.storyboard */,
+				AE5ECC6C2895694B00958E24 /* AddDogDetailController.swift */,
+			);
+			path = AddDogDetail;
 			sourceTree = "<group>";
 		};
 		B902775A6750F829A8671E6F /* Frameworks */ = {
@@ -148,6 +242,7 @@
 		C14C36FD288E6A4F00868A75 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				20AA0BBD2893B27C00F4759C /* Headers */,
 				C14C36FE288E6A4F00868A75 /* Others */,
 				C14C3715288E6A4F00868A75 /* OnBoarding */,
 				C14C3703288E6A4F00868A75 /* Main */,
@@ -159,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				C14C36FF288E6A4F00868A75 /* View */,
+				119C50C32896702900A12955 /* Onboarding */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -169,6 +265,7 @@
 				C14C3701288E6A4F00868A75 /* CustomTextField.swift */,
 				C14C3702288E6A4F00868A75 /* IntroductionTextView.swift */,
 				C14C3700288E6A4F00868A75 /* Extention_UIView.swift */,
+				20AA0BBB2893B24100F4759C /* LineView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,8 +282,9 @@
 		C14C3704288E6A4F00868A75 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				20AA0BC02893B2FD00F4759C /* DefaultTagModel.swift */,
 				C14C3706288E6A4F00868A75 /* DogDataModel.swift */,
-				C14C3705288E6A4F00868A75 /* DogOwner.swift */,
+				7E97F23528927D71002F922E /* OpponentDogLikeDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,11 +292,14 @@
 		C14C3707288E6A4F00868A75 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C14C374C288E735D00868A75 /* Base.lproj */,
+				C14C374E288E735D00868A75 /* TabBar.storyboard */,
+				119C50C82896715E00A12955 /* TabBarController.swift */,
 				C14C3708288E6A4F00868A75 /* Home */,
 				C14C3712288E6A4F00868A75 /* HomeDetailView */,
+				C1D9FCE0288FF032001434FF /* Profile */,
 				C14C370E288E6A4F00868A75 /* Like */,
 				C14C3710288E6A4F00868A75 /* Chat */,
+				119C50A228917B2900A12955 /* ChatRoom */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +319,7 @@
 			children = (
 				C14C370D288E6A4F00868A75 /* PostTableViewCell.xib */,
 				C14C370C288E6A4F00868A75 /* PostTableViewCell.swift */,
+				20AA0BB82893B15600F4759C /* FilterTagViewController.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -226,6 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				C14C370F288E6A4F00868A75 /* Like.storyboard */,
+				7E30393A2890F1E200D58E1A /* LikeListView.swift */,
+				7E6E5EE5288E7E69003AF360 /* SubViews */,
 			);
 			path = Like;
 			sourceTree = "<group>";
@@ -234,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				C14C3711288E6A4F00868A75 /* Chat.storyboard */,
+				AE215A77289139CD00687AB4 /* ChatListController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -258,6 +363,7 @@
 		C14C3716288E6A4F00868A75 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AE5ECC69289568E400958E24 /* AddDogDetail */,
 				C14C371A288E6A4F00868A75 /* StartScreen */,
 				C14C3723288E6A4F00868A75 /* LoginScreen */,
 				C14C3717288E6A4F00868A75 /* AddDogName */,
@@ -281,6 +387,7 @@
 			children = (
 				C14C371B288E6A4F00868A75 /* StartScreen.storyboard */,
 				C14C371C288E6A4F00868A75 /* StartScreenController.swift */,
+				119C50C6289670F500A12955 /* StartNaviController.swift */,
 			);
 			path = StartScreen;
 			sourceTree = "<group>";
@@ -312,12 +419,12 @@
 			path = LoginScreen;
 			sourceTree = "<group>";
 		};
-		C14C374C288E735D00868A75 /* Base.lproj */ = {
+		C1D9FCE0288FF032001434FF /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				C14C374D288E735D00868A75 /* TabBar.storyboard */,
+				C1D9FCDE288FEFFE001434FF /* Profile.storyboard */,
 			);
-			path = Base.lproj;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,9 +488,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C14C3750288E73A600868A75 /* TabBar.storyboard in Resources */,
+				119C50AE2891801E00A12955 /* YourCell.xib in Resources */,
+				7EBD43D92893BA2C00B9E528 /* TabBar.storyboard in Resources */,
+				119C50AA2891800F00A12955 /* MyCell.xib in Resources */,
 				C14C3749288E6E4500868A75 /* Chat.storyboard in Resources */,
+				AE5ECC6B289568F600958E24 /* AddDogDetail.storyboard in Resources */,
 				C14C373C288E6A4F00868A75 /* AddDogName.storyboard in Resources */,
+				7E30398328911B8700D58E1A /* LikeTableViewCell.xib in Resources */,
 				C14C372A288E6A4F00868A75 /* LaunchScreen.storyboard in Resources */,
 				C134DF36288007B600992842 /* .swiftlint.yml in Resources */,
 				C14C3741288E6A4F00868A75 /* AddUserData.storyboard in Resources */,
@@ -391,8 +502,11 @@
 				C14C3737288E6A4F00868A75 /* Like.storyboard in Resources */,
 				C14C373A288E6A4F00868A75 /* HomeDetailView.storyboard in Resources */,
 				C14C3733288E6A4F00868A75 /* Home.storyboard in Resources */,
+				119C50BE2893FA3500A12955 /* ChatInfoCell.xib in Resources */,
 				C14C3736288E6A4F00868A75 /* PostTableViewCell.xib in Resources */,
+				119C50A428917B4300A12955 /* ChatRoom.storyboard in Resources */,
 				C14C372C288E6A4F00868A75 /* Assets.xcassets in Resources */,
+				C1D9FCDF288FEFFE001434FF /* Profile.storyboard in Resources */,
 				C14C3743288E6A4F00868A75 /* LoginScreen.storyboard in Resources */,
 				C14C373D288E6A4F00868A75 /* StartScreen.storyboard in Resources */,
 			);
@@ -465,19 +579,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E97F23628927D71002F922E /* OpponentDogLikeDataModel.swift in Sources */,
+				AE215A78289139CD00687AB4 /* ChatListController.swift in Sources */,
+				119C50A628917FE400A12955 /* ChatRoomVC.swift in Sources */,
 				C14C3739288E6A4F00868A75 /* HomeDetailViewController.swift in Sources */,
+				119C50C92896715E00A12955 /* TabBarController.swift in Sources */,
+				119C50A92891800F00A12955 /* MyCell.swift in Sources */,
 				C14C3732288E6A4F00868A75 /* DogDataModel.swift in Sources */,
+				119C50C228966FEB00A12955 /* Storage.swift in Sources */,
 				C14C372F288E6A4F00868A75 /* CustomTextField.swift in Sources */,
 				C14C373F288E6A4F00868A75 /* SelectTagViewController.swift in Sources */,
 				C14C372D288E6A4F00868A75 /* AppDelegate.swift in Sources */,
+				20AA0BBC2893B24100F4759C /* LineView.swift in Sources */,
 				C14C373E288E6A4F00868A75 /* StartScreenController.swift in Sources */,
 				C14C3734288E6A4F00868A75 /* HomeViewController.swift in Sources */,
+				20AA0BC12893B2FD00F4759C /* DefaultTagModel.swift in Sources */,
+				119C50AD2891801E00A12955 /* YourCell.swift in Sources */,
+				119C50BD2893FA3500A12955 /* ChatInfoCell.swift in Sources */,
 				C14C3746288E6A4F00868A75 /* SceneDelegate.swift in Sources */,
-				C14C3731288E6A4F00868A75 /* DogOwner.swift in Sources */,
+				7E30398228911B8700D58E1A /* LikeTableViewCell.swift in Sources */,
+				7E30393B2890F1E200D58E1A /* LikeListView.swift in Sources */,
 				C14C3744288E6A4F00868A75 /* LoginScreenController.swift in Sources */,
+				119C50C7289670F500A12955 /* StartNaviController.swift in Sources */,
 				C14C373B288E6A4F00868A75 /* AddDogNameViewController.swift in Sources */,
 				C14C3730288E6A4F00868A75 /* IntroductionTextView.swift in Sources */,
+				20AA0BB92893B15600F4759C /* FilterTagViewController.swift in Sources */,
 				C14C3742288E6A4F00868A75 /* AddUserDataViewController.swift in Sources */,
+				AE5ECC6D2895694B00958E24 /* AddDogDetailController.swift in Sources */,
 				C14C372E288E6A4F00868A75 /* Extention_UIView.swift in Sources */,
 				C14C3735288E6A4F00868A75 /* PostTableViewCell.swift in Sources */,
 			);
@@ -492,14 +620,6 @@
 				C14C36F7288E6A4F00868A75 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		C14C374D288E735D00868A75 /* TabBar.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C14C374E288E735D00868A75 /* Base */,
-			);
-			name = TabBar.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -634,9 +754,10 @@
 				INFOPLIST_FILE = UDD/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
+				INFOPLIST_KEY_UIMainStoryboardFile = StartScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,6 +767,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Odaeng UDD";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UDD/Presentation/Headers/CustomSPCDetent-Bridging-Header.h";
+				"SWIFT_OBJC_INTERFACE_HEADER_NAME[arch=*]" = "CustomSPCDetent-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -666,9 +789,10 @@
 				INFOPLIST_FILE = UDD/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
+				INFOPLIST_KEY_UIMainStoryboardFile = StartScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -678,6 +802,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Odaeng UDD";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UDD/Presentation/Headers/CustomSPCDetent-Bridging-Header.h";
+				"SWIFT_OBJC_INTERFACE_HEADER_NAME[arch=*]" = "CustomSPCDetent-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
